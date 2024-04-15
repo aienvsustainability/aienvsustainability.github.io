@@ -23,7 +23,7 @@ const ImageSlider = () => {
                 <SwiperSlide>
                     <Image src="/assets/img/slider-2.jpg" style={{ width: '100%', height: '100%' }} sizes="100vw" alt="Slide 2"  width={0} height={0} className="object-cover w-full h-full" />
                     <div className="absolute max-lg:px-[2rem] px-[25rem] inset-0 flex flex-col justify-center items-center text-white">
-                        <h1 className="max-lg:text-[30px] text-[62px] font-['Poppins'] font-extrabold leading-[1.2] mb-[1rem]">स्वस्मै स्वल्पं<br/>समाजाय सर्वस्वं</h1>
+                        <h1 className="max-lg:text-[30px] text-[62px] hindi font-extrabold leading-[1.2] mb-[1rem]">स्वस्मै स्वल्पं<br/>समाजाय सर्वस्वं</h1>
                         <p className="max-lg:hidden text-[16px] text-[#DDDDDD] mb-[2rem]">CAIES generously promotes and supports research in fundamental and applied science through internships for school students, undergraduate, postgraduate, and PhD students.</p>
                         <button className="bg-[#fe5f00] text-[15px] font-[500] max-lg:hidden text-white px-8 py-3 rounded">Join Us</button>
                     </div>

@@ -1,4 +1,6 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +14,10 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.hindi{
+  font-family: 'Poppins', sans-serif;
 }
 
 .circle:before {
