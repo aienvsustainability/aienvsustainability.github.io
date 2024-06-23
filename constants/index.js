@@ -227,7 +227,7 @@ export const scholars = [
 		name: "Kshitij Saxena",
 		role: "India",
 		linkedinUrl: "https://www.linkedin.com/in/kshitij-saxena-16baa5261/",
-		imageUrl: "/assets/img/team/kshitij.jpeg",
+		imageUrl: "/assets/img/team/Kshitij.jpeg",
 	}
 ];
 
