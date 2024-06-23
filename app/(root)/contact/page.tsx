@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer'
-import HeaderBar from '@/components/HeaderBar'
-import ContactPageHeader from '@/components/contact/ContactPageHeader'
-import ContactSection from '@/components/contact/ContactSection'
+import Navigation from '@/components/Navigation';
+import ContactSection from '@/components/contact/Section'
 import React from "react"
 import { Metadata } from "next";
 
@@ -19,8 +18,7 @@ export const metadata: CustomMetadata = {
 const Contact = () => {
   return (
     <>
-      <HeaderBar />
-      <ContactPageHeader />
+      <Navigation />
       <ContactSection />
       <Footer />
     </>

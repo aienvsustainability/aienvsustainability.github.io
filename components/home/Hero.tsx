@@ -11,7 +11,7 @@ const Hero = () => {
     return (
       <div className="bg-[#F2F2F2] w-full max-lg:py-[6rem] py-[8rem]">
         <div id="heading" className="items-center text-center justify-center">
-          <h1 className="text-black text-[38px] font-extrabold text-center">About CAIES</h1>
+          <h2 className="text-black text-[38px] font-extrabold text-center">About CAIES</h2>
           <span className="border-t-4 w-[60px] h-2 border-[#fe5f00] inline-block text-center"></span>
           <p className="text-[17px] mb-[15px] mt-1">Solutions are designed based on the &apos;goals&apos; considering its multidimensional aspects which are<br/>grounded in micro and macro scientific and technical rigors.</p>
         </div>

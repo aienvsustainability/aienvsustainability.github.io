@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer'
-import HeaderBar from '@/components/HeaderBar'
-import PublicationPageHeader from '@/components/publication/PublicationPageHeader'
-import PublicationSection from '@/components/publication/PublicationSection'
+import Navigation from '@/components/Navigation';
+import PublicationSection from '@/components/publication/Section'
 import React from "react"
 import { Metadata } from "next";
 
@@ -19,8 +18,7 @@ export const metadata: CustomMetadata = {
 const Publications = () => {
   return (
     <>
-        <HeaderBar />
-        <PublicationPageHeader />
+        <Navigation />
         <PublicationSection />
         <Footer />
     </>

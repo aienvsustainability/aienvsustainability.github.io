@@ -199,6 +199,36 @@ export const scholars = [
 		linkedinUrl: "https://www.linkedin.com/in/r0x4r/",
 		imageUrl: "/assets/img/team/eshan.jpeg",
 	},
+	{
+		name: "Mukesh Kumhar",
+		role: "India",
+		linkedinUrl: "https://www.linkedin.com/in/mukesh-kumhar/",
+		imageUrl: "/assets/img/team/mukesh.jpeg",
+	},
+	{
+		name: "Akanksha Kumari",
+		role: "India",
+		linkedinUrl: "https://www.linkedin.com/in/akanksha-kumari-373a5b277/",
+		imageUrl: "/assets/img/team/akanksha.jpeg",
+	},
+	{
+		name: "Vivek Krishan",
+		role: "India",
+		linkedinUrl: "https://www.linkedin.com/in/vivek-krishan-16705a241/",
+		imageUrl: "/assets/img/team/vivek.jpeg",
+	},
+	{
+		name: "Ankit Rai",
+		role: "India",
+		linkedinUrl: "https://www.linkedin.com/in/ankit-rai-b5806924a/",
+		imageUrl: "/assets/img/team/ankiit.jpeg",
+	},
+	{
+		name: "Kshitij Saxena",
+		role: "India",
+		linkedinUrl: "https://www.linkedin.com/in/kshitij-saxena-16baa5261/",
+		imageUrl: "/assets/img/team/kshitij.jpeg",
+	}
 ];
 
 export const collaborators = [

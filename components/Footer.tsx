@@ -15,6 +15,7 @@ const Footer = () => {
           <li><a href="https://www.instagram.com/caiesfoundation/" data-text="in"><i><SiInstagram /></i></a></li>
           <li><a href="https://www.facebook.com/caiesfoundation/" data-text="fb"><i><ImFacebook /></i></a></li>
           <li><a href="https://www.youtube.com/channel/UClV_dab_loUKR15sqD1EYeA" data-text="yt"><i><SiYoutube /></i></a></li>
+          {/* <li>People Visited: </li> */}
         </ul>
       </div>
     </section>

@@ -16,7 +16,7 @@ const Event = () => {
         <>
             <section className="w-full bg-[#F2F2F2] py-[6rem]">
                 <div id="heading" className="items-center text-center justify-center mb-[3rem]">
-                    <h1 className="text-black text-[38px] font-extrabold text-center">Events</h1>
+                    <h2 className="text-black text-[38px] font-extrabold text-center">Events</h2>
                     <span className="border-t-4 w-[60px] h-2 border-[#fe5f00] inline-block text-center"></span>
                     <p className="text-[17px] font-normal mb-[15px] mt-1"><span className="font-['Poppins'] text-[15px]">स्वस्मै स्वल्पं समाजाय सर्वस्वं</span> - A little for self and everything for others</p>
                 </div>
@@ -24,6 +24,7 @@ const Event = () => {
                     <Carousel
                         opts={{
                             align: "start",
+                            loop: true,
                         }}
                         className="w-full"
                     >
@@ -33,7 +34,7 @@ const Event = () => {
                                 <div className="flex flex-col sm:flex-row items-center justify-center">
                                     <Image src="/assets/img/events-1.jpg" width={0} height={0} style={{ width: '385.71px', height: '337.71px' }} sizes="100vw" alt='he' />
                                     <div className="h-auto bg-white border-dashed border border-[#CCCCCC] py-[40px] px-[30px]">
-                                        <h3 className="text-[20px] font-extrabold leading-8">Deepawali Celebration Among Musahar Community</h3>
+                                        <h2 className="text-[20px] font-extrabold leading-8">Deepawali Celebration Among Musahar Community</h2>
                                         <div className="flex gap-4 my-[8px]">
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><SlCalender className="text-[#FE5F00]" /> 2022</p>
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><FiMapPin className="text-[#FE5F00]" /> BIHAR, INDIA</p>
@@ -47,7 +48,7 @@ const Event = () => {
                                 <div className="flex flex-col sm:flex-row items-center justify-center">
                                     <Image src="/assets/img/events-2.jpg" width={0} height={0} style={{ width: '385.71px', height: '337.71px' }} sizes="100vw" alt='he' />
                                     <div className="h-auto bg-white border-dashed border border-[#CCCCCC] py-[40px] px-[30px]">
-                                        <h3 className="text-[20px] font-extrabold leading-8">Deepawali celebration with the Musahar community</h3>
+                                        <h2 className="text-[20px] font-extrabold leading-8">Deepawali celebration with the Musahar community</h2>
                                         <div className="flex gap-4 my-[8px]">
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><SlCalender className="text-[#FE5F00]" /> 2022</p>
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><FiMapPin className="text-[#FE5F00]" /> BIHAR, INDIA</p>
@@ -60,8 +61,8 @@ const Event = () => {
                             <CarouselItem className="md:basis-1/1 lg:basis-1/2">
                                 <div className="flex flex-col sm:flex-row items-center justify-center">
                                     <Image src="/assets/img/events-3.jpg" width={0} height={0} style={{ width: '385.71px', height: '337.71px' }} sizes="100vw" alt='he' />
-                                    <div className="h-auto bg-white border-dashed border border-[#CCCCCC] py-[40px] px-[30px]">
-                                        <h3 className="text-[20px] font-extrabold leading-8">Aaranyakam - KDU</h3>
+                                    <div className="h-[410px] max-lg:h-[430px] bg-white border-dashed border border-[#CCCCCC] py-[40px] px-[30px]">
+                                        <h2 className="text-[20px] font-extrabold leading-8">Aaranyakam - KDU</h2>
                                         <div className="flex gap-4 my-[8px]">
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><SlCalender className="text-[#FE5F00]" /> 2023</p>
                                             <p className="flex text-[12px] gap-1 items-center text-center text-[#999999] font-semibold"><FiMapPin className="text-[#FE5F00]" /> KERELA, INDIA</p>

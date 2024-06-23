@@ -1,9 +1,8 @@
 import Footer from '@/components/Footer'
-import HeaderBar from '@/components/HeaderBar'
-import AwardSection from '@/components/awards/AwardSection'
-import AwardsPageHeader from '@/components/awards/AwardsPageHeader'
+import AwardSection from '@/components/awards/Section'
 import React from "react"
 import { Metadata } from "next";
+import Navigation from '@/components/Navigation';
 
 interface CustomMetadata extends Metadata {
   canonical?: string;
@@ -19,8 +18,7 @@ export const metadata: CustomMetadata = {
 const Awards = () => {
     return (
         <>
-            <HeaderBar />
-            <AwardsPageHeader />
+            <Navigation />
             <AwardSection />
             <Footer />
         </>

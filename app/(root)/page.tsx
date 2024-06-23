@@ -1,11 +1,12 @@
 import React from "react";
-import Header from '@/components/HeaderBar';
+import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Counter from '@/components/home/Counter';
 import Event from '@/components/home/Event';
 import Hero from '@/components/home/Hero';
 import ImageSlider from '@/components/home/ImageSlider';
 import { Metadata } from "next";
+import Head from "next/head";
 
 interface CustomMetadata extends Metadata {
   canonical?: string;
@@ -20,7 +21,21 @@ export const metadata: CustomMetadata = {
 const Home = () => {
   return (
     <>
-      <Header />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "CAIES Fondation - Home",
+              "url": "https://caienvsus.org/",
+            }),
+          }}
+        />
+      </Head>
+
+      <Navigation />
       <ImageSlider />
       <Hero />
       <Counter />

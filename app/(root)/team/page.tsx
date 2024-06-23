@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer'
-import HeaderBar from '@/components/HeaderBar'
-import TeamPageHeader from '@/components/team/TeamPageHeader'
-import TeamSection from '@/components/team/TeamSection'
+import Navigation from '@/components/Navigation';
+// import TeamPageHeader from '@/components/team/TeamPageHeader'
+import TeamSection from '@/components/team/Section'
 import React from "react"
 import { Metadata } from "next";
 
@@ -18,8 +18,7 @@ export const metadata: CustomMetadata = {
 const Team = () => {
   return (
     <>
-    <HeaderBar />
-    <TeamPageHeader />
+    <Navigation />
     <TeamSection />
     <Footer />
     </>

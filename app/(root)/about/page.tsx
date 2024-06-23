@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer'
-import HeaderBar from '@/components/HeaderBar'
-import AboutPageHeader from '@/components/about/AboutPageHeader'
-import AboutSection from '@/components/about/AboutSection'
+import Navigation from '@/components/Navigation';
+import AboutSection from '@/components/about/Section'
 import React from "react"
 import { Metadata } from "next";
 import Head from 'next/head';
@@ -22,8 +21,7 @@ const About = () => {
       <Head>
         <link rel="canonical" href="https://caienvsus.org/about" />
       </Head>
-      <HeaderBar />
-      <AboutPageHeader />
+      <Navigation />
       <AboutSection />
       <Footer />
     </>
