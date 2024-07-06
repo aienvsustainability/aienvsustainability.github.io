@@ -8,33 +8,32 @@ import ImageSlider from '@/components/home/ImageSlider';
 import { Metadata } from "next";
 import Head from "next/head";
 
-interface CustomMetadata extends Metadata {
-  canonical?: string;
+interface CustomMetadata {
+  title: string;
+  description: string;
+  alternates?: {
+    canonical?: string;
+    languages?: {
+      'en-US': string;
+    };
+  };
 }
 
 export const metadata: CustomMetadata = {
   title: "Home",
   description: "CAIES Foundation pioneers sustainable solutions via advanced research, employing AI, ML, and geospatial tech for multidimensional impact.",
-  canonical: "https://caienvsus.org/",
+  alternates: {
+    canonical: "/",
+    languages: {
+      'en-US': '/',
+    }
+  },
 };
+
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "CAIES Fondation - Home",
-              "url": "https://caienvsus.org/",
-            }),
-          }}
-        />
-      </Head>
-
       <Navigation />
       <ImageSlider />
       <Hero />
