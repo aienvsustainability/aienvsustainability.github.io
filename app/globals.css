@@ -1,9 +1,28 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins'; /* Give it a name */
+    src: url('/assets/Poppins-Regular.ttf') format('truetype'); /* Path to your TTF font */
+    font-weight: normal; /* Specify weight if necessary */
+    font-style: normal; /* Specify style if necessary */
+}
+
+@font-face {
+    font-family: 'Poppins'; /* Give it a name */
+    src: url('/assets/Poppins-ExtraBold.ttf') format('truetype'); /* Path to your TTF font */
+    font-weight: bold; /* Specify weight if necessary */
+    font-style: normal; /* Specify style if necessary */
+}
+
+.hindi-normal {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: normal;
+}
 
 * {
   font-family: "Satoshi", sans-serif;
@@ -16,8 +35,9 @@
   overflow: hidden;
 }
 
-#hindi {
+.hindi-bold {
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .circle:before {
