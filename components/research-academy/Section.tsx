@@ -20,7 +20,7 @@ const ResearchAcademySection = () => {
                 breadcrumb={breadcrumb}
             />
             <section id="main-section" className="w-full bg-neutral-50">
-                <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-48 py-20 max-lg:px-8">
+                <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-8 py-20 lg:px-48">
                     <div className="flex flex-col items-center justify-center">
                         <Image
                             src="/assets/img/research.jpg"
@@ -31,7 +31,7 @@ const ResearchAcademySection = () => {
                             className="rounded-2xl"
                         />
                         <div className="flex flex-col justify-center items-center py-8">
-                            <h2 className="text-5xl font-black text-neutral-800">
+                            <h2 className="text-3xl lg:text-5xl font-black text-neutral-800">
                                 Research Academy
                             </h2>
                             <p className="mt-8 max-w-4xl text-base text-center font-normal text-neutral-600">
@@ -51,11 +51,11 @@ const ResearchAcademySection = () => {
                                 stewardship.
                             </p>
 
-                            <div className="my-12 grid grid-cols-4 items-center justify-center gap-5">
+                            <div className="my-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-5">
                                 {researchAcademyBenefits.map((benefit) => (
                                     <div
                                         key={benefit.id}
-                                        className="w-74 group flex h-80 flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
+                                        className="w-full group flex h-80 flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
                                             <div className="flex size-14 items-center justify-center rounded-full border border-dashed text-main border-main bg-slate-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />

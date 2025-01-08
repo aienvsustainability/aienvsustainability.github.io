@@ -76,7 +76,7 @@ const Footer = () => {
                     </li>
                     <li ref={hitCounterRef}>
                         <Link
-                            className="hitCounter"
+                            className="hitCounter text-xs"
                             href="https://visitorshitcounter.com/"
                             target="_blank"
                             title="Hit counter"
