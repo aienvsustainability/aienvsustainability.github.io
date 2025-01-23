@@ -1,36 +1,53 @@
-import { MetadataRoute } from "next";
+import { MetadataRoute } from "next"
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+
     return [
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+            url: `${baseUrl}/`,
             lastModified: new Date().toISOString(),
-            priority: 1
+            priority: 1.0,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/about`,
+            url: `${baseUrl}/about/our-vision`,
             lastModified: new Date().toISOString(),
-            priority: 0.8
+            priority: 0.8,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/team`,
+            url: `${baseUrl}/about/our-goals`,
             lastModified: new Date().toISOString(),
-            priority: 0.8
+            priority: 0.8,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/awards`,
+            url: `${baseUrl}/about/core-members`,
             lastModified: new Date().toISOString(),
-            priority: 0.8
+            priority: 0.8,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/publications`,
+            url: `${baseUrl}/about/our-team`,
             lastModified: new Date().toISOString(),
-            priority: 0.8
+            priority: 0.8,
         },
         {
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+            url: `${baseUrl}/publications`,
             lastModified: new Date().toISOString(),
-            priority: 0.5
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/initiatives/research-academy`,
+            lastModified: new Date().toISOString(),
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/initiatives/ai-for-scientist`,
+            lastModified: new Date().toISOString(),
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/contact`,
+            lastModified: new Date().toISOString(),
+            priority: 0.5,
         },
     ]
 }

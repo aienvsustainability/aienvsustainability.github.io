@@ -5,8 +5,7 @@ import Counter from '@/components/home/Counter';
 import Event from '@/components/home/Event';
 import Hero from '@/components/home/Hero';
 import ImageSlider from '@/components/home/ImageSlider';
-import { Metadata } from "next";
-import Head from "next/head";
+import PublicationSubSection from "@/components/home/Publication";
 
 interface CustomMetadata {
   title: string;
@@ -38,6 +37,7 @@ const Home = () => {
       <ImageSlider />
       <Hero />
       <Counter />
+      <PublicationSubSection />
       <Event />
       <Footer />
     </>

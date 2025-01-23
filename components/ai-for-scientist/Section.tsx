@@ -15,7 +15,7 @@ const AiForScientistSection = () => {
         <>
             <Breadcrumb
                 title="AI for Scientists"
-                subtitle={`Empowering scientists with AI-driven innovation to accelerate research, solve complex problems,\nand drive groundbreaking discoveries for humanity and the environment.`}
+                subtitle={`Discover CAIES Foundation's AI for Scientists initiative, bridging science and AI innovation to accelerate research, solve complex problems, and drive discoveries.`}
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
@@ -30,7 +30,7 @@ const AiForScientistSection = () => {
                             alt="thumbnail"
                             className="rounded-2xl"
                         />
-                        <div className="flex flex-col items-center justify-center py-8">
+                        <div className="mt-8 flex flex-col items-center justify-center py-8">
                             <h2 className="text-3xl font-black text-neutral-800 sm:text-4xl lg:text-5xl">
                                 AI for Scientists
                             </h2>
@@ -55,15 +55,14 @@ const AiForScientistSection = () => {
                                         key={benefit.id}
                                         className="w-full group flex h-80 flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="flex size-14 items-center justify-center rounded-full border border-dashed border-main bg-slate-50 text-xl text-main transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="flex size-14 items-center justify-center rounded-full border border-dashed border-main bg-neutral-50 text-xl text-main transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
                                             <span className="text-sm font-medium text-neutral-400">
                                                 {String(benefit.id).padStart(
                                                     3,
                                                     "0"
-                                                )}{" "}
-                                                {/* Adds leading zeros */}
+                                                )}
                                             </span>
                                         </div>
                                         <div className="mt-auto">

@@ -207,7 +207,7 @@ const ContactSection = () => {
                             className="-mx-4 mt-28 flex flex-row rounded-md bg-neutral-50 p-[80px_50px] shadow-[0_16px_28px_0_#00000026] max-lg:flex-col max-lg:px-8">
                             <div className="relative min-h-[1px] w-full px-4 max-lg:mb-8 max-lg:border-b max-lg:px-1 max-lg:pb-4">
                                 <div className="contact-info">
-                                    <h3 className="mb-8 text-[18px] font-extrabold uppercase">
+                                    <h3 className="mb-8 text-lg font-extrabold uppercase">
                                         Office
                                     </h3>
                                     <p className="mb-4 text-lg">
@@ -292,7 +292,7 @@ const ContactSection = () => {
                                                             onClick={
                                                                 handleRefreshCaptcha
                                                             }>
-                                                            <IoReloadCircle className="text-center text-[24px] text-main" />
+                                                            <IoReloadCircle className="text-center text-2xl text-main" />
                                                         </button>
                                                     </label>
 

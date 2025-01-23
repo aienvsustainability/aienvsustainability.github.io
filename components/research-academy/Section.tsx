@@ -15,7 +15,7 @@ const ResearchAcademySection = () => {
         <>
             <Breadcrumb
                 title="Research Academy"
-                subtitle={`Empowering minds to drive innovation, solve global challenges,\nand lead the future of research and technology.`}
+                subtitle={`Join the Research Academy at CAIES Foundation, a hub for innovation, collaboration, and AI-driven research tackling global challenges and advancing sustainability.`}
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
@@ -30,7 +30,7 @@ const ResearchAcademySection = () => {
                             alt="thumbnail"
                             className="rounded-2xl"
                         />
-                        <div className="flex flex-col justify-center items-center py-8">
+                        <div className="mt-8 flex flex-col justify-center items-center py-8">
                             <h2 className="text-3xl lg:text-5xl font-black text-neutral-800">
                                 Research Academy
                             </h2>
@@ -57,7 +57,7 @@ const ResearchAcademySection = () => {
                                         key={benefit.id}
                                         className="w-full group flex h-80 flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="flex size-14 items-center justify-center rounded-full border border-dashed text-main border-main bg-slate-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="flex size-14 items-center justify-center rounded-full border border-dashed text-main border-main bg-neutral-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
                                             <span className="text-sm font-medium text-neutral-400">
