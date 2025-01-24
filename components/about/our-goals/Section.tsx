@@ -72,7 +72,7 @@ const OurGoalsSection = () => {
                                             <p className="text-sm font-medium text-neutral-500">
                                                 Although we align our
                                                 initiatives with the United
-                                                Nations' Sustainable Development
+                                                Nations&apos; Sustainable Development
                                                 Goals (SDGs) and the six
                                                 priority areas of environmental
                                                 sustainability identified by the
@@ -80,7 +80,7 @@ const OurGoalsSection = () => {
                                                 explore how the synchronization
                                                 among the four{" "}
                                                 <b>
-                                                    "<i>Purusharthas</i>"
+                                                    &quot;<i>Purusharthas</i>&quot;
                                                 </b>
                                                 defined in Sanatan Culture will
                                                 help achieve sustainability at
