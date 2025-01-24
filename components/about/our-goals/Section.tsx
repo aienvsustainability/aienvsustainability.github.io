@@ -87,11 +87,11 @@ const OurGoalsSection = () => {
                                                 an individual level. The four
                                                 Purusharthas include{" "}
                                                 <b>
-                                                    <i>Dharma</i>
+                                                    <i>Dharma </i>
                                                 </b>
                                                 (Righteousness Duty),{" "}
                                                 <b>
-                                                    <i>Artha</i>
+                                                    <i>Artha </i>
                                                 </b>
                                                 (Wealth),{" "}
                                                 <b>

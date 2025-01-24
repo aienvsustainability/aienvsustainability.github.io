@@ -206,18 +206,6 @@ export const scholars = [
         imageUrl: "/assets/img/team/mukesh.jpeg",
     },
     {
-        name: "Akanksha Kumari",
-        role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/akanksha-kumari-373a5b277/",
-        imageUrl: "/assets/img/team/akanksha.jpeg",
-    },
-    {
-        name: "Vivek Krishan",
-        role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/vivek-krishan-16705a241/",
-        imageUrl: "/assets/img/team/vivek.jpeg",
-    },
-    {
         name: "Ankit Rai",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/ankit-rai-b5806924a/",
@@ -232,12 +220,6 @@ export const scholars = [
 ]
 
 export const collaborators = [
-    {
-        name: "Ms. Haley Trivedi",
-        role: "India",
-        imageUrl: "/assets/img/team/haley.jpeg",
-        linkedinUrl: "https://www.linkedin.com/in/haleytrivedi/",
-    },
     {
         name: "Dr. Sandhya Pundhir",
         role: "India",
