@@ -206,18 +206,6 @@ export const scholars = [
         imageUrl: "/assets/img/team/mukesh.jpeg",
     },
     {
-        name: "Akanksha Kumari",
-        role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/akanksha-kumari-373a5b277/",
-        imageUrl: "/assets/img/team/akanksha.jpeg",
-    },
-    {
-        name: "Vivek Krishan",
-        role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/vivek-krishan-16705a241/",
-        imageUrl: "/assets/img/team/vivek.jpeg",
-    },
-    {
         name: "Ankit Rai",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/ankit-rai-b5806924a/",
@@ -232,12 +220,6 @@ export const scholars = [
 ]
 
 export const collaborators = [
-    {
-        name: "Ms. Haley Trivedi",
-        role: "India",
-        imageUrl: "/assets/img/team/haley.jpeg",
-        linkedinUrl: "https://www.linkedin.com/in/haleytrivedi/",
-    },
     {
         name: "Dr. Sandhya Pundhir",
         role: "India",
@@ -448,4 +430,39 @@ export const aiForScientistBenefits = [
         description:
             "Stay updated with the latest advancements in AI technologies and their applications in various scientific fields through regular workshops and updates.",
     },
+];
+
+export const EventDetails = [
+    {
+        id: 1,
+        title: "Deepawali Celebration Among Musahar Community",
+        year: "2022",
+        location: "BIHAR, INDIA",
+        description: "In 2022, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+        image: "/assets/img/events-1.jpg"
+      },
+      {
+        id: 2,
+        title: "Deepawali Celebration Among Musahar Community",
+        year: "2023",
+        location: "Bihar, India",
+        description: "In 2023, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+        image: "/assets/img/events-2.jpg"
+      },
+      {
+        id: 3,
+        title: "Aaranyakam - KDU",
+        year: "2023",
+        location: "Kerala, India",
+        description: "In 2023, Kerala University of Digital Sciences Student Council, with School of Informatics, celebrated Wildlife Week with events promoting conservation.",
+        image: "/assets/img/events-3.jpg"
+      },
+      {
+        id: 4,
+        title: "Lecture on \"AI in Material Science\"",
+        year: "2024",
+        location: "Bihar, India",
+        description: "As part of the \"Artificial Intelligence for Scientists\" initiative by the CAIES Foundation, Dr. Sushant Singh delivered a lecture on \"AI in Material Science\" at the Materials Research Lab, PG Department of Physics, A. N. College, Patna, Bihar, India. The session aimed to showcase how Artificial Intelligence (AI) revolutionizes material science research and drives innovation in this critical field. The Materials Research Lab is headed by Professor Dr. Seema Sharma, a known Physicist and material scientist. She spearheads multiple collaborative projects with the Royal Society London, UK, and other institutions. It was a pleasure seeing students from rural areas working in the lab for their Master's and PhD research. We will work together to make the lab AI-enabled.",
+        image: "/assets/img/events-4.jpg"
+      },
 ];

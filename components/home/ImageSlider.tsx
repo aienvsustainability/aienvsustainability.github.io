@@ -16,7 +16,7 @@ const ImageSlider = () => {
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 loop={true}
                 modules={[EffectFade, Autoplay, Navigation]}
-                className="flex h-[550px] items-center justify-center text-center max-lg:h-[250px]">
+                className="flex h-[590px] items-center justify-center text-center max-lg:h-[570px]">
                 <SwiperSlide>
                     <Image
                         src="/assets/img/slider-1.jpg"
@@ -28,19 +28,19 @@ const ImageSlider = () => {
                         className="h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-96 text-white max-lg:px-8">
-                        <h2 className="max-lg:text-8 mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
+                        <h2 className="max-lg:text-4xl mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
                             Together we can
                             <br />
                             make a Difference
                         </h2>
-                        <p className="mb-8 animate-slidein text-base text-neutral-200 max-lg:hidden">
+                        <p className="animate-slidein text-base text-neutral-200">
                             The CAIES Foundation would extend its education,
                             training, and research activities in other areas
                             required to address the sustainability issues.
                         </p>
-                        <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
+                        {/* <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
                             Join Us
-                        </button>
+                        </button> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -54,20 +54,20 @@ const ImageSlider = () => {
                         className="h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-96 text-white max-lg:px-8">
-                        <h2 className="hindi-bold max-lg:text-8 mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
+                        <h1 className="hindi-bold max-lg:text-4xl mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
                             स्वस्मै स्वल्पं
                             <br />
                             समाजाय सर्वस्वं
-                        </h2>
-                        <p className="mb-8 animate-slidein text-base text-neutral-200 max-lg:hidden">
+                        </h1>
+                        <p className="animate-slidein text-base text-neutral-200">
                             CAIES generously promotes and supports research in
                             fundamental and applied science through internships
                             for school students, undergraduate, postgraduate,
                             and PhD students.
                         </p>
-                        <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
+                        {/* <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
                             Join Us
-                        </button>
+                        </button> */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -81,18 +81,18 @@ const ImageSlider = () => {
                         className="h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-72 text-white max-lg:px-8">
-                        <h2 className="max-lg:text-8 mb-4 animate-slidein text-5xl font-extrabold leading-[1.2]">
+                        <h2 className="max-lg:text-4xl mb-4 animate-slidein text-5xl font-extrabold leading-[1.2]">
                             The Center For Artificial Intelligence &
                             Environmental Sustainability Foundation
                         </h2>
-                        <p className="mb-8 animate-slidein px-28 text-base text-neutral-200 max-lg:hidden max-lg:px-4">
+                        <p className="animate-slidein px-28 text-base text-neutral-200 max-lg:px-4">
                             The CAIES Foundation would extend its education,
                             training, and research activities in other areas
                             required to address the sustainability issues.
                         </p>
-                        <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
+                        {/* <button className="animate-slidein rounded bg-main px-8 py-3 text-base font-medium text-white">
                             Join Us
-                        </button>
+                        </button> */}
                     </div>
                 </SwiperSlide>
             </Swiper>

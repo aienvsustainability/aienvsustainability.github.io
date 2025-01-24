@@ -7,6 +7,7 @@ import { PiArrowLeftThin, PiArrowRightThin } from "react-icons/pi"
 import { publicationCards } from "@/constants"
 import Image from "next/image"
 import Breadcrumb from "../Breadcrumb"
+import Link from "next/link"
 
 interface PublicationCard {
     image: string
@@ -23,7 +24,7 @@ const SkeletonLoader = () => (
             <div className="mb-4 flex items-center gap-1 text-base font-medium text-neutral-300">
                 <WiTime5 /> Date
             </div>
-            <div className="text-[24px] font-semibold leading-8">Title</div>
+            <div className="text-2xl font-semibold leading-8">Title</div>
             <div className="mt-2 h-8 w-2/3 bg-gray-200 text-base"></div>
         </div>
     </div>
@@ -67,34 +68,34 @@ const PublicationSection = () => {
             <section id="publication-section" className="w-full bg-neutral-50">
                 <div
                     id="cards"
-                    className="grid grid-cols-3 gap-5 px-48 py-[6rem] max-lg:grid-cols-1 max-lg:px-8">
+                    className="grid grid-cols-3 gap-5 px-48 py-24 max-lg:grid-cols-1 max-lg:px-8">
                     {currentItems.map((item, index) => (
                         <div
                             key={index}
                             className="relative w-full overflow-hidden p-[2%] transition-shadow duration-300">
-                            <a href={item.link}>
+                            <Link href={item.link}>
                                 <Image
                                     src={item.image}
                                     width={500}
                                     height={500}
                                     alt="award"
                                 />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href={item.link}
-                                className="absolute right-4 top-4 flex items-center rounded-sm bg-[#FE5D00A4] px-[10px] py-2 text-[14px] font-medium text-white hover:bg-[#FE5D00] hover:transition-all hover:duration-1000 hover:ease-in-out">
+                                className="absolute right-4 top-4 flex items-center rounded-sm bg-[#FE5D00A4] px-[10px] py-2 text-sm font-medium text-white hover:bg-[#FE5D00] hover:transition-all hover:duration-1000 hover:ease-in-out">
                                 Read More{" "}
                                 <FiPlus className="ml-[5px] text-xs" />
-                            </a>
+                            </Link>
                             <div className="h-auto border border-dashed border-stone-300 bg-white px-8 py-10">
                                 <h4 className="mb-4 flex items-center gap-1 text-base font-medium text-neutral-300">
                                     <WiTime5 /> {item.date}
                                 </h4>
-                                <a href={item.link}>
-                                    <h3 className="text-[24px] font-semibold leading-8">
+                                <Link href={item.link}>
+                                    <h3 className="text-2xl font-semibold leading-8">
                                         {item.title}
                                     </h3>
-                                </a>
+                                </Link>
                                 <p
                                     className="mt-2 text-base"
                                     dangerouslySetInnerHTML={{
