@@ -5,18 +5,19 @@ import Breadcrumb from "../Breadcrumb"
 const AboutSection = () => {
     const breadcrumb = [
         { label: "Home", link: "/" },
-        { label: "About Us", link: "/" },
-        { label: "Core Members", active: true },
+        { label: "About Us", active: true },
     ]
     return (
         <>
             <Breadcrumb
-                title="Core Members"
+                title="About Us"
                 subtitle={`Working together, growing together!`}
                 imageUrl="/assets/img/page-header-bg.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="about-section" className="relative bg-neutral-50">
+            <section
+                id="about-section"
+                className="relative bg-neutral-50">
                 <div
                     id="container"
                     className="circle shape border-b border-[#EAEAEA] p-48 max-lg:px-8 max-lg:py-24">
@@ -69,10 +70,10 @@ const AboutSection = () => {
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-center text-4xl font-extrabold text-neutral-800">
+                        <h1 className="text-center text-4xl font-extrabold text-neutral-800">
                             The Directors
-                        </h2>
-                        <span className="inline-block h-2 w-16 border-t-4 border-main text-center"></span>
+                        </h1>
+                        <span className="inline-block h-2 w-[60px] border-t-4 border-main text-center"></span>
                     </div>
                     <div id="content">
                         <p className="mb-4 text-left text-lg leading-8 text-neutral-600">
@@ -160,14 +161,16 @@ const AboutSection = () => {
                         </div>
                     </div>
                 </div>
-                <div id="directors" className="px-48 pb-20 pt-8 max-lg:px-8">
+                <div
+                    id="directors"
+                    className="px-48 pb-20 pt-8 max-lg:px-8">
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-center text-4xl font-extrabold text-neutral-800">
+                        <h1 className="text-center text-4xl font-extrabold text-neutral-800">
                             HRM and Legal
-                        </h2>
-                        <span className="inline-block h-2 w-16 border-t-4 border-main text-center"></span>
+                        </h1>
+                        <span className="inline-block h-2 w-[60px] border-t-4 border-main text-center"></span>
                     </div>
                     <div id="content">
                         <p className="mb-4 text-left text-lg leading-8 text-neutral-600">

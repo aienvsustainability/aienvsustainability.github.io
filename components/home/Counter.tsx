@@ -19,7 +19,7 @@ const Counter = () => {
                             <h3 className="mt-[10px] text-[48px] font-semibold text-main">
                                 1000
                             </h3>
-                            <p className="text-center text-lg font-medium">
+                            <p className="text-center text-[18px] font-medium">
                                 Sponsored
                             </p>
                         </div>
@@ -30,7 +30,7 @@ const Counter = () => {
                             <h3 className="mt-[10px] text-[48px] font-semibold text-main">
                                 10
                             </h3>
-                            <p className="text-center text-lg font-medium">
+                            <p className="text-center text-[18px] font-medium">
                                 Scholars Around The World
                             </p>
                         </div>
@@ -41,7 +41,7 @@ const Counter = () => {
                             <h3 className="mt-[10px] text-[48px] font-semibold text-main">
                                 250
                             </h3>
-                            <p className="text-center text-lg font-medium">
+                            <p className="text-center text-[18px] font-medium">
                                 People Impacted
                             </p>
                         </div>
@@ -52,7 +52,7 @@ const Counter = () => {
                             <h3 className="mt-[10px] text-[48px] font-semibold text-main">
                                 10
                             </h3>
-                            <p className="text-center text-lg font-medium">
+                            <p className="text-center text-[18px] font-medium">
                                 Intellectual Support
                             </p>
                         </div>

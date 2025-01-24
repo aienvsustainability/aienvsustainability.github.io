@@ -9,36 +9,36 @@ const formatDescription = (description: string) => {
 
 const Hero = () => {
     return (
-        <div className="w-full bg-neutral-50 py-32 max-lg:py-24">
+        <div className="w-full bg-neutral-50 py-[8rem] max-lg:py-[6rem]">
             <div
                 id="heading"
-                className="flex flex-col items-center justify-center px-4 text-center">
-                <h2 className="mb-2 text-center text-4xl font-extrabold text-neutral-800">
+                className="items-center justify-center text-center">
+                <h2 className="text-center text-[38px] font-extrabold text-neutral-800">
                     About CAIES
                 </h2>
-                <span className="inline-block h-2 w-16 border-t-4 border-main text-center"></span>
-                <p className="mb-4 mt-4 max-w-2xl text-lg text-neutral-600 max-lg:text-base">
+                <span className="border-main inline-block h-2 w-[60px] border-t-4 text-center"></span>
+                <p className="mb-4 mt-1 text-lg text-neutral-600">
                     Solutions are designed based on the &apos;goals&apos;
-                    considering its multidimensional aspects which are grounded
-                    in micro and macro scientific and technical rigors.
+                    considering its multidimensional aspects which are
+                    <br />
+                    grounded in micro and macro scientific and technical rigors.
                 </p>
             </div>
             <div
                 id="section"
-                className="grid grid-cols-1 gap-6 bg-neutral-50 px-4 pt-6 sm:grid-cols-2 sm:px-8 lg:grid-cols-3 lg:px-48">
+                className="flex flex-col gap-6 px-8 pt-12 sm:flex-row sm:px-48">
                 {/* Render each item from aboutSection array */}
                 {aboutCards.map((item, index) => (
                     <div
                         key={index}
-                        className="relative overflow-hidden p-[2%]">
+                        className="relative w-full overflow-hidden p-[2%] sm:w-[500px]">
                         <Image
                             src={item.image}
                             width={500}
                             height={500}
                             alt={`causes${index + 1}`}
-                            className="h-auto w-full"
                         />
-                        <div className="border border-dashed border-neutral-300 bg-white px-8 py-10 sm:h-[420px]">
+                        <div className="border border-dashed border-stone-300 bg-white px-8 py-10 sm:h-[500px]">
                             <h3 className="text-2xl font-semibold leading-8 text-neutral-800">
                                 {item.title}
                             </h3>
