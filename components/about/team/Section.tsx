@@ -95,14 +95,14 @@ const TeamSection = () => {
                         {renderTeamMembers(scholars)}
                     </div>
 
-                    <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-800 max-lg:px-8">
+{/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-800 max-lg:px-8">
                         Collaborators
                     </h2>
                     <div
                         id="advisory-team"
                         className="grid grid-cols-4 justify-center gap-5 px-48 py-8 max-lg:grid-cols-1 max-lg:px-8">
                         {renderTeamMembers(collaborators)}
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>
