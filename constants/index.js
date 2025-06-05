@@ -168,55 +168,71 @@ export const scholars = [
         role: "United Kingdom",
         linkedinUrl: "https://www.linkedin.com/in/aayushi-sharan-34a7201a2/",
         imageUrl: "/assets/img/team/aayushi.jpeg",
+        status: true,
     },
     {
         name: "Saumya Srishtee",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee/",
         imageUrl: "/assets/img/team/saumya.jpeg",
+        status: true,
     },
     {
         name: "Asha Mariam Manoj",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/asha-mariam-manoj-b01a96249/",
         imageUrl: "/assets/img/team/asha.jpeg",
+        status: true,
     },
     {
         name: "Kashvi Swami",
         role: "United States",
         linkedinUrl: "https://www.linkedin.com/in/kashviswami/",
         imageUrl: "/assets/img/team/kashvi.jpeg",
+        status: true,
     },
     {
         name: "Preetish Patel",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/preetishpatel123/",
         imageUrl: "/assets/img/team/preetish.jpeg",
+        status: true,
     },
     {
         name: "Eshan Singh",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/r0x4r/",
         imageUrl: "/assets/img/team/eshan.jpeg",
+        status: false,
     },
     {
         name: "Mukesh Kumhar",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/mukesh-kumhar/",
         imageUrl: "/assets/img/team/mukesh.jpeg",
+        status: true,
     },
     {
         name: "Ankit Rai",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/ankit-rai-b5806924a/",
         imageUrl: "/assets/img/team/ankiit.jpeg",
+        status: true,
     },
     {
         name: "Kshitij Saxena",
         role: "India",
         linkedinUrl: "https://www.linkedin.com/in/kshitij-saxena-16baa5261/",
         imageUrl: "/assets/img/team/Kshitij.jpeg",
+        status: true,
     },
+    {
+        name: "Ananya Singh",
+        role: "India",
+        linkedinUrl: "#",
+        imageUrl: "/assets/img/team/ananya.jpg",
+        status: false,
+    }
 ]
 
 export const collaborators = [
@@ -331,7 +347,7 @@ export const researchAcademyBenefits = [
         description:
             "Join a prestigious network of scholars recognized for driving innovation and contributing to meaningful change.",
     },
-];
+]
 
 export const aiForScientistBenefits = [
     {
@@ -430,7 +446,7 @@ export const aiForScientistBenefits = [
         description:
             "Stay updated with the latest advancements in AI technologies and their applications in various scientific fields through regular workshops and updates.",
     },
-];
+]
 
 export const EventDetails = [
     {
@@ -438,31 +454,112 @@ export const EventDetails = [
         title: "Deepawali Celebration Among Musahar Community",
         year: "2022",
         location: "BIHAR, INDIA",
-        description: "In 2022, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
-        image: "/assets/img/events-1.jpg"
-      },
-      {
+        description:
+            "In 2022, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+        image: "/assets/img/events-1.jpg",
+    },
+    {
         id: 2,
         title: "Deepawali Celebration Among Musahar Community",
         year: "2023",
         location: "Bihar, India",
-        description: "In 2023, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
-        image: "/assets/img/events-2.jpg"
-      },
-      {
+        description:
+            "In 2023, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+        image: "/assets/img/events-2.jpg",
+    },
+    {
         id: 3,
         title: "Aaranyakam - KDU",
         year: "2023",
         location: "Kerala, India",
-        description: "In 2023, Kerala University of Digital Sciences Student Council, with School of Informatics, celebrated Wildlife Week with events promoting conservation.",
-        image: "/assets/img/events-3.jpg"
-      },
-      {
+        description:
+            "In 2023, Kerala University of Digital Sciences Student Council, with School of Informatics, celebrated Wildlife Week with events promoting conservation.",
+        image: "/assets/img/events-3.jpg",
+    },
+    {
         id: 4,
-        title: "Lecture on \"AI in Material Science\"",
+        title: 'Lecture on "AI in Material Science"',
         year: "2024",
         location: "Bihar, India",
-        description: "As part of the \"Artificial Intelligence for Scientists\" initiative by the CAIES Foundation, Dr. Sushant Singh delivered a lecture on \"AI in Material Science\" at the Materials Research Lab, PG Department of Physics, A. N. College, Patna, Bihar, India. The session aimed to showcase how Artificial Intelligence (AI) revolutionizes material science research and drives innovation in this critical field. The Materials Research Lab is headed by Professor Dr. Seema Sharma, a known Physicist and material scientist. She spearheads multiple collaborative projects with the Royal Society London, UK, and other institutions. It was a pleasure seeing students from rural areas working in the lab for their Master's and PhD research. We will work together to make the lab AI-enabled.",
-        image: "/assets/img/events-4.jpg"
-      },
-];
+        description:
+            'As part of the "Artificial Intelligence for Scientists" initiative by the CAIES Foundation, Dr. Sushant Singh delivered a lecture on "AI in Material Science" at the Materials Research Lab, PG Department of Physics, A. N. College, Patna, Bihar, India. The session aimed to showcase how Artificial Intelligence (AI) revolutionizes material science research and drives innovation in this critical field. The Materials Research Lab is headed by Professor Dr. Seema Sharma, a known Physicist and material scientist. She spearheads multiple collaborative projects with the Royal Society London, UK, and other institutions. It was a pleasure seeing students from rural areas working in the lab for their Master\'s and PhD research. We will work together to make the lab AI-enabled.',
+        image: "/assets/img/events-4.jpg",
+    },
+]
+
+export const AvailableInternshipTrack = [
+    {
+        id: 1,
+        title: "Artificial Intelligence Intern (AII)",
+        description:
+            "For students aspiring to build a career in Artificial Intelligence, including machine learning, computer vision, natural language processing (NLP), and AI applications across various domains. Interns may work on foundation-led AI initiatives or propose independent ideas aligned with societal impact.",
+    },
+    {
+        id: 2,
+        title: "Cybersecurity Intern (CSI)",
+        description:
+            "For students with an interest in digital security, privacy, data protection, threat detection, and related technologies. Interns may engage in security assessments, awareness campaigns, and responsible tech projects under supervision.",
+    },
+    {
+        id: 3,
+        title: "Generative AI Intern (GAII)",
+        description:
+            "Focused on students keen to explore the emerging field of Generative AI, including text-to-image generation, large language models, synthetic data, and creativity-driven AI solutions. Interns will be encouraged to innovate and build ethical GenAI applications.",
+    },
+    {
+        id: 4,
+        title: "Agentic AI Intern (AAII)",
+        description:
+            "For those intrigued by autonomous agents, multi-agent systems, and intelligent orchestration frameworks. Interns will work on projects involving autonomous AI systems for scientific, educational, and social problem-solving.",
+    },
+    {
+        id: 5,
+        title: "Data Science Intern (DSI)",
+        description:
+            "Open to students with a passion for data analytics, visualization, statistical modeling, and applied data science. Interns may work on diverse datasets from healthcare, sustainability, policy, or behavioral sciences.",
+    },
+    {
+        id: 6,
+        title: "Environmental Sustainability Intern (ESI)",
+        description:
+            "Ideal for students passionate about climate action, environmental research, circular economy, and green innovation. Interns contribute to sustainability projects and field studies or develop innovative sustainability models using scientific or AI-based approaches.",
+    },
+]
+
+export const steps = [
+    {
+        title: "STEP 1",
+        description:
+            "Submit your Application with a Cover Letter stating your interest, along with a detailed Resume/CV",
+    },
+    {
+        title: "STEP 2",
+        description: "Screening & Shortlisting by our selection committee",
+    },
+    {
+        title: "STEP 3",
+        description: "Interview (virtual or in-person)",
+    },
+    {
+        title: "STEP 4",
+        description: "Receive an Offer Letter with internship details",
+    },
+    {
+        title: "STEP 5",
+        description: "Registration and Onboarding",
+    },
+    {
+        title: "STEP 6",
+        description:
+            "Engage in the Internship Project (6–12 weeks standard duration)",
+    },
+    {
+        title: "STEP 7",
+        description: "Submit the final Project Report/Deliverables",
+    },
+    {
+        title: "STEP 8",
+        description:
+            "Receive a Certificate of Internship Completion from the CAIES Foundation",
+    },
+]

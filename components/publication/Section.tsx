@@ -78,7 +78,7 @@ const PublicationSection = () => {
                                     src={item.image}
                                     width={500}
                                     height={500}
-                                    alt="award"
+                                    alt={item.title}
                                 />
                             </Link>
                             <Link

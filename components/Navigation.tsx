@@ -177,6 +177,29 @@ const Navigation = () => {
                                         </li>
                                     </ul>
                                 </div>
+                                <div className="group relative">
+                                    <div className="flex gap-1">
+                                        <li className="cursor-pointer list-none text-base font-medium hover:text-main">
+                                            Work with us
+                                        </li>
+                                    </div>
+                                    <ul className="invisible absolute -left-20 top-[300%] z-[999] h-auto w-[250px] bg-white opacity-0 transition-all duration-300 ease-linear group-hover:visible group-hover:top-[200%] group-hover:opacity-100">
+                                        <li className="relative block border-b border-gray-200 last:border-0">
+                                            <Link
+                                                href="/work-with-us/internships"
+                                                className="block px-4 text-base font-medium leading-[45px] text-neutral-800 transition-colors duration-300 ease-linear hover:bg-main hover:text-white">
+                                                Internships
+                                            </Link>
+                                        </li>
+                                        {/* <li>
+                                            <Link
+                                                href="/initiatives/ai-for-scientist"
+                                                className="block px-4 text-base font-medium leading-[45px] text-neutral-800 transition-colors duration-300 ease-linear hover:bg-main hover:text-white">
+                                                AI For Scientists
+                                            </Link>
+                                        </li> */}
+                                    </ul>
+                                </div>
                                 <Link
                                     href="/contact"
                                     className="text-base font-medium text-neutral-800 hover:text-main">

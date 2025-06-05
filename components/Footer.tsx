@@ -188,11 +188,12 @@ const Footer = () => {
                     </div>
                     <div className="flex justify-center">
                         <Image
-                            src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcaienvsus.org&count_bg=%23FE5F00&title_bg=%23171717&icon=&icon_color=%23E7E7E7&title=Visitors+Count&edge_flat=true"
-                            alt="visitor counter"
-                            width={200}
-                            height={50}
+                            src="https://hits.sh/caienvsus.org.svg?style=for-the-badge&label=Visitor%20Count&color=FE5F00&labelColor=000000"
+                            alt="Visitor Count"
+                            width={120}
+                            height={20}
                         />
+
                     </div>
                 </div>
             </div>
