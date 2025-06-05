@@ -109,7 +109,7 @@ const TeamSection = () => {
                     <div
                         id="advisory-team"
                         className="grid grid-cols-4 justify-center gap-5 px-48 py-8 max-lg:grid-cols-1 max-lg:px-8">
-                        {renderTeamMembers(intellectualAdvisors)}
+                        {renderTeamMembers(collaborators)}
                     </div>
                 </div>
             </section>
