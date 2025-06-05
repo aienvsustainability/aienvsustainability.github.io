@@ -54,7 +54,7 @@ const ImageSlider = () => {
                         className="h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-96 text-white max-lg:px-8">
-                        <h1 className="hindi-bold max-lg:text-4xl mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
+                        <h1 className="font-hindi max-lg:text-4xl mb-4 animate-slidein text-6xl font-extrabold leading-[1.2]">
                             स्वस्मै स्वल्पं
                             <br />
                             समाजाय सर्वस्वं

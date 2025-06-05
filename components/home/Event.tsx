@@ -34,7 +34,7 @@ const Event = () => {
                     </h2>
                     <span className="inline-block h-2 w-16 border-t-4 border-main text-center"></span>
                     <p className="mx-auto mb-4 mt-1 items-center justify-center text-center text-lg font-normal text-neutral-600 max-lg:max-w-xs">
-                        <span className="hindi-normal text-base text-neutral-600">
+                        <span className="font-hindi text-base text-neutral-600">
                             स्वस्मै स्वल्पं समाजाय सर्वस्वं
                         </span>{" "}
                         - A little for self and everything for others

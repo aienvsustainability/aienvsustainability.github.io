@@ -8,6 +8,7 @@ interface TeamMember {
     role: string
     linkedinUrl: string
     imageUrl: string
+    status?: boolean
 }
 
 const SkeletonLoader = () => (
@@ -20,14 +21,20 @@ const SkeletonLoader = () => (
     </div>
 )
 
-const renderTeamMembers = (members: TeamMember[] | undefined) => {
+const renderTeamMembers = (members: TeamMember[] | undefined, type?: "scholars") => {
     if (!members) {
         return Array.from({ length: 4 }).map((_, index) => (
             <SkeletonLoader key={index} />
         ))
     }
 
-    return members.map((member, index) => (
+    const filteredMembers =
+        type === "scholars"
+            ? members.filter((member) => member.status === false)
+            : members
+
+
+    return filteredMembers.map((member, index) => (
         <div key={index} className="flex p-1">
             <a href={member.linkedinUrl}>
                 <div
@@ -38,6 +45,7 @@ const renderTeamMembers = (members: TeamMember[] | undefined) => {
                         width={300}
                         height={300}
                         alt={member.name}
+                        className="aspect-square object-cover"
                     />
                     <div className="hover">
                         <h3 className="px-[5px] text-lg font-medium text-main">
@@ -92,7 +100,7 @@ const TeamSection = () => {
                     <div
                         id="advisory-team"
                         className="grid grid-cols-4 justify-center gap-5 px-48 py-8 max-lg:grid-cols-1 max-lg:px-8">
-                        {renderTeamMembers(scholars)}
+                        {renderTeamMembers(scholars, "scholars")}
                     </div>
 
                     <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-800 max-lg:px-8">
@@ -101,7 +109,7 @@ const TeamSection = () => {
                     <div
                         id="advisory-team"
                         className="grid grid-cols-4 justify-center gap-5 px-48 py-8 max-lg:grid-cols-1 max-lg:px-8">
-                        {renderTeamMembers(collaborators)}
+                        {renderTeamMembers(intellectualAdvisors)}
                     </div>
                 </div>
             </section>

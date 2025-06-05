@@ -15,7 +15,7 @@ const PublicationSubSection = () => {
                     Our recent publications
                 </h2>
                 <span className="my-2 inline-block h-2 w-16 border-t-4 border-main text-center"></span>
-                <p className="my-3 max-w-sm text-center text-base text-neutral-600 md:text-lg lg:text-xl">
+                <p className="my-3 max-w-md text-center text-base text-neutral-600 md:text-lg lg:text-xl">
                     From curious minds to groundbreaking discoveries, your
                     gateway to scholarly excellence
                 </p>
@@ -34,7 +34,7 @@ const PublicationSubSection = () => {
                                     height={500}
                                     sizes="100vw"
                                     alt={item.title}
-                                    className="object-fill w-full h-64 sm:h-80 lg:h-96"
+                                    className="object-cover w-full"
                                 />
                             </Link>
                             <Link
