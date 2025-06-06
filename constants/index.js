@@ -227,7 +227,7 @@ export const scholars = [
         status: true,
     },
     {
-        name: "Ananya Singh",
+        name: "Ananya Sinha",
         role: "India",
         linkedinUrl: "#",
         imageUrl: "/assets/img/team/ananya.jpg",
