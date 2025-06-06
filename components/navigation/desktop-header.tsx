@@ -19,9 +19,9 @@ const Dropdown = ({ label, items, ping }: DropdownProps) => (
                 </span>
             )}
         </div>
-        <ul className="invisible absolute -left-20 top-[300%] z-[999] w-[250px] bg-white opacity-0 transition-all group-hover:visible group-hover:top-[200%] group-hover:opacity-100">
+        <ul className="invisible absolute -left-20 top-[350%] z-50 w-62 bg-white opacity-0 transition-all group-hover:visible group-hover:top-[200%] group-hover:opacity-100">
             {items.map((item: { href: string; text: string }) => (
-                <li key={item.href} className="border-b border-main/20 last:border-0">
+                <li key={item.href} className="border-b border-main/10 last:border-0">
                     <Link
                         href={item.href}
                         className="block px-4 text-base font-medium leading-[45px] text-main hover:bg-primary hover:text-white"

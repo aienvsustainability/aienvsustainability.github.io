@@ -100,7 +100,7 @@ export const footerLinks: FooterSection[] = [
         ],
     },
     {
-        title: "Work with us",
+        title: "Work with Us",
         links: [{ href: "/work-with-us/internships", text: "Internships" }],
     },
 ]

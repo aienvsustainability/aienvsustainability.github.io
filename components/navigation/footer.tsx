@@ -53,7 +53,7 @@ const Footer = () => {
                     </p>
                     <div className="justify-between items-center flex gap-5">
                         <Link href="#" className="mb-4 text-sm font-medium text-secondary/70 md:mb-0 capitalize">Privacy Policy</Link>
-                        <Link href="#" className="mb-4 text-sm font-medium text-secondary/70 md:mb-0 capitalize">Terms of Services</Link>
+                        <Link href="#" className="mb-4 text-sm font-medium text-secondary/70 md:mb-0">Terms of Services</Link>
                     </div>
                     <Image
                         src="https://hits.sh/caienvsus.org.svg?style=for-the-badge&label=Visitor%20Count&color=FE5F00&labelColor=000000"
