@@ -65,7 +65,7 @@ export const dropdownItems: Record<string, DropdownItem[]> = {
         { href: "/initiatives/research-academy", text: "Research Academy" },
         { href: "/initiatives/ai-for-scientist", text: "AI For Scientists" },
     ],
-    "Work with us": [
+    "Work with Us": [
         { href: "/work-with-us/internships", text: "Internships" },
     ],
 }
@@ -100,7 +100,7 @@ export const footerLinks: FooterSection[] = [
         ],
     },
     {
-        title: "Work with us",
+        title: "Work with Us",
         links: [{ href: "/work-with-us/internships", text: "Internships" }],
     },
 ]
