@@ -1,124 +1,27 @@
-@import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.font-hindi {
-    font-family: var(--font-poppins), sans-serif !important;
+:root {
+    --background: #fafafa;
 }
 
-* {
-    font-family: "Satoshi", sans-serif;
+@theme inline {
+    --color-background: var(--background);
+    --font-hindi: var(--font-poppins);
+    --color-primary: #FE5F00;
+    --color-main: #010000;
+    --color-secondary: #737373;
 }
 
-.circle,
-.shape {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.circle:before {
-    background-color: #FE5F00;
-    content: '';
-    height: 800px;
-    width: 800px;
-    position: absolute;
-    top: -400px;
-    left: -350px;
-    border-radius: 100%;
-    opacity: 0.2;
-    z-index: -1;
-}
-
-.shape:after {
-    background-color: #FE5F00;
-    content: '';
-    width: 50%;
-    height: 680px;
-    position: absolute;
-    top: 330px;
-    right: -150px;
-    border-radius: 100%;
-    -webkit-transform: skew(3deg, 30deg);
-    -ms-transform: skew(3deg, 30deg);
-    transform: skew(5deg, 10deg);
-    opacity: 0.3;
-    z-index: -1;
-}
-
-#details .hover {
-    background: black;
-    /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 4));
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 70px 0 15px 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s linear;
-}
-
-#details:hover .hover {
-    visibility: visible;
-    opacity: 1;
-}
-
-#details:hover .hover img {
-    transform: scale(1.1);
-}
-
-.swiper-button-next {
-    background-image: url("/right.svg") !important;
-    opacity: 0.5;
-    border-radius: 100%;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.swiper-button-prev {
-    background-image: url("/left.svg") !important;
-    opacity: 0.5;
-    border-radius: 100%;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-.swiper-button-next::after {
-    display: none;
-}
-
-.swiper-button-prev::after {
-    display: none;
-}
-
-@media not all and (min-width: 1024px) {
-
-    .circle,
-    .shape {
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: none;
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
     }
+} */
+
+body {
+    background: var(--background);
+    font-family: var(--font-satoshi);
 }
 
 #social-links li a {
@@ -161,6 +64,80 @@
     visibility: visible;
     color: #FFFFFF;
     /* If you want to change the icon color on hover */
+}
+
+.input {
+    @apply w-full rounded-md border border-main/10 bg-white p-4 focus:outline-none;
+}
+
+#details .hover {
+    background: black;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 4));
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 70px 0 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+#details:hover .hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+#details:hover .hover img {
+    transform: scale(1.1);
+}
+
+.circle,
+.shape {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.circle:before {
+    background-color: #FE5F00;
+    content: '';
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    top: -400px;
+    left: -350px;
+    border-radius: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.shape:after {
+    background-color: #FE5F00;
+    content: '';
+    width: 50%;
+    height: 680px;
+    position: absolute;
+    top: 330px;
+    right: -150px;
+    border-radius: 100%;
+    -webkit-transform: skew(3deg, 30deg);
+    -ms-transform: skew(3deg, 30deg);
+    transform: skew(5deg, 10deg);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@media not all and (min-width: 1024px) {
+
+    .circle,
+    .shape {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: none;
+    }
 }
 
 @keyframes marquee {

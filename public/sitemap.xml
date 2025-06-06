@@ -1,0 +1,57 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://caienvsus.org/</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/about/our-vision</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/about/our-goals</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/about/core-members</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/about/our-team</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/publications</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/initiatives/research-academy</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/initiatives/ai-for-scientist</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/work-with-us/internships</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/contact</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+
+</urlset>
