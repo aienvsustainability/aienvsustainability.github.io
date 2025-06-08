@@ -411,7 +411,7 @@ export const scholars = [
     {
         name: "Saumya Srishtee",
         role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee/",
+        linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee27/",
         imageUrl: "/assets/img/team/saumya.jpeg",
         status: true,
     },
