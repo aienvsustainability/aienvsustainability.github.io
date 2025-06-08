@@ -136,7 +136,7 @@ export default function OurTeam() {
                         {renderTeamMembers(scholars, "scholars")}
                     </div>
 
-                    <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
+{/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
                         Collaborators
                     </h2>
                     <div
@@ -144,7 +144,7 @@ export default function OurTeam() {
                         className="grid grid-cols-4 justify-center gap-5 px-48 py-8 max-lg:grid-cols-1 max-lg:px-8">
                         {renderTeamMembers(collaborators)}
                     </div>
-                </div>
+                </div> */}
             </section>
         </main>
     )
