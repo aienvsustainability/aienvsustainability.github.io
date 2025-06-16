@@ -159,4 +159,17 @@ export interface TeamMember {
     linkedinUrl: string
     imageUrl: string
     status?: boolean
+    testimonial?: TestiData[]
+}
+
+export interface TestiData {
+    video?: string;
+    text?: string;
+}
+
+export interface VideoPlayerProps {
+    src: string
+    poster: string
+    iconSize?: number;
+    className?: string
 }

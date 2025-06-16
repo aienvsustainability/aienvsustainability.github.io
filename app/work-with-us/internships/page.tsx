@@ -6,6 +6,7 @@ import { AvailableInternshipTrack, scholars } from "@/constants"
 import Breadcrumb from "@/components/ui/breadcrumb"
 import Marquee from "@/components/ui/marquee"
 import { CustomMetadata } from "@/types"
+import TestimonialCard from "@/components/ui/testimonials"
 
 export const metadata: CustomMetadata = {
     title: "Internship Opportunities at the CAIES Foundation",
@@ -61,7 +62,7 @@ export default function Internships() {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="w-full bg-background">
+            <section id="main-section" className="w-full bg-background max-lg:px-4">
                 <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-2 py-6 sm:px-4 sm:py-8 md:px-8 md:py-10 lg:px-48 lg:py-20">
                     <div className="flex flex-col w-full">
                         <div className="w-full">
@@ -137,7 +138,6 @@ export default function Internships() {
                                 </h3>
 
                                 <div className="relative w-full">
-                                    {/* Gradient overlays */}
                                     <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-12 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                     <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-12 bg-gradient-to-l from-background via-background/80 to-transparent" />
 
@@ -340,6 +340,29 @@ export default function Internships() {
                                             requirements.
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div className="mt-8 w-full h-fit flex items-start justify-center flex-col">
+                                <h3 className="text-2xl text-main mb-8 font-bold">
+                                    Don&apos;t take our word for it! <br className="flex md:hidden"/>Hear it from our Alumni&apos;s
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    {scholars
+                                        .filter(
+                                            (s) =>
+                                                Array.isArray(s.testimonial) &&
+                                                s.testimonial.length > 0 &&
+                                                ('text' in s.testimonial[0] || 'video' in s.testimonial[0])
+                                        )
+                                        .map((s, idx) => (
+                                            <TestimonialCard
+                                                key={idx}
+                                                name={s.name}
+                                                role={s.role}
+                                                imageUrl={s.imageUrl}
+                                                testimonial={s.testimonial}
+                                            />
+                                        ))}
                                 </div>
                             </div>
                             <div className="mt-8 flex w-full flex-col">

@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
-import React from "react"
+import { ComponentPropsWithoutRef } from "react";
 
-interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
+interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
     className?: string
     reverse?: boolean
     pauseOnHover?: boolean

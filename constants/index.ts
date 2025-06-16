@@ -321,7 +321,7 @@ export const carddata = {
             icon: PiGraph,
             title: "Drive Sustainable Development",
             description:
-                "Although we align our initiatives with the United Nations' Sustainable Development Goals (SDGs) and the six priority areas of environmental sustainability identified by the World Economic Forum, we also explore how the synchronization among the four \"Purusharthas\"defined in Sanatan Culture will help achieve sustainability at an individual level. The four Purusharthas include Dharma (Righteousness Duty), Artha (Wealth), Kama (Desire), and Moksha (Liberation). We aim to craft practical and sustainable solutions that address pressing global challenges while promoting environmental stewardship and social equity.",
+                'Although we align our initiatives with the United Nations\' Sustainable Development Goals (SDGs) and the six priority areas of environmental sustainability identified by the World Economic Forum, we also explore how the synchronization among the four "Purusharthas"defined in Sanatan Culture will help achieve sustainability at an individual level. The four Purusharthas include Dharma (Righteousness Duty), Artha (Wealth), Kama (Desire), and Moksha (Liberation). We aim to craft practical and sustainable solutions that address pressing global challenges while promoting environmental stewardship and social equity.',
         },
         {
             number: "002",
@@ -407,6 +407,11 @@ export const scholars = [
         linkedinUrl: "https://www.linkedin.com/in/aayushi-sharan-34a7201a2/",
         imageUrl: "/assets/img/team/aayushi.jpeg",
         status: true,
+        testimonial: [
+            {
+                video: "/assets/videos/aayushi-testimonial.mp4",
+            },
+        ],
     },
     {
         name: "Saumya Srishtee",
@@ -421,6 +426,11 @@ export const scholars = [
         linkedinUrl: "https://www.linkedin.com/in/asha-mariam-manoj-b01a96249/",
         imageUrl: "/assets/img/team/asha.jpeg",
         status: true,
+        testimonial: [
+            {
+                text: "I am Asha Mariam Manoj, currently a Data Analyst Apprentice at Google, Bangalore, where I transform complex data into actionable insights. My journey was shaped by my work with the CAIES Foundation, where I led a project to predict the Air Quality Index (AQI) across Indian cities using machine learning techniques such as SVR, random forest, and SARIMA. This experience strengthened my skills in Python, SQL, data visualization, and model evaluation, while reinforcing my passion for using data science to address real-world challenges—an approach that aligns closely with Google’s mission and values.",
+            },
+        ],
     },
     {
         name: "Kashvi Swami",
@@ -470,7 +480,7 @@ export const scholars = [
         linkedinUrl: "#",
         imageUrl: "/assets/img/team/ananya.jpg",
         status: false,
-    }
+    },
 ]
 
 export const collaborators = [

@@ -10,6 +10,29 @@
     --color-primary: #FE5F00;
     --color-main: #010000;
     --color-secondary: #737373;
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
+        }
+    }
+
+    @keyframes marquee-vertical {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(calc(-100% - var(--gap)));
+        }
+    }
+
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -138,32 +161,4 @@ body {
         overflow: hidden;
         display: none;
     }
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes marquee-vertical {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-100%);
-    }
-}
-
-.animate-marquee {
-    animation: marquee var(--duration) linear infinite;
-}
-
-.animate-marquee-vertical {
-    animation: marquee-vertical var(--duration) linear infinite;
 }
