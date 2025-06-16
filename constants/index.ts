@@ -65,7 +65,7 @@ export const dropdownItems: Record<string, DropdownItem[]> = {
         { href: "/initiatives/research-academy", text: "Research Academy" },
         { href: "/initiatives/ai-for-scientist", text: "AI For Scientists" },
     ],
-    "Work with us": [
+    "Work with Us": [
         { href: "/work-with-us/internships", text: "Internships" },
     ],
 }
@@ -411,7 +411,7 @@ export const scholars = [
     {
         name: "Saumya Srishtee",
         role: "India",
-        linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee/",
+        linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee27/",
         imageUrl: "/assets/img/team/saumya.jpeg",
         status: true,
     },
