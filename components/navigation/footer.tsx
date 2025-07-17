@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-6">
                     <div className="col-span-2">
                         <Link href="/">
-                            <Image src="/assets/img/logo.webp" width={0} height={0} sizes="100vw" className="w-40 h-auto object-cover" alt="CAIES Foundation Logo Image" />
+                            <Image src="/assets/img/logo.webp" width={0} height={0} sizes="100vw" className="w-40 h-auto object-cover pointer-events-none select-none" alt="CAIES Foundation Logo Image" />
                         </Link>
                         <p className="mt-4 max-w-xs text-sm font-medium text-secondary/70">
                             Registered under 12A, 80G, and CSR (Indian Income Tax Laws) and TM (Trademark Registration).
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                     {footerLinks.map((section, idx) => (
                         <div key={idx}>
-                            <h3 className="font-bold text-main">{section.title}</h3>
+                            <h3 className="font-bold text-main pointer-events-none select-none">{section.title}</h3>
                             <ul className="mt-4 space-y-2">
                                 {section.links.map(({ href, text }, i) => (
                                     <li key={i}>
@@ -63,7 +63,7 @@ const Footer = () => {
                         sizes="100vw"
                         quality={100}
                         priority
-                        className="w-44 h-8 object-contain"
+                        className="select-none pointer-events-none w-44 h-8 object-contain"
                     />
                 </div>
             </div>

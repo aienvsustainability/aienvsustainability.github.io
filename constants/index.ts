@@ -9,6 +9,8 @@ import {
     Slide,
     SocialLink,
 } from "@/types"
+import { Description } from "@radix-ui/react-dialog"
+import { title } from "process"
 import { BiDollar } from "react-icons/bi"
 import { BsEmojiSmile } from "react-icons/bs"
 import {
@@ -64,6 +66,7 @@ export const dropdownItems: Record<string, DropdownItem[]> = {
     Initiatives: [
         { href: "/initiatives/research-academy", text: "Research Academy" },
         { href: "/initiatives/ai-for-scientist", text: "AI For Scientists" },
+        { href: "/initiatives/ai-yoddha", text: "AI Yoddha" },
     ],
     "Work with Us": [
         { href: "/work-with-us/internships", text: "Internships" },
@@ -77,6 +80,7 @@ export const footerLinks: FooterSection[] = [
             { href: "/", text: "Home" },
             { href: "/about/core-members", text: "About Us" },
             { href: "/publications", text: "Publications" },
+            { href: "/research-and-development", text: "Research & Development" },
             { href: "/contact", text: "Contact" },
         ],
     },
@@ -97,6 +101,7 @@ export const footerLinks: FooterSection[] = [
                 text: "AI For Scientists",
             },
             { href: "/initiatives/research-academy", text: "Research Academy" },
+            { href: "/initiatives/ai-yoddha", text: "AI Yoddha" },
         ],
     },
     {
@@ -597,6 +602,113 @@ export const researchAcademyBenefits = [
     },
 ]
 
+export const aiyoddhabenefits = [
+    {
+        id: 1,
+        title: "AI Awareness",
+        description:
+            "Introduces students to the fundamentals of Artificial Intelligence.",
+    },
+    {
+        id: 2,
+        title: "Contextual Learning",
+        description: "Utilizes locally relevant examples to illustrate Al concepts.",
+    },
+    {
+        id: 3,
+        title: "Foundational Skills",
+        description: "Builds comfort with data, logic, and algorithms.",
+    },
+    {
+        id: 4,
+        title: "Future-Ready Talent",
+        description: "Equips learners for emerging Al-driven job markets.",
+    },
+    {
+        id: 5,
+        title: "Ethical Use",
+        description: "Emphasizes responsible and fair use of Al technologies.",
+    },
+    {
+        id: 6,
+        title: "Educator Enablement",
+        description: "Equips teachers to introduce Al into classrooms.",
+    },
+    {
+        id: 7,
+        title: "Community Literacy",
+        description: "Spreads Al awareness beyond schools to families.",
+    },
+    {
+        id: 8,
+        title: "Global Perspective",
+        description: "Connects students with international Al trends.",
+    },
+    {
+        id: 9,
+        title: "Creative Problem Solving",
+        description: "Encourages using Al to address local challenges.",
+    },
+    {
+        id: 10,
+        title: "Inclusive Al Culture",
+        description: "Democratizes access to Al education.",
+    },
+]
+
+export const aiyoddhaframework = [
+    {
+        id: 1,
+        title: "Awareness",
+        description: "Building Al curiosity and conceptual understanding from Class 6 onwards through relatable, real-world examples."
+    },
+    {
+        id: 2,
+        title: "Accessibility",
+        description: "Promoting open-source, cost-free tools and offline-first learning models, especially in resource-constrained schools."
+    },
+    {
+        id: 3,
+        title: "Application",
+        description: "Enabling students to apply Al to real-life problems through guided hands-on projects, games, and simulations."
+    },
+    {
+        id: 4,
+        title: "Ethics & Responsibility",
+        description: "Emphasizing fairness, privacy, explainability, and responsible Al use from the start of the learning journey."
+    },
+    {
+        id: 5,
+        title: "Agentic Thinking",
+        description: "Introducing multi-agent systems, autonomy, and decision- making to prepare learners for the Al ecosystems of the future."
+    },
+    {
+        id: 6,
+        title: "Innovation & Inclusion",
+        description: "Promoting culturally contextual projects, regional language tools, and inclusive practices across all geographies and gender groups."
+    },
+]
+
+export const aiyoddhalignment = [
+    {
+        id: 1,
+        title: "NEP 2020",
+        description:
+            "Encourages early coding, Al, and experiential learning.",
+    },
+    {
+        id: 2,
+        title: "Bloom's Taxonomy",
+        description:
+            "Moves from understanding to creating and evaluating.",
+    },
+    {
+        id: 3,
+        title: "UN SDG Goals",
+        description:
+            "Supports Quality Education, Gender Equality, and Reduced Inequalities.",
+    },
+]
 export const aiForScientistBenefits = [
     {
         id: 1,

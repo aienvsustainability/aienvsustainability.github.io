@@ -1,6 +1,6 @@
 import ContactForm from "@/components/pages/contact/contactform";
 import ContactInfo from "@/components/pages/contact/contactinfo";
-import GoogleMap from "@/components/pages/contact/googlemap";
+import LeafletMap from "@/components/pages/contact/googlemap";
 import Breadcrumb from "@/components/ui/breadcrumb";
 import { CustomMetadata } from "@/types";
 
@@ -58,7 +58,7 @@ export default function Contact() {
             />
             <section id="contact-section" className="w-full bg-background">
                 <div className="relative z-1">
-                    <GoogleMap />
+                    <LeafletMap />
                     <div className="relative z-1 mx-auto w-full px-48 max-lg:px-12">
                         <div className="flex flex-row max-lg:flex-col bg-background py-20 px-12 rounded-md shadow-[0_16px_28px_0_#00000026]">
                             <div className="w-full px-4 max-lg:mb-8 max-lg:border-b max-lg:pb-4">
