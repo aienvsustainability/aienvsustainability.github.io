@@ -15,9 +15,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
             style={{ backgroundImage: `url(${imageUrl})` }}>
             <div id="title" className="px-48 max-lg:px-8">
                 <div id="content" className="text-white">
-                    <h2 className="text-5xl font-extrabold max-lg:text-3xl">
+                    <h1 className="text-5xl font-extrabold max-lg:text-3xl">
                         {title}
-                    </h2>
+                    </h1>
                     <p className="my-4 max-w-xl whitespace-pre-line text-base max-lg:text-sm">
                         {subtitle}
                     </p>

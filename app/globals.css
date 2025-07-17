@@ -46,6 +46,10 @@ body {
     background: var(--background);
     font-family: var(--font-satoshi);
 }
+*::selection {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100)
+}
 
 #social-links li a {
     font-size: 15px;

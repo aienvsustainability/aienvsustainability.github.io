@@ -103,7 +103,7 @@ const Header = () => (
             <div className="w-full border-b border-main/10 bg-white px-48 py-6 max-lg:px-2">
                 <div className="flex items-center justify-between">
                     <Link href="/">
-                        <Image src="/assets/img/logo.webp" priority width={0} sizes="100vw" className="h-auto w-40 object-cover" height={0} quality={100} alt="CAIES Foundation Logo" />
+                        <Image src="/assets/img/logo.webp" priority width={0} sizes="100vw" className="h-auto w-40 object-cover select-none" height={0} quality={100} alt="CAIES Foundation Logo" />
                     </Link>
                     <div className="flex items-center gap-6">
                         <div className="hidden gap-6 max-lg:hidden md:flex">
@@ -111,11 +111,12 @@ const Header = () => (
                             {Object.entries(dropdownItems).map(([label, items]) => (
                                 <Dropdown key={label} label={label} items={items} ping={label === "Initiatives"} />
                             ))}
+                            <Link href="/research-and-development" className="text-base font-medium text-main hover:text-primary">Research & Development</Link>
                             <Link href="/publications" className="text-base font-medium text-main hover:text-primary">Publications</Link>
                             <Link href="/contact" className="text-base font-medium text-main hover:text-primary">Contact</Link>
                         </div>
                         <button className="hidden rounded bg-primary px-4 py-3 text-base font-medium text-white max-lg:hidden">
-                            Connect With Us
+                            Support Us
                         </button>
                         <MobileHeader />
                     </div>

@@ -41,7 +41,7 @@ const MobileHeader = () => {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
     return (
-        <section id="MobileNavigation" className="w-full max-w-[264px] lg:hidden">
+        <section id="MobileNavigation" className="w-full max-w-66 lg:hidden">
             <Sheet>
                 <SheetTrigger asChild>
                     <RxHamburgerMenu className="mr-4 size-8 cursor-pointer" />
@@ -65,7 +65,9 @@ const MobileHeader = () => {
                                     }
                                 />
                             ))}
-
+                            <li className="text-3xl font-semibold">
+                                <Link href="/research-and-development">Research & Development</Link>
+                            </li>
                             <li className="text-3xl font-semibold">
                                 <Link href="/publications">Publications</Link>
                             </li>
