@@ -247,7 +247,7 @@ export default function Internships() {
                                                             School
                                                         </td>
                                                         <td className="border border-main/10 px-4 py-2">
-                                                            8–10
+                                                            9 & 10 (Higher Secondary)
                                                         </td>
                                                         <td className="border border-main/10 px-4 py-2">
                                                             Rs. 501/-
@@ -266,7 +266,7 @@ export default function Internships() {
                                                             College
                                                         </td>
                                                         <td className="border border-main/10 px-4 py-2">
-                                                            12
+                                                            11 & 12 (Senior Secondary)
                                                         </td>
                                                         <td className="border border-main/10 px-4 py-2">
                                                             Rs. 501/-
