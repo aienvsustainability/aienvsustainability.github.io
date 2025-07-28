@@ -73,7 +73,7 @@ export default function OurGoals() {
                             className="aspect-video h-full w-full object-cover rounded-2xl"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-2xl font-black text-main sm:text-3xl lg:text-5xl">Our Vision</h2>
+                            <h2 className="text-2xl font-black text-main sm:text-3xl lg:text-5xl">Our Goals</h2>
                             <p className="mt-8 max-w-5xl text-center text-base text-secondary font-normal">
                                 At the CAIES Foundation, our goals reflect our commitment to driving impactful change through research, innovation, and education. These goals guide our mission to create solutions that are actionable, scalable, and sustainable
                             </p>
