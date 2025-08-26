@@ -3,6 +3,7 @@ import "./globals.css";
 import { poppins, satoshi } from "@/lib/fonts";
 import Header from "@/components/navigation/desktop-header";
 import Footer from "@/components/navigation/footer";
+import DesktopHeader from "@/components/navigation/new-header";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://caienvsus.org"),
@@ -66,7 +67,8 @@ export default function RootLayout({
             <body
                 className={`${poppins.variable} ${satoshi.variable} antialiased scroll-smooth`}
             >
-                <Header />
+                {/* <Header /> */}
+                <DesktopHeader />
                 {children}
                 <Footer />
             </body>

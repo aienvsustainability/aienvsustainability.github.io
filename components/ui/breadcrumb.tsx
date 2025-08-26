@@ -23,7 +23,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
                     </p>
                     <ol
                         id="breadcrumb"
-                        className="flex gap-2 p-0 text-xs font-medium">
+                        className="flex w-full gap-2 p-0 text-xs font-medium">
                         {breadcrumb.map((item, index) => (
                             <li
                                 key={index}

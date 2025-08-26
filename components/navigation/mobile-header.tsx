@@ -1,11 +1,13 @@
 "use client"
 import React, { useState } from "react"
 import Link from "next/link"
-import { RxHamburgerMenu } from "react-icons/rx"
+import { CgMenuRight } from "react-icons/cg";
 import { GoChevronDown, GoChevronUp } from "react-icons/go"
 import {
     Sheet,
+    SheetClose,
     SheetContent,
+    SheetDescription,
     SheetHeader,
     SheetTitle,
     SheetTrigger,
@@ -13,22 +15,35 @@ import {
 import { dropdownItems } from "@/constants"
 import { MobileDropdownProps } from "@/types"
 
-const MobileDropdown = ({ label, links, isOpen, onToggle }: MobileDropdownProps) => (
-    <li className="text-3xl font-semibold">
+const MobileDropdown = ({
+    label,
+    links,
+    isOpen,
+    onToggle,
+}: MobileDropdownProps) => (
+    <li className="">
         <div className="flex flex-col items-center">
-            <button className="flex items-center gap-2 outline-none" onClick={onToggle}>
-                {label} {isOpen ? <GoChevronUp /> : <GoChevronDown />}
+            <button
+                className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold ring-0 outline-0"
+                onClick={onToggle}>
+                {label}{" "}
+                {isOpen ? (
+                    <GoChevronUp className="ml-1 size-4" />
+                ) : (
+                    <GoChevronDown className="ml-1 size-4" />
+                )}
             </button>
             {isOpen && (
-                <ul className="mt-4 flex flex-col items-start pl-4">
+                <ul className="border-main/20 mt-4 flex flex-col items-start border-l pl-1">
                     {links.map(({ text, href }) => (
-                        <li key={href} className="border-b border-main/20 last:border-0">
-                            <Link
-                                href={href}
-                                className="block px-4 text-lg font-medium leading-[45px] text-main transition-colors duration-300"
-                            >
-                                {text}
-                            </Link>
+                        <li key={href} className="">
+                            <SheetClose asChild>
+                                <Link
+                                    href={href}
+                                    className="text-main block px-1 text-base leading-11 font-medium transition-colors duration-300">
+                                    {text}
+                                </Link>
+                            </SheetClose>
                         </li>
                     ))}
                 </ul>
@@ -44,41 +59,44 @@ const MobileHeader = () => {
         <section id="MobileNavigation" className="w-full max-w-66 lg:hidden">
             <Sheet>
                 <SheetTrigger asChild>
-                    <RxHamburgerMenu className="mr-4 size-8 cursor-pointer" />
+                    <CgMenuRight className="mr-4 size-6 text-main cursor-pointer" />
                 </SheetTrigger>
-                <SheetContent className="bg-white">
+                <SheetContent className="flex flex-col items-start bg-white pt-20">
                     <SheetHeader>
-                        <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
-                        <ul className="flex flex-col items-center gap-6 py-8">
-                            <li className="text-3xl font-semibold">
-                                <Link href="/">Home</Link>
-                            </li>
+                        <SheetTitle className="sr-only">
+                            Mobile Navigation
+                        </SheetTitle>
+                        <SheetDescription className="sr-only">
+                            Close mobile navigation
+                        </SheetDescription>
+                        <ul className="flex flex-col items-start gap-6 py-8">
+                            <SheetClose asChild>
+                                <li className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold">
+                                    <Link href="/">Home</Link>
+                                </li>
+                            </SheetClose>
 
-                            {Object.entries(dropdownItems).map(([label, links]) => (
-                                <MobileDropdown
-                                    key={label}
-                                    label={label}
-                                    links={links}
-                                    isOpen={openDropdown === label}
-                                    onToggle={() =>
-                                        setOpenDropdown((prev) => (prev === label ? null : label))
-                                    }
-                                />
-                            ))}
-                            <li className="text-3xl font-semibold">
-                                <Link href="/research-and-development">Research & Development</Link>
-                            </li>
-                            <li className="text-3xl font-semibold">
-                                <Link href="/publications">Publications</Link>
-                            </li>
-                            <li className="text-3xl font-semibold">
-                                <Link href="/contact">Contact</Link>
-                            </li>
+                            {Object.entries(dropdownItems).map(
+                                ([label, links]) => (
+                                    <MobileDropdown
+                                        key={label}
+                                        label={label}
+                                        links={links}
+                                        isOpen={openDropdown === label}
+                                        onToggle={() =>
+                                            setOpenDropdown((prev) =>
+                                                prev === label ? null : label
+                                            )
+                                        }
+                                    />
+                                )
+                            )}
+                            <SheetClose asChild>
+                                <li className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold">
+                                    <Link href="/contact">Contact</Link>
+                                </li>
+                            </SheetClose>
                         </ul>
-
-                        <button className="mt-4 rounded bg-primary px-4 py-2 text-[1.25rem] font-semibold text-white">
-                            Connect With Us
-                        </button>
                     </SheetHeader>
                 </SheetContent>
             </Sheet>
