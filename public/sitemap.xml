@@ -1,6 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <url>
         <loc>https://caienvsus.org/</loc>
@@ -44,6 +43,16 @@
     </url>
     <url>
         <loc>https://caienvsus.org/work-with-us/internships</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/get-involved/support-us</loc>
+        <lastmod>2025-06-06T03:36:41+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://caienvsus.org/get-involved/collaboration-opportunities</loc>
         <lastmod>2025-06-06T03:36:41+00:00</lastmod>
         <priority>0.80</priority>
     </url>

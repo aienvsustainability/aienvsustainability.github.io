@@ -32,6 +32,12 @@ import { MdMail, MdOutlinePhoneAndroid } from "react-icons/md"
 import { PiGraph } from "react-icons/pi"
 import { SiFacebook, SiInstagram, SiX, SiYoutube } from "react-icons/si"
 import { SlPeople } from "react-icons/sl"
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { FaUserGraduate } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
+import { FaBookOpen } from "react-icons/fa";
 
 export const contactLinks: ContactLink[] = [
     {
@@ -70,6 +76,13 @@ export const dropdownItems: Record<string, DropdownItem[]> = {
     ],
     "Work with Us": [
         { href: "/work-with-us/internships", text: "Internships" },
+        { href: "/get-involved/support-us", text: "Support Us" },
+        { href: "/get-involved/collaboration-opportunities", text: "Collaboration Opportunities" },
+    ],
+    "Our Work": [
+        { href: "/publications", text: "Publications" },
+        // { href: "/resources", text: "Resources" },
+        { href: "/research-and-development", text: "Research & Development" },
     ],
 }
 
@@ -106,7 +119,360 @@ export const footerLinks: FooterSection[] = [
     },
     {
         title: "Work with Us",
-        links: [{ href: "/work-with-us/internships", text: "Internships" }],
+        links: [
+            { href: "/work-with-us/internships", text: "Internships" },
+            { href: "/get-involved/support-us", text: "Support Us" },
+            { href: "/get-involved/collaboration-opportunities", text: "Collaboration Opportunities" },
+        ],
+    },
+]
+
+export const collaborationSections = [
+    {
+        title: "For Universities & Research Institutes",
+        description:
+            "Collaborate with us to design innovative academic programs and labs, create opportunities for student exchange and fellowships, and lead joint research that applies AI to sustainability challenges.",
+        cards: [
+            {
+                icon: FaPeopleGroup,
+                number: "01",
+                title: "Co-develop academic programs and labs",
+                description:
+                    "Collaborate with us to create innovative courses and labs that combine AI and sustainability for real-world impact.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "02",
+                title: "Enable student exchange and joint fellowships",
+                description:
+                    "Open global opportunities for students through exchange programs and fellowships, encouraging shared learning and growth.",
+            },
+            {
+                icon: FaPeoplePulling,
+                number: "03",
+                title: "Host collaborative research on AI + Sustainability",
+                description:
+                    "Partner in research that applies AI to address pressing environmental and social sustainability challenges.",
+            },
+        ],
+    },
+    {
+        title: "For Corporates & Industry Partners",
+        description:
+            "Work with us on joint R&D to advance AI and sustainability solutions, drive meaningful CSR projects for environmental impact, and build future-ready talent through upskilling and reskilling programs.",
+        cards: [
+            {
+                icon: FaPeoplePulling,
+                number: "01",
+                title: "Joint R&D on Sustainability and AI technologies",
+                description:
+                    "Collaborate on cutting-edge research that merges AI with sustainable practices to create scalable industry solutions.",
+            },
+            {
+                icon: FaPeopleGroup,
+                number: "02",
+                title: "CSR-driven environmental projects",
+                description:
+                    "Partner with us to design and implement impactful CSR initiatives that support communities and protect the environment.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "03",
+                title: "Workforce upskilling and reskilling programs",
+                description:
+                    "Equip employees with future-ready skills in AI, green tech, and sustainability to stay ahead in a changing world.",
+            },
+        ],
+    },
+    {
+        title: "For Startups & Innovators",
+        description:
+            "Gain access to mentorship, funding, and incubation support, collaborate with CAIES Labs to co-develop impactful solutions, and showcase your innovations at our flagship events and summits.",
+        cards: [
+            {
+                icon: FaPeopleGroup,
+                number: "01",
+                title: "Access mentorship, funding, and incubation support",
+                description:
+                    "Get the right guidance, resources, and financial backing to grow your sustainable innovations.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "02",
+                title: "Partner with CAIES Labs for product co-development",
+                description:
+                    "Collaborate with our experts to design, test, and scale impactful AI + sustainability solutions.",
+            },
+            {
+                icon: FaPeopleGroup,
+                number: "03",
+                title: "Showcase innovations at CAIES events and summits",
+                description:
+                    "Present your ideas to global audiences and connect with potential partners and investors.",
+            },
+        ],
+    },
+    {
+        title: "For NPOs & Development Sector Agencies",
+        description:
+            "Co-create training on AI, sustainability, and ESG, run awareness campaigns with global bodies, and support large-scale capacity-building in underserved regions.",
+        cards: [
+            {
+                icon: FaPeoplePulling,
+                number: "01",
+                title: "Customized Training on AI & Sustainability",
+                description:
+                    "Collaborate with CAIES to design and deliver customized training programs on AI, Sustainability, ESG, and emerging technologies.",
+            },
+            {
+                icon: FaPeopleGroup,
+                number: "02",
+                title: "Global Skill-Building & Awareness Campaigns",
+                description:
+                    "Agencies like the UN, WHO, FAO, UNEP, and World Bank can co-develop skill-building and awareness campaigns.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "03",
+                title: "Capacity-Building in Underserved Regions",
+                description:
+                    "Support large-scale capacity-building projects in underserved regions.",
+            },
+        ],
+    },
+    {
+        title: "For Government Officials & Policy Makers",
+        description:
+            "Design AI-driven sustainability frameworks, train officials on responsible AI and climate modeling, and pilot policies that drive social and environmental impact.",
+        cards: [
+            {
+                icon: FaPeopleGroup,
+                number: "01",
+                title: "AI-Driven Sustainability Frameworks",
+                description:
+                    "Partner with CAIES to design AI-driven sustainability frameworks.",
+            },
+            {
+                icon: FaPeoplePulling,
+                number: "02",
+                title: "Training for Responsible AI & Climate Risk",
+                description:
+                    "Develop customized training modules for government officers on responsible AI, climate risk modeling, and data governance.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "03",
+                title: "AI-Powered Policy Simulations & Pilots",
+                description:
+                    "Collaborate on policy simulations and pilot programs that leverage AI for environmental and vedic sciences.",
+            },
+        ],
+    },
+]
+
+export const supportUs = [
+    {
+        title: "Knowledge Contribution",
+        description:
+            "Support CAIES by delivering guest lectures, workshops, and webinars; sharing expertise in AI, sustainability, and vedic sciences; and co-authoring impactful research, whitepapers, and policy briefs.",
+        cards: [
+            {
+                icon: FaChalkboardTeacher,
+                number: "01",
+                title: "Guest Lectures & Workshops",
+                description:
+                    "Conduct guest lectures, workshops, and webinars.",
+            },
+            {
+                icon: MdOutlineSupportAgent,
+                number: "02",
+                title: "Share Domain Expertise",
+                description:
+                    "Share domain expertise in AI, Sustainability, data governance, vedic sciences, etc.",
+            },
+            {
+                icon: HiOutlineDocumentText,
+                number: "03",
+                title: "Co-author Research & Policy Briefs",
+                description:
+                    "Co-author research papers, whitepapers, or policy briefs.",
+            },
+        ],
+    },
+    {
+        title: "Skill Sharing",
+        description:
+            "Contribute by mentoring students and professionals, guiding hands-on projects, and helping develop curricula that integrate AI and sustainability.",
+        cards: [
+            {
+                icon: FaUserGraduate,
+                number: "01",
+                title: "Mentorship for Learners & Professionals",
+                description:
+                    "Mentor students, professionals, and researchers.",
+            },
+            {
+                icon: FaMagnifyingGlassChart,
+                number: "02",
+                title: "Project Guidance & Support",
+                description:
+                    "Offer hands-on project guidance.",
+            },
+            {
+                icon: FaBookOpen,
+                number: "03",
+                title: "Curriculum Development Assistance",
+                description:
+                    "Assist in curriculum development for AI + Sustainability education.",
+            },
+        ],
+    },
+    {
+        title: "Donate Books & Knowledge Resources",
+        description:
+            "Support learning by contributing books on AI, sustainability, Vedic sciences, and educational materials for rural students.",
+        cards: [
+            {
+                icon: FaBookOpen,
+                number: "01",
+                title: "AI & Technology Resources",
+                description:
+                    "Textbooks and reference materials on AI, Data Science, and Technology.",
+            },
+            {
+                icon: GiStumpRegrowth,
+                number: "02",
+                title: "Environmental & Sustainability Books",
+                description:
+                    "Books on environmental science, climate change, and Sustainability.",
+            },
+            {
+                icon: GiGiftOfKnowledge,
+                number: "03",
+                title: "Vedic Sciences & Ancient Knowledge",
+                description:
+                    "Literature on vedic sciences and ancient Hindu civilization.",
+            },
+            {
+                icon: FaBookOpen,
+                number: "04",
+                title: "Textbooks for Rural Education",
+                description:
+                    "School and college-level textbooks to support rural education programs.",
+            },
+        ],
+    },
+    {
+        title: "Financial Support",
+        description:
+            "Contribute through monthly, annual, or one-time donations, fund targeted research, sponsor scholarships and fellowships, and help build CAIES Labs and outreach programs.",
+        cards: [
+            {
+                icon: BiDollar,
+                number: "01",
+                title: "Monthly Contribution",
+                description:
+                    "Provide steady support to sustain ongoing programs and initiatives.",
+            },
+            {
+                icon: BiDollar,
+                number: "02",
+                title: "Annual Contribution",
+                description:
+                    "Commit yearly to strengthen long-term impact and planning.",
+            },
+            {
+                icon: BiDollar,
+                number: "03",
+                title: "One-time Contribution",
+                description:
+                    "Make a meaningful difference with a single donation.",
+            },
+            {
+                icon: FaMagnifyingGlassChart,
+                number: "04",
+                title: "Fund Research Programs",
+                description:
+                    "Directly support focused projects on AI, sustainability, and vedic sciences.",
+            },
+            {
+                icon: FaUserGraduate,
+                number: "05",
+                title: "Sponsor Scholarships & Fellowships",
+                description:
+                    "Empower students and researchers through financial aid.",
+            },
+            {
+                icon: FaPeopleCarryBox,
+                number: "06",
+                title: "Enable Labs & Outreach",
+                description:
+                    "Help build CAIES Labs, strengthen infrastructure, and expand outreach.",
+            },
+        ],
+    },
+    {
+        title: "Mentorship & Advisory",
+        description:
+            "Support CAIES by guiding startups and innovators, serving as an advisor in AI, sustainability, governance, or Vedic sciences, and mentoring students and researchers through dedicated office hours.",
+        cards: [
+            {
+                icon: FaPeopleGroup,
+                number: "01",
+                title: "Guide Startups & Innovators",
+                description:
+                    "Guide startups and innovators in AI and Sustainability.",
+            },
+            {
+                icon: MdOutlineSupportAgent,
+                number: "02",
+                title: "Join as an Advisor",
+                description:
+                    "Join CAIES as an advisor on AI, Sustainability, governance, or vedic sciences.",
+            },
+            {
+                icon: FaUserGraduate,
+                number: "03",
+                title: "Mentor Students & Researchers",
+                description:
+                    "Host office hours to mentor students and early-stage researchers.",
+            },
+        ],
+    },
+    {
+        title: "Volunteering",
+        description:
+            "Contribute your time and expertise by joining sustainability drives, helping organize events, supporting educational outreach, or delivering specialized programs for students.",
+        cards: [
+            {
+                icon: GiStumpRegrowth,
+                number: "01",
+                title: "Environmental Campaigns & Drives",
+                description:
+                    "Be part of environmental campaigns and sustainability drives.",
+            },
+            {
+                icon: FaMagnifyingGlassChart,
+                number: "02",
+                title: "Event & Summit Support",
+                description:
+                    "Help organize events, workshops, and summits.",
+            },
+            {
+                icon: FaBookOpen,
+                number: "03",
+                title: "Educational Outreach",
+                description:
+                    "Support educational outreach in rural and urban communities.",
+            },
+            {
+                icon: FaChalkboardTeacher,
+                number: "04",
+                title: "Specialized Student Programs",
+                description:
+                    "Deliver a specialized program for undergraduate students on AI, Sustainability, vedic sciences, or any areas of your expertise.",
+            },
+        ],
     },
 ]
 
