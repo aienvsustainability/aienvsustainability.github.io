@@ -93,6 +93,11 @@ const MobileHeader = () => {
                             )}
                             <SheetClose asChild>
                                 <li className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold">
+                                    <Link href="https://training.caienvsus.org/">Training & Courses</Link>
+                                </li>
+                            </SheetClose>
+                            <SheetClose asChild>
+                                <li className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold">
                                     <Link href="/contact">Contact</Link>
                                 </li>
                             </SheetClose>
