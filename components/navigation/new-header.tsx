@@ -69,6 +69,7 @@ const navItems = [
             </DropdownMenuContent>
         ),
     },
+    { label: "Training & Courses", href: "https://training.caienvsus.org/" },
     { label: "Contact", href: "/contact" },
 ]
 
