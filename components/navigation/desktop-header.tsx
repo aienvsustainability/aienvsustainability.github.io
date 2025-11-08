@@ -113,6 +113,7 @@ const Header = () => (
                             ))}
                             <Link href="/research-and-development" className="text-base font-medium text-main hover:text-primary">Research & Development</Link>
                             <Link href="/publications" className="text-base font-medium text-main hover:text-primary">Publications</Link>
+                            <Link href="/training-and-courses" className="text-base font-medium text-main hover:text-primary">Training & Courses</Link>
                             <Link href="/contact" className="text-base font-medium text-main hover:text-primary">Contact</Link>
                         </div>
                         <button className="hidden rounded bg-primary px-4 py-3 text-base font-medium text-white max-lg:hidden">
