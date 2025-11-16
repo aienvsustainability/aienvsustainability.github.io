@@ -88,9 +88,9 @@ const Event = () => {
                                                 <DialogContent className="border-none bg-white sm:max-w-fit">
                                                     <DialogHeader>
                                                         <DialogTitle>
-                                                            <h2 className="max-w-2xl text-center text-2xl font-black text-main">
+                                                            <p className="max-w-2xl text-center text-2xl font-black text-main">
                                                                 {event.title}
-                                                            </h2>
+                                                            </p>
                                                         </DialogTitle>
                                                         <DialogDescription>
                                                             <div className="mt-5 w-full flex-col items-center justify-center">
@@ -101,7 +101,7 @@ const Event = () => {
                                                                         height={0}
                                                                         sizes="100vw"
                                                                         alt={event.title}
-                                                                        className="flex aspect-video h-56 w-96 items-center justify-center object-fill object-center"
+                                                                        className="flex aspect-video h-56 w-96 items-center justify-center object-contain object-center"
                                                                     />
                                                                 </div>
                                                                 <p className="mt-6 text-center text-base font-medium text-secondary">

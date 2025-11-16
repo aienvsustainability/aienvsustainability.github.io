@@ -93,6 +93,7 @@ export const footerLinks: FooterSection[] = [
             { href: "/", text: "Home" },
             { href: "/about/core-members", text: "About Us" },
             { href: "/publications", text: "Publications" },
+            { href: "https://training.caienvsus.org/", text: "Training & Courses" },
             { href: "/research-and-development", text: "Research & Development" },
             { href: "/contact", text: "Contact" },
         ],
@@ -571,6 +572,22 @@ export const eventdetails: EventDetails[] = [
             'As part of the "Artificial Intelligence for Scientists" initiative by the CAIES Foundation, Dr. Sushant Singh delivered a lecture on "AI in Material Science" at the Materials Research Lab, PG Department of Physics, A. N. College, Patna, Bihar, India. The session aimed to showcase how Artificial Intelligence (AI) revolutionizes material science research and drives innovation in this critical field. The Materials Research Lab is headed by Professor Dr. Seema Sharma, a known Physicist and material scientist. She spearheads multiple collaborative projects with the Royal Society London, UK, and other institutions. It was a pleasure seeing students from rural areas working in the lab for their Master\'s and PhD research. We will work together to make the lab AI-enabled.',
         image: "/assets/img/events-4.jpg",
     },
+    {
+        id: 5,
+        title: "Invited speaker at the 2nd Academia",
+        year: "2025",
+        location: "Bihar, India",
+        description: 'Invited speaker at the 2nd Academia–Industry & Global Knowledge Conclave on Nanoscience & Nanotechnology, hosted by Aryabhatta Knowledge University, Patna, Bihar, under the inspiring theme: “Frontier Research & Scientific Innovations for Vikshit Bihar / Society.',
+        image: "/assets/img/sept-event.jpg"
+    },
+        {
+        id: 6,
+        title: "Invited delegate at the Emerging Science",
+        year: "2025",
+        location: "New Delhi, India",
+        description: 'Invited delegate at the Emerging Science, Technology, and Innovation Conclave, organized by the Department of Science and Technology, Government of India, New Delhi, at the Bharat Mandapam.',
+        image: "/assets/img/nov-event.jpg"
+    }
 ]
 
 export const publications: PublicationDetails[] = [
@@ -851,6 +868,55 @@ export const scholars = [
         linkedinUrl: "#",
         imageUrl: "/assets/img/team/ananya.jpg",
         status: false,
+    },
+    {
+        name: "Akash Kumar",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/akash-kumar-3baa04250/",
+        imageUrl: "/assets/img/team/akash.jpg",
+        status: true,
+    },
+    {
+        name: "Chandrakant Singh",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/chandrakant001",
+        imageUrl: "/assets/img/team/chandrakant.jpg",
+        status: true,
+    },
+    {
+        name: "Sonakshi Singh",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/sonakshi-singh-9baa72327/",
+        imageUrl: "/assets/img/team/sonakshi.png",
+        status: true,
+    },
+    {
+        name: "Anjali Kumari",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/anjali-pandey-3193952b5",
+        imageUrl: "/assets/img/team/anjali.jpg",
+        status: true,
+    },
+    {
+        name: "Rishu Kumari",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/rishukumari001/",
+        imageUrl: "/assets/img/team/rishu.jpg",
+        status: true,
+    },
+    {
+        name: "Priyanka Kumari",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/priyanka-kumari-03ab792b7/",
+        imageUrl: "/assets/img/team/priyanka.jpg",
+        status: true,
+    },
+    {
+        name: "Vinay Kumar Mahto",
+        role: "India",
+        linkedinUrl: "https://www.linkedin.com/in/vinay-kumar-546a35253/",
+        imageUrl: "/assets/img/team/vinay.jpg",
+        status: true,
     },
 ]
 
