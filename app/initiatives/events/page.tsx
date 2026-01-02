@@ -114,22 +114,22 @@ const eventsPage = () => {
                                                 ? "border-b border-neutral-300"
                                                 : ""
                                         }`}>
-                                        <div className="col-span-4 flex h-32 items-center justify-start px-2.5 py-2">
+                                        <div className="col-span-4 flex min-h-32 items-center justify-start px-2.5 py-2">
                                             <h3 className="text-main font-condensed text-left text-4xl font-medium tracking-wider uppercase">
                                                 {event.title}
                                             </h3>
                                         </div>
-                                        <div className="col-span-1 flex h-32 items-center justify-start px-2.5 py-2">
+                                        <div className="col-span-1 flex min-h-32 items-center justify-start px-2.5 py-2">
                                             <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
                                                 {event.year}
                                             </h3>
                                         </div>
-                                        <div className="col-span-3 flex h-32 items-center justify-start px-2.5 py-2">
+                                        <div className="col-span-3 flex min-h-32 items-center justify-start px-2.5 py-2">
                                             <h3 className="line-clamp-2 text-left text-sm leading-snug font-medium tracking-wider text-neutral-500">
                                                 {event.description}
                                             </h3>
                                         </div>
-                                        <div className="col-span-2 flex h-32 items-center justify-start overflow-hidden px-2.5 py-2">
+                                        <div className="col-span-2 flex min-h-32 items-center justify-start overflow-hidden px-2.5 py-2">
                                             <Image
                                                 src={event.image}
                                                 alt={event.title}
