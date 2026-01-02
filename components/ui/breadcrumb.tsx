@@ -12,10 +12,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
     return (
         <section
             id="page-header"
-            className="flex min-h-80 w-full items-center bg-cover bg-center"
+            className="flex w-full bg-cover bg-center"
             // style={{ backgroundImage: `url(${imageUrl})` }}
         >
-            <div className="relative flex w-full flex-col items-center justify-center overflow-hidden md:h-102">
+            <div className="relative flex h-[60vh] w-full flex-col items-center justify-center overflow-hidden md:h-102">
                 <Image
                     src={imageUrl}
                     alt={title}
