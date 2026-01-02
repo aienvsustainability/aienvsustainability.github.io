@@ -607,14 +607,14 @@ export const eventdetails: EventDetails[] = [
         description: 'The CAIES Foundation is organizing a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at AN Sinha Hall, Patna. This program is designed to introduce students and aspiring professionals to the fundamentals, real-world applications, and career opportunities in AI and Data Science. Through expert-led sessions and practical insights, participants will gain clarity on industry trends, essential skills, and learning pathways required to build a future-ready career in these rapidly evolving fields.',
         image: "/assets/img/one-page-brochure.png"
     },
-    // {
-    //     id: 9,
-    //     title: "One-Day Orientation Program on Artificial Intelligence & Data Science",
-    //     year: "2026",
-    //     location: "Patna, India",
-    //     description: 'The CAIES Foundation is organizing a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at AN Sinha Hall, Patna. This program is designed to introduce students and aspiring professionals to the fundamentals, real-world applications, and career opportunities in AI and Data Science. Through expert-led sessions and practical insights, participants will gain clarity on industry trends, essential skills, and learning pathways required to build a future-ready career in these rapidly evolving fields.',
-    //     image: "/assets/img/one-page-brochure.png"
-    // }
+    {
+        id: 9,
+        title: "Invited Speaker at International Conference on Frontiers in Surface Engineering and Additive Manufacturing",
+        year: "2026",
+        location: "Kharagpur, India",
+        description: 'Description will be updated soon.',
+        image: "/assets/img/fseam.png"
+    }
 ]
 
 export const publications: PublicationDetails[] = [
