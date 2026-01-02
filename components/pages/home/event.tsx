@@ -58,7 +58,7 @@ const Event = () => {
                                             />
                                         </div>
                                         <div className="border-main/20 h-105 w-80 border border-dashed bg-white px-8 py-10 max-lg:h-110 max-lg:w-56">
-                                            <h2 className="text-main text-xl leading-8 font-extrabold">
+                                            <h2 className="text-main text-xl leading-8 line-clamp-5 font-extrabold">
                                                 {event.title}
                                             </h2>
                                             <div className="my-2 flex gap-4">
