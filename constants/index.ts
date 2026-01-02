@@ -30,7 +30,7 @@ import { GrTechnology } from "react-icons/gr"
 import { HiOutlineChatBubbleLeftRight } from "react-icons/hi2"
 import { MdMail, MdOutlinePhoneAndroid } from "react-icons/md"
 import { PiGraph } from "react-icons/pi"
-import { SiFacebook, SiInstagram, SiX, SiYoutube } from "react-icons/si"
+import { SiFacebook, SiInstagram, SiLinkedin, SiX, SiYoutube } from "react-icons/si"
 import { SlPeople } from "react-icons/sl"
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdOutlineSupportAgent } from "react-icons/md";
@@ -60,6 +60,7 @@ export const socialLinks: SocialLink[] = [
         href: "https://www.youtube.com/channel/UClV_dab_loUKR15sqD1EYeA",
         icon: SiYoutube,
     },
+    { href: "https://www.linkedin.com/company/caies-foundation", icon: SiLinkedin },
 ]
 
 export const dropdownItems: Record<string, DropdownItem[]> = {
@@ -483,13 +484,14 @@ export const slides: Slide[] = [
         titleLines: ["Together we can", "make a Difference"],
         desc: `The CAIES Foundation would extend its education, training, and research activities in other areas required to address the sustainability issues.`,
         paddingX: "px-96",
-        titleSize: "text-6xl",
+        titleClass: "font-condensed uppercase font-medium",
+        titleSize: "text-8xl",
     },
     {
         img: "/assets/img/slider-2.jpg",
         titleLines: ["स्वस्मै स्वल्पं", "समाजाय सर्वस्वं"],
         desc: `CAIES generously promotes and supports research in fundamental and applied science through internships for school students, undergraduate, postgraduate, and PhD students.`,
-        titleClass: "font-hindi",
+        titleClass: "font-hindi font-extrabold",
         paddingX: "px-96",
         titleSize: "text-6xl",
     },
@@ -498,7 +500,8 @@ export const slides: Slide[] = [
         title: `The Center For Artificial Intelligence & Environmental Sustainability Foundation`,
         desc: `The CAIES Foundation would extend its education, training, and research activities in other areas required to address the sustainability issues.`,
         paddingX: "px-72",
-        titleSize: "text-5xl",
+        titleSize: "text-7xl",
+        titleClass: "font-condensed uppercase font-medium",
         descPadding: "px-28 max-lg:px-4",
     },
 ]
@@ -580,14 +583,38 @@ export const eventdetails: EventDetails[] = [
         description: 'Invited speaker at the 2nd Academia–Industry & Global Knowledge Conclave on Nanoscience & Nanotechnology, hosted by Aryabhatta Knowledge University, Patna, Bihar, under the inspiring theme: “Frontier Research & Scientific Innovations for Vikshit Bihar / Society.',
         image: "/assets/img/sept-event.jpg"
     },
-        {
+    {
         id: 6,
         title: "Invited delegate at the Emerging Science",
         year: "2025",
         location: "New Delhi, India",
         description: 'Invited delegate at the Emerging Science, Technology, and Innovation Conclave, organized by the Department of Science and Technology, Government of India, New Delhi, at the Bharat Mandapam.',
         image: "/assets/img/nov-event.jpg"
-    }
+    },
+    {
+        id: 7,
+        title: "Pooja Ceremony of the Education, Training, and Research Center",
+        year: "2025",
+        location: "Maner, India",
+        description: 'The CAIES Foundation organized a Pooja Ceremony on 18 December 2025 in Maner, Bihar, India, to mark the auspicious inauguration of its Education, Training, and Research Center. The ceremony was held to seek divine blessings for the institution’s mission of knowledge, innovation, and social impact, symbolizing a commitment to ethical learning, academic excellence, and the creation of a positive and nurturing environment for students, educators, and researchers as the center begins its journey of empowering individuals through education and skill development.',
+        image: "/assets/img/event-6.jpg"
+    },
+    {
+        id: 8,
+        title: "One-Day Orientation Program on Artificial Intelligence & Data Science",
+        year: "2026",
+        location: "Patna, India",
+        description: 'The CAIES Foundation is organizing a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at AN Sinha Hall, Patna. This program is designed to introduce students and aspiring professionals to the fundamentals, real-world applications, and career opportunities in AI and Data Science. Through expert-led sessions and practical insights, participants will gain clarity on industry trends, essential skills, and learning pathways required to build a future-ready career in these rapidly evolving fields.',
+        image: "/assets/img/one-page-brochure.png"
+    },
+    // {
+    //     id: 9,
+    //     title: "One-Day Orientation Program on Artificial Intelligence & Data Science",
+    //     year: "2026",
+    //     location: "Patna, India",
+    //     description: 'The CAIES Foundation is organizing a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at AN Sinha Hall, Patna. This program is designed to introduce students and aspiring professionals to the fundamentals, real-world applications, and career opportunities in AI and Data Science. Through expert-led sessions and practical insights, participants will gain clarity on industry trends, essential skills, and learning pathways required to build a future-ready career in these rapidly evolving fields.',
+    //     image: "/assets/img/one-page-brochure.png"
+    // }
 ]
 
 export const publications: PublicationDetails[] = [

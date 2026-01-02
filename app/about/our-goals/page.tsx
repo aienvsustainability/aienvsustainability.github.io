@@ -54,14 +54,14 @@ export default function OurGoals() {
     ]
 
     return (
-        <main className="flex flex-col items-center justify-center w-full h-full">
+        <main className="flex h-full w-full flex-col items-center justify-center">
             <Breadcrumb
                 title="Our Goals"
                 subtitle={`Learn how CAIES Foundation drives impactful change through research, innovation, and education with sustainable, scalable solutions.`}
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="w-full bg-background">
+            <section id="main-section" className="bg-background w-full">
                 <div className="mx-auto flex flex-col items-center justify-center gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     <div className="flex flex-col items-center justify-center">
                         <Image
@@ -70,17 +70,34 @@ export default function OurGoals() {
                             height={0}
                             sizes="100vw"
                             alt="Our Vision"
-                            className="aspect-video h-full w-full object-cover rounded-2xl"
+                            className="aspect-video h-full w-full rounded-2xl object-cover"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-2xl font-black text-main sm:text-3xl lg:text-5xl">Our Goals</h2>
-                            <p className="mt-8 max-w-5xl text-center text-base text-secondary font-normal">
-                                At the CAIES Foundation, our goals reflect our commitment to driving impactful change through research, innovation, and education. These goals guide our mission to create solutions that are actionable, scalable, and sustainable
+                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                Our Goals
+                            </h2>
+                            <p className="text-secondary mt-8 max-w-5xl text-center text-base font-normal">
+                                At the CAIES Foundation, our goals reflect our
+                                commitment to driving impactful change through
+                                research, innovation, and education. These goals
+                                guide our mission to create solutions that are
+                                actionable, scalable, and sustainable
                             </p>
-                            <CardGrid cards={carddata.goals} className="h-137" />
+                            <CardGrid
+                                cards={carddata.goals}
+                                className="h-137"
+                            />
                             <div className="mt-2 flex flex-col items-center justify-center py-8">
-                                <p className="max-w-5xl text-left text-base text-secondary font-normal">
-                                    The CAIES Foundation reaffirms its commitment to driving positive change and fostering a sustainable future for future generations through these goals. Every step we take is guided by a deep sense of responsibility to science, society, and humanity, ensuring our initiatives align with our vision of a better, more sustainable world.
+                                <p className="text-secondary max-w-5xl text-left text-base font-normal">
+                                    The CAIES Foundation reaffirms its
+                                    commitment to driving positive change and
+                                    fostering a sustainable future for future
+                                    generations through these goals. Every step
+                                    we take is guided by a deep sense of
+                                    responsibility to science, society, and
+                                    humanity, ensuring our initiatives align
+                                    with our vision of a better, more
+                                    sustainable world.
                                 </p>
                             </div>
                         </div>

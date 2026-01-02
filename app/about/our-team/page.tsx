@@ -101,7 +101,7 @@ export default function OurTeam() {
         { label: "Our Team", active: true },
     ]
     return (
-        <main className="flex flex-col items-center justify-center w-full h-full">
+        <main className="flex h-full w-full flex-col items-center justify-center">
             <Breadcrumb
                 title="Our Team"
                 subtitle={`Innovating together, forging pathways, transforming futures\nwith unity and resilience.`}
@@ -112,13 +112,13 @@ export default function OurTeam() {
                 <div
                     id="heading"
                     className="mb-12 items-center justify-center px-48 text-center max-lg:px-8">
-                    <h1 className="text-center text-4xl font-extrabold text-main">
+                    <h1 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                         Meet Our Team
                     </h1>
-                    <span className="inline-block h-2 w-16 border-t-4 border-primary text-center max-lg:mb-8"></span>
+                    <span className="border-primary inline-block h-2 w-16 border-t-4 text-center max-lg:mb-8"></span>
                 </div>
                 <div id="container" className="ax-auto w-full px-4">
-                    <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
+                    <h2 className="text-main px-48 text-left text-2xl font-extrabold max-lg:px-8">
                         The Advisory Team
                     </h2>
                     <div
@@ -127,7 +127,7 @@ export default function OurTeam() {
                         {renderTeamMembers(intellectualAdvisors)}
                     </div>
 
-                    <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
+                    <h2 className="text-main px-48 text-left text-2xl font-extrabold max-lg:px-8">
                         Scholars
                     </h2>
                     <div
@@ -136,7 +136,7 @@ export default function OurTeam() {
                         {renderTeamMembers(scholars, "scholars")}
                     </div>
 
-{/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
+                    {/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
                         Collaborators
                     </h2>
                     <div

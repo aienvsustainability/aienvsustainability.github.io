@@ -53,14 +53,14 @@ export default function AiForScientist() {
         { label: "AI for scientists", active: true },
     ]
     return (
-        <main className="flex flex-col items-center justify-center w-full h-full">
+        <main className="flex h-full w-full flex-col items-center justify-center">
             <Breadcrumb
                 title="AI for Scientists"
                 subtitle={`Discover CAIES Foundation's AI for Scientists initiative, bridging science and AI innovation to accelerate research, solve complex problems, and drive discoveries.`}
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="w-full bg-background">
+            <section id="main-section" className="bg-background w-full">
                 <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     <div className="flex flex-col">
                         <Image
@@ -71,13 +71,13 @@ export default function AiForScientist() {
                             priority
                             quality={100}
                             alt="thumbnail"
-                            className="aspect-video w-full h-full object-cover rounded-2xl"
+                            className="aspect-video h-full w-full rounded-2xl object-cover"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-3xl font-black text-main sm:text-4xl lg:text-5xl">
+                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                                 AI for Scientists
                             </h2>
-                            <p className="mt-4 max-w-xl text-center text-sm font-normal text-secondary sm:mt-8 sm:text-base lg:max-w-4xl">
+                            <p className="text-secondary mt-4 max-w-xl text-center text-sm font-normal sm:mt-8 sm:text-base lg:max-w-4xl">
                                 At CAIES Foundation, our AI for Scientists
                                 initiative empowers researchers across
                                 disciplines with cutting-edge Artificial
@@ -96,12 +96,12 @@ export default function AiForScientist() {
                                 {aiForScientistBenefits.map((benefit) => (
                                     <div
                                         key={benefit.id}
-                                        className="w-full group flex h-80 flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
+                                        className="group flex h-80 w-full flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="flex size-14 items-center justify-center rounded-full border border-dashed border-primary bg-background text-xl text-primary transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="border-primary bg-background text-primary flex size-14 items-center justify-center rounded-full border border-dashed text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
-                                            <span className="text-sm font-medium text-secondary/60">
+                                            <span className="text-secondary/60 text-sm font-medium">
                                                 {String(benefit.id).padStart(
                                                     3,
                                                     "0"
@@ -109,10 +109,10 @@ export default function AiForScientist() {
                                             </span>
                                         </div>
                                         <div className="mt-auto">
-                                            <h3 className="mb-2 text-base font-semibold text-main">
+                                            <h3 className="text-main mb-2 text-base font-semibold">
                                                 {benefit.title}
                                             </h3>
-                                            <p className="text-sm font-medium text-secondary">
+                                            <p className="text-secondary text-sm font-medium">
                                                 {benefit.description}
                                             </p>
                                         </div>
@@ -121,7 +121,7 @@ export default function AiForScientist() {
                             </div>
                             <Link
                                 href="mailto:sushant.singh@cainevsus.org"
-                                className="mt-8 flex max-w-sm items-center justify-center rounded-md bg-primary p-4 text-base font-medium text-white">
+                                className="bg-primary mt-8 flex max-w-sm items-center justify-center rounded-md p-4 text-base font-medium text-white">
                                 Please contact for more information
                             </Link>
                         </div>

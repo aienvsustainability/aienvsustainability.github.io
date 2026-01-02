@@ -51,17 +51,17 @@ export default function About() {
         { label: "Core Members", active: true },
     ]
     return (
-        <main className="flex flex-col items-center justify-center w-full h-full">
+        <main className="flex h-full w-full flex-col items-center justify-center">
             <Breadcrumb
                 title="Core Members"
                 subtitle={`Working together, growing together!`}
                 imageUrl="/assets/img/page-header-bg.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="about-section" className="relative bg-background">
+            <section id="about-section" className="bg-background relative">
                 <div
                     id="container"
-                    className="circle shape border-b border-main/10 p-48 max-lg:px-8 max-lg:py-24">
+                    className="circle shape border-main/10 border-b p-48 max-lg:px-8 max-lg:py-24">
                     <div
                         id="about-wrap"
                         className="-mx-4 flex flex-row items-center max-lg:flex-col">
@@ -70,21 +70,21 @@ export default function About() {
                             className="relative min-h-px w-full px-4">
                             <div
                                 id="about-image"
-                                className="overflow-hidden min-w-4/5 size-125 rounded-md max-lg:mb-8 max-lg:w-full">
+                                className="size-125 min-w-4/5 overflow-hidden rounded-md max-lg:mb-8 max-lg:w-full">
                                 <Image
                                     src="/assets/img/about.jpg"
                                     width={0}
                                     height={0}
                                     sizes="100vw"
                                     alt="about"
-                                    className="aspect-square h-125 w-125 object-cover cursor-pointer rounded-md hover:scale-105 transition-transform duration-500 ease-linear"
+                                    className="aspect-square h-125 w-125 cursor-pointer rounded-md object-cover transition-transform duration-500 ease-linear hover:scale-105"
                                 />
                             </div>
                         </div>
                         <div
                             id="about-content"
                             className="relative min-h-px w-full px-4">
-                            <h2 className="mb-5 text-3xl text-main font-extrabold max-lg:text-center">
+                            <h2 className="text-main font-condensed mb-5 text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                                 About the CAIES Foundation
                             </h2>
                             <p className="text-secondary pr-5 text-lg font-normal">
@@ -108,17 +108,17 @@ export default function About() {
                 </div>
                 <div
                     id="directors"
-                    className="px-48 py-20 max-lg:border-b max-lg:border-t max-lg:px-8">
+                    className="px-48 py-20 max-lg:border-t max-lg:border-b max-lg:px-8">
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-center text-4xl font-extrabold text-main">
+                        <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                             The Directors
                         </h2>
-                        <span className="inline-block h-2 w-16 border-t-4 border-primary text-center"></span>
+                        <span className="border-primary inline-block h-2 w-16 border-t-4 text-center"></span>
                     </div>
                     <div id="content">
-                        <p className="mb-4 text-left text-lg leading-8 text-secondary">
+                        <p className="text-secondary mb-4 text-left text-lg leading-8">
                             <b>Dr. Sushant Singh</b>, a founding Director of the
                             CAIES Foundation, boasts over 18 years of experience
                             in environmental science, data science, and
@@ -137,7 +137,7 @@ export default function About() {
                             activities like writing stories, poems, and plays
                             addressing social and environmental issues.
                         </p>
-                        <p className="mb-4 text-left text-lg leading-8 text-secondary">
+                        <p className="text-secondary mb-4 text-left text-lg leading-8">
                             <b>Mrs. Rashmi Singh</b>, a founding Director of the
                             CAIES Foundation, possesses over 15 years of
                             professional experience in development sectors,
@@ -173,7 +173,7 @@ export default function About() {
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">
-                                            <h3 className="text-5 font-semibold text-primary">
+                                            <h3 className="text-5 text-primary font-semibold">
                                                 Dr. Sushant Singh
                                             </h3>
                                             <span className="text-sm text-white">
@@ -196,7 +196,7 @@ export default function About() {
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">
-                                            <h3 className="text-5 font-semibold text-primary">
+                                            <h3 className="text-5 text-primary font-semibold">
                                                 Rashmi Singh
                                             </h3>
                                             <span className="text-sm text-white">
@@ -209,17 +209,17 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div id="directors" className="px-48 pb-20 pt-8 max-lg:px-8">
+                <div id="directors" className="px-48 pt-8 pb-20 max-lg:px-8">
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-center text-4xl font-extrabold text-main">
+                        <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                             HRM and Legal
                         </h2>
-                        <span className="inline-block h-2 w-16 border-t-4 border-primary text-center"></span>
+                        <span className="border-primary inline-block h-2 w-16 border-t-4 text-center"></span>
                     </div>
                     <div id="content">
-                        <p className="mb-4 text-left text-lg leading-8 text-secondary">
+                        <p className="text-secondary mb-4 text-left text-lg leading-8">
                             <b>Mr. Chandan Kumar Sinha</b> has recently joined
                             the CAIES Foundation as a Coordinator: HRM and
                             Legal. He has earned a law degree from Choudary
@@ -256,7 +256,7 @@ export default function About() {
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">
-                                            <h3 className="text-5 font-semibold text-primary">
+                                            <h3 className="text-5 text-primary font-semibold">
                                                 Chandan Kumar Sinha
                                             </h3>
                                             <span className="text-sm text-white">

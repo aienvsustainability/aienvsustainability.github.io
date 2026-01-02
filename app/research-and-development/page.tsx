@@ -67,7 +67,7 @@ const page = () => {
             />
             <section id="main-section" className="bg-background w-full">
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-8 overflow-hidden px-8 py-20 lg:px-0">
-                    <h2 className="text-main text-3xl font-black lg:text-5xl">
+                    <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                         Research and Development
                     </h2>
                     <p className="text-secondary mt-8 w-full text-center text-base font-normal">
@@ -90,7 +90,8 @@ const page = () => {
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1" className="w-full">
                             <AccordionTrigger className="text-main flex w-full cursor-pointer items-center text-2xl font-medium">
-                                Identification And Characterization Of Exosomal MicroRNAs
+                                Identification And Characterization Of Exosomal
+                                MicroRNAs
                             </AccordionTrigger>
                             <AccordionContent className="flex w-full flex-col gap-4 text-lg text-balance">
                                 <strong>Project Title:</strong>Identification
@@ -104,7 +105,8 @@ const page = () => {
                                 Health Research (DHR), Ministry of Health and
                                 Family Welfare (MoHFW)
                                 <br />
-                                <strong>Project Area:</strong> Kolkata, West Bengal, Bharat
+                                <strong>Project Area:</strong> Kolkata, West
+                                Bengal, Bharat
                                 <br />
                                 <strong>Project Period:</strong> 2023-2026
                             </AccordionContent>

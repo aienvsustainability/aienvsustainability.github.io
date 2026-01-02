@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { poppins, satoshi } from "@/lib/fonts";
-import Header from "@/components/navigation/desktop-header";
+import { dilemmaSans, poppins, satoshi } from "@/lib/fonts";
 import Footer from "@/components/navigation/footer";
 import DesktopHeader from "@/components/navigation/new-header";
+import AutoDialog from "@/components/ui/auto-dialog";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://caienvsus.org"),
@@ -65,9 +65,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${poppins.variable} ${satoshi.variable} antialiased scroll-smooth`}
+                className={`${poppins.variable} ${satoshi.variable} ${dilemmaSans.variable} antialiased scroll-smooth`}
             >
-                {/* <Header /> */}
+                <AutoDialog />
                 <DesktopHeader />
                 {children}
                 <Footer />

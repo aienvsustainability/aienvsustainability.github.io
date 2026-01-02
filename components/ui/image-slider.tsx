@@ -56,7 +56,7 @@ const ImageSlider = () => {
                             className={`absolute inset-0 flex flex-col items-center justify-center text-white max-lg:px-8 ${slide.paddingX}`}
                         >
                             <h2
-                                className={`mb-4 animate-slidein font-extrabold leading-[1.2] max-lg:text-4xl ${slide.titleSize} ${slide.titleClass ?? ""
+                                className={`mb-4 animate-slidein leading-[1.2] max-lg:text-4xl ${slide.titleSize} ${slide.titleClass ?? ""
                                     }`}
                             >
                                 {slide.titleLines ? (

@@ -63,7 +63,7 @@ const page = () => {
                     {collaborationSections.map((section, idx) => (
                         <React.Fragment key={idx}>
                             <div className="flex flex-col items-start">
-                                <h2 className="text-main mb-4 text-3xl font-bold lg:text-4xl">
+                                <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                                     {section.title}
                                 </h2>
                                 <p className="text-secondary text-base font-medium lg:text-lg">
@@ -71,12 +71,11 @@ const page = () => {
                                 </p>
                             </div>
                             <div
-                                className={`grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 pb-14 ${
+                                className={`grid grid-cols-1 gap-5 pb-14 sm:grid-cols-2 lg:grid-cols-3 ${
                                     idx !== collaborationSections.length - 1
-                                        ? "border-dashed border-main/20 border-b"
+                                        ? "border-main/20 border-b border-dashed"
                                         : ""
-                                }`}
-                            >
+                                }`}>
                                 {section.cards.map((card, i) => (
                                     <VisionCard key={i} {...card} />
                                 ))}

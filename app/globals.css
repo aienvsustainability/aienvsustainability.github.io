@@ -166,3 +166,7 @@ body {
         display: none;
     }
 }
+
+.font-condensed {
+    font-family: var(--font-dilemma-sans), sans-serif !important;
+}

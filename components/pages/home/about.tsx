@@ -2,7 +2,6 @@ import React from "react"
 import Image from "next/image"
 import { aboutcards } from "@/constants"
 
-// Function to replace \n with <br/> in the description
 const formatDescription = (description: string) => {
     return description.replace(/\n/g, "<br/>")
 }
@@ -13,11 +12,11 @@ const About = () => {
             <div
                 id="heading"
                 className="flex flex-col items-center justify-center px-4 text-center">
-                <h2 className="mb-2 text-center text-4xl font-extrabold text-main">
+                <h2 className="mb-2 text-center text-7xl uppercase font-condensed font-medium text-main">
                     About CAIES
                 </h2>
                 <span className="inline-block h-2 w-16 border-t-4 border-primary text-center"></span>
-                <p className="mb-4 mt-4 max-w-2xl text-lg text-secondary max-lg:text-base">
+                <p className="mb-4 font-medium mt-4 max-w-2xl text-lg text-secondary max-lg:text-base">
                     Solutions are designed based on the &apos;goals&apos;
                     considering its multidimensional aspects which are grounded
                     in micro and macro scientific and technical rigors.

@@ -62,3 +62,45 @@ export const satoshi = localFont({
     ],
     variable: "--font-satoshi",
 })
+
+export const dilemmaSans = localFont({
+    src: [
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansThinCD.otf",
+            weight: "100",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansExtraLightCD.otf",
+            weight: "200",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansLightCD.otf",
+            weight: "300",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansRegularCD.otf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansMediumCD.otf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansBoldCD.otf",
+            weight: "700",
+            style: "normal",
+        },
+        {
+            path: "./fonts/dilemmasans/Dilemma-SansBlackCD.otf",
+            weight: "900",
+            style: "normal",
+        },
+    ],
+    variable: "--font-dilemma-sans",
+    display: "swap",
+})

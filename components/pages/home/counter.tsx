@@ -11,7 +11,7 @@ const Counter = () => (
       {counters.map((item, i) => (
         <div key={i} className="flex flex-col items-center justify-center">
           <div className="text-4xl">{React.createElement(item.icon)}</div>
-          <h3 className="mt-4 text-5xl font-semibold text-primary">{item.value}</h3>
+          <h3 className="mt-4 text-7xl font-normal text-primary font-condensed">{item.value}</h3>
           <p className="text-lg font-medium">{item.label}</p>
         </div>
       ))}

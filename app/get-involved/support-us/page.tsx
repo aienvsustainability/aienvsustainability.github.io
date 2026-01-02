@@ -63,7 +63,7 @@ const page = () => {
                     {supportUs.map((section, idx) => (
                         <React.Fragment key={idx}>
                             <div className="flex flex-col items-start">
-                                <h2 className="text-main mb-4 text-3xl font-bold lg:text-4xl">
+                                <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                                     {section.title}
                                 </h2>
                                 <p className="text-secondary text-base font-medium lg:text-lg">

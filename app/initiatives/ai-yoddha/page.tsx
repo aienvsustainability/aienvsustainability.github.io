@@ -76,7 +76,7 @@ const AIYoddhaSection = () => {
                             className="aspect-video h-full w-full rounded-2xl object-cover object-center"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-main text-3xl font-black lg:text-5xl">
+                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
                                 AI Yoddha
                             </h2>
                             <p className="text-secondary mt-8 max-w-4xl text-center text-base font-normal">
