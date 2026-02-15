@@ -64,7 +64,7 @@ export default function Internships() {
             />
             <section
                 id="main-section"
-                className="bg-background w-full max-lg:px-4">
+                className="w-full bg-neutral-50 max-lg:px-4">
                 <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-2 py-6 sm:px-4 sm:py-8 md:px-8 md:py-10 lg:px-48 lg:py-20">
                     <div className="flex w-full flex-col">
                         <div className="w-full">
@@ -79,8 +79,8 @@ export default function Internships() {
                             />
                         </div>
                         <div className="mt-6 flex flex-col items-center justify-center py-4 sm:py-8">
-                            <h2 className="text-main text-center text-2xl font-black sm:text-3xl md:text-4xl lg:text-5xl"></h2>
-                            <p className="text-secondary mt-4 max-w-xl text-center text-base font-normal sm:mt-8 lg:max-w-4xl">
+                            <h2 className="text-center text-2xl font-black text-neutral-900 sm:text-3xl md:text-4xl lg:text-5xl"></h2>
+                            <p className="mt-4 max-w-xl text-center text-base font-normal text-neutral-500 sm:mt-8 lg:max-w-4xl">
                                 The CAIES Foundation generously promotes and
                                 supports research in fundamental and applied
                                 sciences and engineering by offering internships
@@ -113,10 +113,10 @@ export default function Internships() {
                                         key={intership.id}
                                         className="group flex h-80 w-full flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="border-primary bg-background text-primary flex size-14 items-center justify-center rounded-full border border-dashed text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="border-primary text-primary flex size-14 items-center justify-center rounded-full border border-dashed bg-neutral-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
-                                            <span className="text-secondary/60 text-sm font-medium">
+                                            <span className="text-sm text-neutral-500/60">
                                                 {String(intership.id).padStart(
                                                     3,
                                                     "0"
@@ -124,10 +124,10 @@ export default function Internships() {
                                             </span>
                                         </div>
                                         <div className="mt-auto">
-                                            <h3 className="text-main mb-2 text-base font-semibold">
+                                            <h3 className="mb-2 text-base font-semibold text-neutral-900">
                                                 {intership.title}
                                             </h3>
-                                            <p className="text-secondary text-sm font-medium">
+                                            <p className="text-sm text-neutral-500">
                                                 {intership.description}
                                             </p>
                                         </div>
@@ -135,13 +135,13 @@ export default function Internships() {
                                 ))}
                             </div>
                             <div className="my-8 flex h-fit w-full flex-col items-start justify-center">
-                                <h3 className="text-main font-condensed mb-8 text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     Meet Our Alumni
                                 </h3>
 
                                 <div className="relative w-full">
-                                    <div className="from-background via-background/80 pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r to-transparent" />
-                                    <div className="from-background via-background/80 pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-gradient-to-l to-transparent" />
+                                    <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r from-neutral-50 via-neutral-50/80 to-transparent" />
+                                    <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-gradient-to-l from-neutral-50 via-neutral-50/80 to-transparent" />
 
                                     <Marquee
                                         pauseOnHover
@@ -180,7 +180,7 @@ export default function Internships() {
                                 </div>
                             </div>
                             <div className="mt-8 flex h-fit w-full flex-col items-start justify-center">
-                                <h3 className="text-main font-condensed mb-8 text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     Application and Selection Process
                                 </h3>
                                 <Image
@@ -193,11 +193,11 @@ export default function Internships() {
                                 />
                             </div>
                             <div className="mt-12 w-full overflow-x-auto">
-                                <h3 className="text-main font-condensed mb-8 text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     Important Notes
                                 </h3>
                                 <div className="mt-6 flex flex-col gap-2">
-                                    <ul className="text-secondary gap-2 text-base">
+                                    <ul className="gap-2 text-base text-neutral-500">
                                         <li className="mb-2">
                                             1. We do not charge students for
                                             internships, except for a nominal
@@ -207,35 +207,35 @@ export default function Internships() {
                                         </li>
                                         <li className="mb-2">
                                             2. Registration categories and fees:
-                                            <table className="border-main/10 text-secondary mt-4 w-full border bg-white text-left text-sm">
-                                                <thead className="bg-secondary/40 text-main text-center font-semibold">
+                                            <table className="mt-4 w-full border border-neutral-900/10 bg-white text-left text-sm text-neutral-500">
+                                                <thead className="bg-neutral-500/40 text-center font-semibold text-neutral-900">
                                                     <tr>
                                                         <th
-                                                            className="border-main/10 border px-4 py-3"
+                                                            className="border border-neutral-900/10 px-4 py-3"
                                                             rowSpan={2}>
                                                             Academic Category
                                                         </th>
                                                         <th
-                                                            className="border-main/10 border px-4 py-3"
+                                                            className="border border-neutral-900/10 px-4 py-3"
                                                             rowSpan={2}>
                                                             Class
                                                         </th>
                                                         <th
-                                                            className="border-main/10 border px-4 py-3"
+                                                            className="border border-neutral-900/10 px-4 py-3"
                                                             colSpan={2}>
                                                             Registration Fee
                                                         </th>
                                                         <th
-                                                            className="border-main/10 border px-4 py-3"
+                                                            className="border border-neutral-900/10 px-4 py-3"
                                                             rowSpan={2}>
                                                             Fee Waiver
                                                         </th>
                                                     </tr>
                                                     <tr>
-                                                        <th className="border-main/10 border px-4 py-3">
+                                                        <th className="border border-neutral-900/10 px-4 py-3">
                                                             Private Institution
                                                         </th>
-                                                        <th className="border-main/10 border px-4 py-3">
+                                                        <th className="border border-neutral-900/10 px-4 py-3">
                                                             Government
                                                             Institution
                                                         </th>
@@ -243,93 +243,93 @@ export default function Internships() {
                                                 </thead>
                                                 <tbody className="text-center">
                                                     <tr>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             School
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             6–8
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 501/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 101/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Only for students
                                                             from Government
                                                             Schools
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             School
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             9 & 10 (Higher
                                                             Secondary)
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 501/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 101/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Only for students
                                                             from Government
                                                             Schools
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             College
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             11 & 12 (Senior
                                                             Secondary)
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 501/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 101/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             No waiver
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             College
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             UG
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 1001/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 201/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             No waiver
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             College
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             PG
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 1501/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             Rs. 501/-
                                                         </td>
-                                                        <td className="border-main/10 border px-4 py-2">
+                                                        <td className="border border-neutral-900/10 px-4 py-2">
                                                             No waiver
                                                         </td>
                                                     </tr>
@@ -364,7 +364,7 @@ export default function Internships() {
                                 </div>
                             </div>
                             <div className="mt-8 flex h-fit w-full flex-col items-start justify-center">
-                                <h3 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl mb-8">
+                                <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     Don&apos;t take our word for it!{" "}
                                     <br className="flex md:hidden" />
                                     Hear it from our Alumni&apos;s
@@ -390,11 +390,11 @@ export default function Internships() {
                                 </div>
                             </div>
                             <div className="mt-8 flex w-full flex-col">
-                                <h3 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                <h3 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     What You Gain
                                 </h3>
                                 <div className="mt-6 flex flex-col gap-2">
-                                    <ul className="text-secondary gap-2 text-base">
+                                    <ul className="gap-2 text-base text-neutral-500">
                                         <li className="mb-2">
                                             1. Real-world experience working on
                                             cutting-edge projects

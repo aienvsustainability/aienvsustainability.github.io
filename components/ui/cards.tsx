@@ -23,18 +23,18 @@ export const VisionCard = ({
         <div className="mb-4 flex items-center justify-between">
             <div
                 className={cn(
-                    "border-primary bg-background text-primary flex size-28 items-center justify-center rounded-full border border-dashed text-5xl transition-all duration-500 ease-in-out",
+                    "border-primary text-primary flex size-28 items-center justify-center rounded-full border bg-neutral-100/40 text-5xl transition-all duration-500 ease-in-out",
                     iconClassName
                 )}>
                 {React.createElement(icon)}
             </div>
-            <span className="text-secondary text-base font-medium">
-                {number}
-            </span>
+            <span className="text-base text-neutral-500">{number}</span>
         </div>
         <div className="mt-auto">
-            <h3 className="text-main mb-2 text-base font-semibold">{title}</h3>
-            <p className="text-secondary text-sm font-medium">{description}</p>
+            <h3 className="mb-2 text-base font-bold text-neutral-900">
+                {title}
+            </h3>
+            <p className="text-sm text-neutral-500">{description}</p>
         </div>
     </div>
 )
@@ -49,7 +49,7 @@ export const CardGrid = ({
     className?: string
 }) => (
     <div className="mt-12 w-full max-w-5xl">
-        <h2 className="text-main text-left text-lg font-bold sm:text-xl lg:text-3xl">
+        <h2 className="text-left text-lg font-bold text-neutral-900 sm:text-xl lg:text-3xl">
             {title}
         </h2>
         <div className="my-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -65,12 +65,12 @@ const page = () => {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="bg-background w-full">
+            <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-8 overflow-hidden px-8 py-20 lg:px-0">
-                    <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                    <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                         Research and Development
                     </h2>
-                    <p className="text-secondary mt-8 w-full text-center text-base font-normal">
+                    <p className="mt-8 w-full text-center text-base font-normal text-neutral-500">
                         The Research and Development (R&amp;D) wing of the CAIES
                         Foundation is committed to pioneering innovations at the
                         confluence of Artificial Intelligence, Environmental
@@ -86,10 +86,10 @@ const page = () => {
                         R&amp;D fosters a knowledge-driven, future-ready
                         ecosystem for Bharat and the world.
                     </p>
-                    {/* <div className="bg-main/20 h-px w-full" /> */}
+                    {/* <div className="bg-neutral-900/20 h-px w-full" /> */}
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1" className="w-full">
-                            <AccordionTrigger className="text-main flex w-full cursor-pointer items-center text-2xl font-medium">
+                            <AccordionTrigger className="flex w-full cursor-pointer items-center text-2xl text-neutral-900">
                                 Identification And Characterization Of Exosomal
                                 MicroRNAs
                             </AccordionTrigger>

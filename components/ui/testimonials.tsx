@@ -21,7 +21,7 @@ export default function TestimonialCard({
     const content = testimonial.length > 0 ? testimonial[0] : null
 
     return (
-        <div className="shadow-main/5 relative flex min-h-110 w-full flex-col overflow-hidden rounded-md bg-white p-0 shadow-xl items-center justify-center">
+        <div className="relative flex min-h-110 w-full flex-col items-center justify-center overflow-hidden rounded-md bg-white p-0 shadow-xl shadow-neutral-900/5">
             <div className="absolute top-4 left-4 z-10">
                 <Image
                     src={imageUrl}
@@ -29,7 +29,7 @@ export default function TestimonialCard({
                     height={0}
                     sizes="100vw"
                     alt={name}
-                    className="size-12 saturate-150 contrast-125 brigtness-90 rounded-full object-center"
+                    className="brigtness-90 size-12 rounded-full object-center contrast-125 saturate-150"
                 />
             </div>
 
@@ -41,18 +41,24 @@ export default function TestimonialCard({
                             poster="/assets/img/thumbnail.webp"
                         />
                     ) : (
-                        <p className="px-6 justify-center text-secondary text-sm font-medium whitespace-pre-line">
+                        <p className="justify-center px-6 text-sm whitespace-pre-line text-neutral-500">
                             {content.text}
                         </p>
                     )
                 ) : (
-                    <p className="text-gray-500 text-sm italic">No testimonial available.</p>
+                    <p className="text-sm text-gray-500 italic">
+                        No testimonial available.
+                    </p>
                 )}
             </div>
 
-            <div className="absolute bg-white/40 backdrop-blur-sm pl-2 pr-8 py-2 rounded bottom-4 left-4">
-                <h3 className="text-primary font-hindi uppercase text-sm font-semibold">{name}</h3>
-                <p className="text-main text-xs mix-blend-darken">{role}</p>
+            <div className="absolute bottom-4 left-4 rounded bg-white/40 py-2 pr-8 pl-2 backdrop-blur-sm">
+                <h3 className="text-primary font-hindi text-sm font-semibold uppercase">
+                    {name}
+                </h3>
+                <p className="text-xs text-neutral-900 mix-blend-darken">
+                    {role}
+                </p>
             </div>
         </div>
     )

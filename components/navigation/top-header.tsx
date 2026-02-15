@@ -1,26 +1,33 @@
 import React from "react"
-import { SiFacebook, SiInstagram, SiLinkedin, SiX, SiYoutube } from "react-icons/si"
+import {
+    SiFacebook,
+    SiInstagram,
+    SiLinkedin,
+    SiX,
+    SiYoutube,
+} from "react-icons/si"
 import { contactLinks } from "@/constants"
 import Link from "next/link"
 
 const TopHeader = () => {
     return (
-        <div className="bg-primary flex w-full flex-row px-48 py-3 text-white max-lg:px-2">
-            <div className="flex flex-1 items-center gap-6 max-lg:gap-8 max-lg:overflow-x-auto">
-                {contactLinks.map(({ href, icon, text }) => (
-                    <Link key={href} href={href}>
-                        <p className="flex items-center text-sm font-bold text-white">
-                            {React.createElement(icon, {
-                                className: "text-lg text-white mr-1",
-                            })}{" "}
-                            {text}
-                        </p>
-                    </Link>
-                ))}
-            </div>
-            <div id="social-links" className="max-lg:hidden">
-                <div id="social-links" className="font-medium text-white">
-                    <ul className="flex items-center">
+        <div className="bg-primary w-full h-10 md:h-12 mx-auto flex items-center border-0 justify-center md:justify-between py-3">
+            <div className="mx-auto flex max-w-6xl w-full items-center justify-between max-lg:px-2">
+                <div className="flex items-center justify-between px-2 md:px-0 max-md:w-full gap-8 lg:gap-6">
+                    {contactLinks.map(({ href, icon, text }) => (
+                        <Link key={href} href={href}>
+                            <p className="flex items-center text-sm text-neutral-50">
+                                {React.createElement(icon, {
+                                    className: "text-base text-neutral-50 mr-1",
+                                })}
+                                {text}
+                            </p>
+                        </Link>
+                    ))}
+                </div>
+
+                <div id="social-links" className="hidden text-xs text-neutral-50 md:flex">
+                    <ul className="flex items-center gap-1">
                         <li>
                             <a
                                 href="https://twitter.com/CaiesF"

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { dilemmaSans, poppins, satoshi } from "@/lib/fonts";
+import { circularSans, dilemmaSans, poppins, satoshi } from "@/lib/fonts";
 import Footer from "@/components/navigation/footer";
-import DesktopHeader from "@/components/navigation/new-header";
 import AutoDialog from "@/components/ui/auto-dialog";
+import DesktopHeader from "@/components/navigation/header";
+import Preloader from "@/components/ui/preloader";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://caienvsus.org"),
@@ -65,13 +66,13 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${poppins.variable} ${satoshi.variable} ${dilemmaSans.variable} antialiased scroll-smooth`}
-            >
-                <AutoDialog />
+                className={`${poppins.variable} ${satoshi.variable} ${dilemmaSans.variable} ${circularSans.variable} scroll-smooth bg-neutral-50 antialiased`}>
+                {/* <AutoDialog /> */}
+                <Preloader duration={2000} />
                 <DesktopHeader />
                 {children}
                 <Footer />
             </body>
         </html>
-    );
+    )
 }

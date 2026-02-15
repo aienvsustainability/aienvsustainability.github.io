@@ -13,22 +13,19 @@ import { eventdetails } from "@/constants"
 import Link from "next/link"
 
 const Event = () => {
-    // const sortedEvents = [...eventdetails].sort(
-    //         (a, b) => Number(b.year) - Number(a.year)
-    //     )
     const sortedEvents = [...eventdetails].reverse()
     return (
         <>
-            <section className="bg-background w-full py-24">
+            <section className="w-full bg-neutral-50 py-24">
                 <div
                     id="heading"
                     className="mb-12 items-center justify-center text-center">
-                    <h2 className="font-condensed text-main text-center text-7xl font-medium uppercase">
+                    <h2 className="font-condensed text-center text-7xl text-neutral-900 uppercase">
                         Events
                     </h2>
                     <span className="border-primary inline-block h-2 w-16 border-t-4 text-center"></span>
-                    <p className="text-secondary mx-auto mt-1 mb-4 items-center justify-center text-center text-lg font-medium max-lg:max-w-xs">
-                        <span className="font-hindi text-secondary text-base">
+                    <p className="mx-auto items-center justify-center py-4 text-center text-base text-neutral-500 max-lg:max-w-xs">
+                        <span className="font-hindi text-base text-neutral-500">
                             स्वस्मै स्वल्पं समाजाय सर्वस्वं
                         </span>{" "}
                         - A little for self and everything for others
@@ -57,26 +54,28 @@ const Event = () => {
                                                 className="aspect-square size-80 object-cover object-center max-lg:size-60"
                                             />
                                         </div>
-                                        <div className="border-main/20 h-105 w-80 border border-dashed bg-white px-8 py-10 max-lg:h-110 max-lg:w-56">
-                                            <h2 className="text-main text-xl leading-8 line-clamp-5 font-extrabold">
-                                                {event.title}
-                                            </h2>
-                                            <div className="my-2 flex gap-4">
-                                                <p className="text-secondary/50 flex items-center gap-1 text-center text-xs font-semibold uppercase">
-                                                    <SlCalender className="text-primary" />{" "}
-                                                    {event.year}
-                                                </p>
-                                                <p className="text-secondary/50 flex items-center gap-1 text-center text-xs font-semibold uppercase">
-                                                    <FiMapPin className="text-primary" />{" "}
-                                                    {event.location}
-                                                </p>
+                                        <div className="flex h-110 w-56 flex-col justify-between border border-neutral-200 bg-white px-8 py-10 lg:h-105 lg:w-80">
+                                            <div className="flex flex-col">
+                                                <h2 className="line-clamp-5 text-lg leading-snug font-black text-neutral-900">
+                                                    {event.title}
+                                                </h2>
+                                                <div className="my-2 flex gap-4">
+                                                    <p className="flex items-center gap-1 text-center text-xs text-neutral-500/50 uppercase">
+                                                        <SlCalender className="text-primary" />{" "}
+                                                        {event.year}
+                                                    </p>
+                                                    <p className="flex items-center gap-1 text-center text-xs text-neutral-500/50 uppercase">
+                                                        <FiMapPin className="text-primary" />{" "}
+                                                        {event.location}
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p className="text-secondary mt-2 line-clamp-6 text-base">
+                                            <p className="mt-2 line-clamp-4 text-base tracking-tight text-neutral-500">
                                                 {event.description}
                                             </p>
                                             <Link
                                                 href="/initiatives/events"
-                                                className="bg-primary mt-5 inline-block cursor-pointer rounded-sm px-6 text-base leading-[45px] font-medium text-white">
+                                                className="bg-primary flex h-12 cursor-pointer items-center justify-center rounded-sm px-6 text-base text-neutral-50">
                                                 Read More
                                             </Link>
                                         </div>

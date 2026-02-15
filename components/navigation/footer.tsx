@@ -6,7 +6,7 @@ import { footerLinks, socialLinks } from "@/constants"
 
 const Footer = () => {
     return (
-        <footer className="border-main/10 border-t bg-white py-10">
+        <footer className="border-t border-neutral-900/10 bg-neutral-50 py-10">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-6">
                     <div className="col-span-2">
@@ -20,16 +20,16 @@ const Footer = () => {
                                 alt="CAIES Foundation Logo Image"
                             />
                         </Link>
-                        <p className="text-secondary/70 mt-4 max-w-xs text-sm font-medium">
+                        <p className="mt-4 max-w-xs text-xs text-neutral-400">
                             Registered under 12A, 80G, and CSR (Indian Income
                             Tax Laws) and TM (Trademark Registration).
                         </p>
-                        <ul className="text-main mt-6 flex space-x-4">
+                        <ul className="mt-6 flex space-x-4 text-neutral-900">
                             {socialLinks.map(({ href, icon: Icon }, i) => (
                                 <li key={i}>
                                     <Link
                                         href={href}
-                                        className="hover:text-primary text-xl transition-all duration-500 hover:scale-105 hover:rotate-[360deg]">
+                                        className="hover:text-primary text-xl transition-all duration-500 hover:scale-105 hover:rotate-360">
                                         <Icon />
                                     </Link>
                                 </li>
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
                     {footerLinks.map((section, idx) => (
                         <div key={idx}>
-                            <h3 className="text-main pointer-events-none font-black select-none">
+                            <h3 className="pointer-events-none font-black text-neutral-900 select-none">
                                 {section.title}
                             </h3>
                             <ul className="mt-4 space-y-2">
@@ -46,7 +46,7 @@ const Footer = () => {
                                     <li key={i}>
                                         <Link
                                             href={href}
-                                            className="text-secondary hover:text-primary font-medium tracking-wide">
+                                            className="hover:text-primary text-base text-neutral-500">
                                             {text}
                                         </Link>
                                     </li>
@@ -55,20 +55,20 @@ const Footer = () => {
                         </div>
                     ))}
                 </div>
-                <div className="border-main/10 mt-10 flex flex-col items-center justify-between border-t pt-6 md:flex-row">
-                    <p className="text-secondary/70 mb-4 text-sm font-medium md:mb-0">
+                <div className="mt-10 flex flex-col items-center justify-between border-t border-neutral-200 pt-6 md:flex-row">
+                    <p className="mb-4 text-sm text-neutral-300 md:mb-0">
                         © {new Date().getFullYear()} CAIES Foundation. All
                         rights reserved.
                     </p>
                     <div className="flex items-center justify-between gap-5">
                         <Link
                             href="#"
-                            className="text-secondary/70 mb-4 text-sm font-medium capitalize md:mb-0">
+                            className="mb-4 text-sm text-neutral-500 capitalize md:mb-0">
                             Privacy Policy
                         </Link>
                         <Link
                             href="#"
-                            className="text-secondary/70 mb-4 text-sm font-medium md:mb-0">
+                            className="mb-4 text-sm text-neutral-500 md:mb-0">
                             Terms of Services
                         </Link>
                     </div>
@@ -78,7 +78,6 @@ const Footer = () => {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        quality={100}
                         priority
                         className="pointer-events-none h-8 w-44 object-contain select-none"
                     />

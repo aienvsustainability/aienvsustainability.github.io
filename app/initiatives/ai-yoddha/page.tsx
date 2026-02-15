@@ -1,17 +1,14 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import {
-    aiyoddhabenefits,
-} from "@/constants"
+import { aiyoddhabenefits } from "@/constants"
 import { VscBookmark } from "react-icons/vsc"
 import Breadcrumb from "@/components/ui/breadcrumb"
 import { CustomMetadata } from "@/types"
 
 export const metadata: CustomMetadata = {
     title: "AI Yoddha",
-    description:
-        "Creating responsible AI Warriors for India's future",
+    description: "Creating responsible AI Warriors for India's future",
     alternates: {
         canonical: "/initiatives/ai-yoddha",
         languages: {
@@ -20,8 +17,7 @@ export const metadata: CustomMetadata = {
     },
     openGraph: {
         title: "CAIES Fondation - AI Yoddha",
-        description:
-            "Creating responsible AI Warriors for India's future",
+        description: "Creating responsible AI Warriors for India's future",
         url: "https://caienvsus.org/initiatives/ai-yoddha",
         siteName: "CAIES Foundation",
         images: [
@@ -62,7 +58,7 @@ const AIYoddhaSection = () => {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="bg-background w-full">
+            <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-8 py-20 lg:px-48">
                     <div className="flex flex-col items-center justify-center">
                         <Image
@@ -70,16 +66,15 @@ const AIYoddhaSection = () => {
                             width={0}
                             height={0}
                             sizes="100vw"
-                            quality={100}
                             priority
                             alt="thumbnail"
                             className="aspect-video h-full w-full rounded-2xl object-cover object-center"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                            <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                 AI Yoddha
                             </h2>
-                            <p className="text-secondary mt-8 max-w-4xl text-center text-base font-normal">
+                            <p className="mt-8 max-w-4xl text-center text-base font-normal text-neutral-500">
                                 At CAIES Foundation, our Al Yoddha Initiative is
                                 dedicated to democratizing Artificial
                                 Intelligence education by nurturing ethical,
@@ -107,10 +102,10 @@ const AIYoddhaSection = () => {
                                         key={benefit.id}
                                         className="group flex h-60 w-full flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="text-primary border-primary bg-background flex size-14 items-center justify-center rounded-full border border-dashed text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="text-primary border-primary flex size-14 items-center justify-center rounded-full border border-dashed bg-neutral-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
-                                            <span className="text-secondary/60 text-sm font-medium">
+                                            <span className="text-sm text-neutral-500/60">
                                                 {String(benefit.id).padStart(
                                                     3,
                                                     "0"
@@ -118,10 +113,10 @@ const AIYoddhaSection = () => {
                                             </span>
                                         </div>
                                         <div className="mt-auto">
-                                            <h3 className="text-main mb-2 text-base font-semibold">
+                                            <h3 className="mb-2 text-base font-semibold text-neutral-900">
                                                 {benefit.title}
                                             </h3>
-                                            <p className="text-secondary text-sm font-medium">
+                                            <p className="text-sm text-neutral-500">
                                                 {benefit.description}
                                             </p>
                                         </div>
@@ -131,7 +126,7 @@ const AIYoddhaSection = () => {
 
                             <Link
                                 href="mailto:sushant.singh@cainevsus.org"
-                                className="bg-primary mt-8 flex max-w-sm items-center justify-center rounded-md p-4 text-base font-medium text-white">
+                                className="bg-primary mt-8 flex max-w-sm items-center justify-center rounded-md p-4 text-base text-white">
                                 Please contact for more information
                             </Link>
                         </div>

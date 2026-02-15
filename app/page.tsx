@@ -28,7 +28,7 @@ export const metadata: CustomMetadata = {
 
 export default function Home() {
     return (
-        <main className="items-center justify-center flex flex-col h-full w-full">
+        <main className="items-center bg-neutral-50 justify-center flex flex-col h-full w-full">
             <h1 className="sr-only">CAIES Foundation pioneers sustainable solutions via advanced....</h1>
             <ImageSlider />
             <About />

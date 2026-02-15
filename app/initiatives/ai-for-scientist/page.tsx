@@ -60,7 +60,7 @@ export default function AiForScientist() {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="bg-background w-full">
+            <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     <div className="flex flex-col">
                         <Image
@@ -69,15 +69,14 @@ export default function AiForScientist() {
                             height={0}
                             sizes="100vw"
                             priority
-                            quality={100}
                             alt="thumbnail"
                             className="aspect-video h-full w-full rounded-2xl object-cover"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                            <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                 AI for Scientists
                             </h2>
-                            <p className="text-secondary mt-4 max-w-xl text-center text-sm font-normal sm:mt-8 sm:text-base lg:max-w-4xl">
+                            <p className="mt-4 max-w-xl text-center text-sm font-normal text-neutral-500 sm:mt-8 sm:text-base lg:max-w-4xl">
                                 At CAIES Foundation, our AI for Scientists
                                 initiative empowers researchers across
                                 disciplines with cutting-edge Artificial
@@ -98,10 +97,10 @@ export default function AiForScientist() {
                                         key={benefit.id}
                                         className="group flex h-80 w-full flex-col justify-between rounded-3xl bg-white p-6 shadow-[50px_44px_194px_#0000000f] transition-transform duration-500 ease-in-out hover:scale-105 hover:cursor-pointer">
                                         <div className="mb-4 flex items-center justify-between">
-                                            <div className="border-primary bg-background text-primary flex size-14 items-center justify-center rounded-full border border-dashed text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
+                                            <div className="border-primary text-primary flex size-14 items-center justify-center rounded-full border border-dashed bg-neutral-50 text-xl transition-all duration-500 ease-in-out group-hover:rotate-180">
                                                 <VscBookmark />
                                             </div>
-                                            <span className="text-secondary/60 text-sm font-medium">
+                                            <span className="text-sm text-neutral-500/60">
                                                 {String(benefit.id).padStart(
                                                     3,
                                                     "0"
@@ -109,10 +108,10 @@ export default function AiForScientist() {
                                             </span>
                                         </div>
                                         <div className="mt-auto">
-                                            <h3 className="text-main mb-2 text-base font-semibold">
+                                            <h3 className="mb-2 text-base font-semibold text-neutral-900">
                                                 {benefit.title}
                                             </h3>
-                                            <p className="text-secondary text-sm font-medium">
+                                            <p className="text-sm text-neutral-500">
                                                 {benefit.description}
                                             </p>
                                         </div>
@@ -121,7 +120,7 @@ export default function AiForScientist() {
                             </div>
                             <Link
                                 href="mailto:sushant.singh@cainevsus.org"
-                                className="bg-primary mt-8 flex max-w-sm items-center justify-center rounded-md p-4 text-base font-medium text-white">
+                                className="bg-primary mt-8 flex max-w-sm items-center justify-center rounded-md p-4 text-base text-white">
                                 Please contact for more information
                             </Link>
                         </div>

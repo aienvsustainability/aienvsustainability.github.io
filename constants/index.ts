@@ -484,7 +484,7 @@ export const slides: Slide[] = [
         titleLines: ["Together we can", "make a Difference"],
         desc: `The CAIES Foundation would extend its education, training, and research activities in other areas required to address the sustainability issues.`,
         paddingX: "px-96",
-        titleClass: "font-condensed uppercase font-medium",
+        titleClass: "font-condensed uppercase ",
         titleSize: "text-8xl",
     },
     {
@@ -501,7 +501,7 @@ export const slides: Slide[] = [
         desc: `The CAIES Foundation would extend its education, training, and research activities in other areas required to address the sustainability issues.`,
         paddingX: "px-72",
         titleSize: "text-7xl",
-        titleClass: "font-condensed uppercase font-medium",
+        titleClass: "font-condensed uppercase ",
         descPadding: "px-28 max-lg:px-4",
     },
 ]
@@ -541,78 +541,95 @@ export const counters: CounterItem[] = [
 export const eventdetails: EventDetails[] = [
     {
         id: 1,
-        title: "Deepawali Celebration Among Musahar Community",
+        title: "Deepawali Celebration Among Musahar Community, Prayagraj",
         year: "2022",
-        location: "BIHAR, INDIA",
+        location: "UP, Bharat",
         description:
-            "In 2022, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+            "The CAIES Foundation celebrated Deepawali with the Musahar community in Prayagraj, fostering inclusion, dignity, and social harmony.The celebration featured cultural activities and community interaction, reinforcing the Foundation’s commitment to social equity and grassroots engagement.",
         image: "/assets/img/events-1.jpg",
     },
     {
         id: 2,
-        title: "Deepawali Celebration Among Musahar Community",
+        title: "Deepawali Celebration Among Musahar Community, Prayagraj",
         year: "2023",
-        location: "Bihar, India",
+        location: "UP, Bharat",
         description:
-            "In 2023, Deepawali was celebrated among the Musahar community in Bihar, India, marked by cultural festivities and communal gatherings.",
+            "Continuing its commitment to community upliftment, the CAIES Foundation once again celebrated Deepawali with the Musahar community.The event strengthened bonds of trust and reaffirmed the Foundation’s long- term engagement with marginalized communities through shared cultural values.",
         image: "/assets/img/events-2.jpg",
     },
     {
         id: 3,
-        title: "Aaranyakam - KDU",
+        title: "Aaranyakam - Wildlife Week, Kerala Digital University,",
         year: "2023",
-        location: "Kerala, India",
+        location: "Kerala, Bharat",
         description:
-            "In 2023, Kerala University of Digital Sciences Student Council, with School of Informatics, celebrated Wildlife Week with events promoting conservation.",
+            "The CAIES Foundation proudly sponsored “Aaranyakam”, an event organized during Wildlife Week by the Student Council of the School of Informatics, Kerala University of Digital Sciences, Innovation and Technology. The initiative promoted environmental conservation, biodiversity awareness, and responsible digital citizenship.",
         image: "/assets/img/events-3.jpg",
     },
     {
         id: 4,
-        title: 'Lecture on "AI in Material Science"',
+        title: 'Lecture on "AI in Material Science", Patna',
         year: "2024",
-        location: "Bihar, India",
+        location: "Bihar, Bharat",
         description:
-            'As part of the "Artificial Intelligence for Scientists" initiative by the CAIES Foundation, Dr. Sushant Singh delivered a lecture on "AI in Material Science" at the Materials Research Lab, PG Department of Physics, A. N. College, Patna, Bihar, India. The session aimed to showcase how Artificial Intelligence (AI) revolutionizes material science research and drives innovation in this critical field. The Materials Research Lab is headed by Professor Dr. Seema Sharma, a known Physicist and material scientist. She spearheads multiple collaborative projects with the Royal Society London, UK, and other institutions. It was a pleasure seeing students from rural areas working in the lab for their Master\'s and PhD research. We will work together to make the lab AI-enabled.',
+            "Under the Artificial Intelligence for Scientists initiative, Dr. Sushant Kumar Singh delivered an invited lecture on “AI in Material Science” at the Materials Research Lab, PG Department of Physics, A.N.College.The session highlighted how AI is transforming materials research and innovation.The event also marked the beginning of collaborative efforts to make the laboratory AI- enabled, benefiting students from rural and underserved backgrounds pursuing Master’s and PhD research.",
         image: "/assets/img/events-4.jpg",
     },
     {
         id: 5,
-        title: "Invited speaker at the 2nd Academia",
+        title: "Invited Speaker & Panelist – Aryabhatta Knowledge University, Patna",
         year: "2025",
-        location: "Bihar, India",
-        description: 'Invited speaker at the 2nd Academia–Industry & Global Knowledge Conclave on Nanoscience & Nanotechnology, hosted by Aryabhatta Knowledge University, Patna, Bihar, under the inspiring theme: “Frontier Research & Scientific Innovations for Vikshit Bihar / Society.',
-        image: "/assets/img/sept-event.jpg"
+        location: "Bihar, Bharat",
+        description:
+            "Dr. Sushant Kumar Singh was invited as a speaker and panelist at the 2nd Academia–Industry & Global Knowledge Conclave on Nanoscience & Nanotechnology, held under the theme \"Frontier Research & Scientific Innovations for Viksit Bihar / Society.\" The session emphasized translational research, innovation, and regional scientific leadership.",
+        image: "/assets/img/event-aku.jpeg",
     },
     {
         id: 6,
-        title: "Invited delegate at the Emerging Science",
+        title: "Invited Delegate – Emerging Science, Technology & Innovation Conclave(ESTIC)",
         year: "2025",
-        location: "New Delhi, India",
-        description: 'Invited delegate at the Emerging Science, Technology, and Innovation Conclave, organized by the Department of Science and Technology, Government of India, New Delhi, at the Bharat Mandapam.',
+        location: "New Delhi, Bharat",
+        description: "Dr. Sushant Kumar Singh participated as an invited delegate at ESTIC, organized by the Department of Science and Technology, Government of India, at Bharat Mandapam, New Delhi.The conclave brought together national stakeholders to shape India’s future science, technology, and innovation ecosystem.",
         image: "/assets/img/nov-event.jpg"
     },
     {
         id: 7,
-        title: "Pooja Ceremony of the Education, Training, and Research Center",
+        title: "Pooja Ceremony – Education, Training & Research Center, CAIES Foundation, Patna",
         year: "2025",
-        location: "Maner, India",
-        description: 'The CAIES Foundation organized a Pooja Ceremony on 18 December 2025 in Maner, Bihar, India, to mark the auspicious inauguration of its Education, Training, and Research Center. The ceremony was held to seek divine blessings for the institution’s mission of knowledge, innovation, and social impact, symbolizing a commitment to ethical learning, academic excellence, and the creation of a positive and nurturing environment for students, educators, and researchers as the center begins its journey of empowering individuals through education and skill development.',
+        location: "Bihar, Bharat",
+        description: "On 18 December 2025, the CAIES Foundation organized a Pooja Ceremony in Maner, Bihar, marking the auspicious inauguration of its Education, Training, and Research Center.The ceremony symbolized the Foundation’s commitment to ethical learning, academic excellence, innovation, and social impact as it begins empowering learners and researchers.",
         image: "/assets/img/event-6.jpg"
     },
     {
         id: 8,
-        title: "One-Day Orientation Program on Artificial Intelligence & Data Science",
-        year: "2026",
-        location: "Patna, India",
-        description: 'The CAIES Foundation is organizing a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at AN Sinha Hall, Patna. This program is designed to introduce students and aspiring professionals to the fundamentals, real-world applications, and career opportunities in AI and Data Science. Through expert-led sessions and practical insights, participants will gain clarity on industry trends, essential skills, and learning pathways required to build a future-ready career in these rapidly evolving fields.',
-        image: "/assets/img/one-page-brochure.png"
+        title: "7th International Conference on Science & Technology, Resources, Environment & Agriculture, Ho Chi Minh City",
+        year: "2025",
+        location: "Vietnam",
+        description: "Dr. Sushant Kumar Singh jointly presented a research paper titled \"Establishing Training in Artificial Intelligence for Sustainability Science\" with Prof. Robert Taylor, MSU, NJ, USA, at the 7th International Conference on Science and Technology, Resources, Environment, and Agriculture in the Digital Era and Sustainable Development, contributing to global discourse on AI - driven sustainability capacity building.",
+        image: "/assets/img/event-vietnam.jpeg"
     },
     {
         id: 9,
-        title: "Invited Speaker at International Conference on Frontiers in Surface Engineering and Additive Manufacturing",
+        title: "Keynote Address – \"Building an AI - Ready Campus: Shaping the Future\", T.P.S.College, Patna",
         year: "2026",
-        location: "Kharagpur, India",
-        description: 'Description will be updated soon.',
+        location: "Bihar, Bharat",
+        description: "Dr. Sushant Kumar Singh delivered a keynote on \"Building an AI- Ready Campus: Shaping the Future\", highlighting the urgent need for institutions to adapt to the rapidly evolving AI landscape.The talk emphasized institutional readiness, faculty empowerment, and student - centric AI integration for future resilience.",
+        image: "/assets/img/event-tps.jpeg"
+    },
+    {
+        id: 10,
+        title: "One-Day Orientation Program on Artificial Intelligence & Data Science",
+        year: "2026",
+        location: "Patna, Bharat",
+        description: "The CAIES Foundation organized a One-Day Orientation Program on Artificial Intelligence and Data Science on 18 January 2026 at A.N.Sinha Institute of Social Studies, Patna.The program introduced students and young professionals to AI fundamentals, real-world applications, and career pathways, enabling participants to make informed decisions toward future - ready careers.",
+        image: "/assets/img/one-page-brochure.png"
+    },
+    {
+        id: 11,
+        title: "Keynote Speaker – International Conference on Frontiers in Surface Engineering & Additive Manufacturing(FSEAM), IIT Kharagpur",
+        year: "2026",
+        location: "West Bengal, Bharat",
+        description: "Dr. Sushant Kumar Singh was invited as a Keynote Speaker at the International Conference on Frontiers in Surface Engineering and Additive Manufacturing (FSEAM), jointly organized by IIT Kharagpur and BIT Mesra.His address highlighted the convergence of AI, advanced manufacturing, and sustainable engineering.",
         image: "/assets/img/fseam.png"
     }
 ]
@@ -631,10 +648,10 @@ export const publications: PublicationDetails[] = [
         id: 2,
         image: "/assets/img/post-6.jpg",
         date: "May 31.2023",
-        title: "Landslide susceptibility prediction using frequency ratio model: a case study of Uttarakhand, Himalaya (India)",
+        title: "Landslide susceptibility prediction using frequency ratio model: a case study of Uttarakhand, Himalaya (Bharat)",
         link: "https://link.springer.com/article/10.1007/s43538-023-00171-z",
         description:
-            "The purpose of this study is to develop a landslide susceptibility prediction model by applying the Frequency Ratio (FR) model and remote sensing data sets for the Northern part of Uttarakhand, India.",
+            "The purpose of this study is to develop a landslide susceptibility prediction model by applying the Frequency Ratio (FR) model and remote sensing data sets for the Northern part of Uttarakhand, Bharat.",
     },
     {
         id: 3,
@@ -679,7 +696,7 @@ export const publications: PublicationDetails[] = [
         title: "Evaluating and predicting social behavior of arsenic affected communities: Towards developing arsenic resilient society",
         link: "https://linkinghub.elsevier.com/retrieve/pii/S2405665021000226",
         description:
-            "This study uses six machine learning (ML) algorithms to evaluate and predict individuals' social resilience towards arsenicosis-affected people in an arsenic-risk society of rural India. Over 50% of the surveyed communities were found to be resilient towards arsenicosis patients.",
+            "This study uses six machine learning (ML) algorithms to evaluate and predict individuals' social resilience towards arsenicosis-affected people in an arsenic-risk society of rural Bharat. Over 50% of the surveyed communities were found to be resilient towards arsenicosis patients.",
     },
 ]
 
@@ -830,20 +847,20 @@ export const scholars = [
     },
     {
         name: "Saumya Srishtee",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/saumya-srishtee27/",
         imageUrl: "/assets/img/team/saumya.jpeg",
         status: true,
     },
     {
         name: "Asha Mariam Manoj",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/asha-mariam-manoj-b01a96249/",
         imageUrl: "/assets/img/team/asha.jpeg",
         status: true,
         testimonial: [
             {
-                text: "I am Asha Mariam Manoj, currently a Data Analyst Apprentice at Google, Bangalore, where I transform complex data into actionable insights. My journey was shaped by my work with the CAIES Foundation, where I led a project to predict the Air Quality Index (AQI) across Indian cities using machine learning techniques such as SVR, random forest, and SARIMA. This experience strengthened my skills in Python, SQL, data visualization, and model evaluation, while reinforcing my passion for using data science to address real-world challenges—an approach that aligns closely with Google’s mission and values.",
+                text: "I am Asha Mariam Manoj, currently a Data Analyst Apprentice at Google, Bangalore, where I transform complex data into actionable insights. My journey was shaped by my work with the CAIES Foundation, where I led a project to predict the Air Quality Index (AQI) across Bharatn cities using machine learning techniques such as SVR, random forest, and SARIMA. This experience strengthened my skills in Python, SQL, data visualization, and model evaluation, while reinforcing my passion for using data science to address real-world challenges—an approach that aligns closely with Google’s mission and values.",
             },
         ],
     },
@@ -856,91 +873,91 @@ export const scholars = [
     },
     {
         name: "Preetish Patel",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/preetishpatel123/",
         imageUrl: "/assets/img/team/preetish.jpeg",
         status: true,
     },
     {
         name: "Eshan Singh",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/r0x4r/",
         imageUrl: "/assets/img/team/eshan.jpeg",
         status: false,
     },
     {
         name: "Mukesh Kumhar",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/mukesh-kumhar/",
         imageUrl: "/assets/img/team/mukesh.jpeg",
         status: true,
     },
     {
         name: "Ankit Rai",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/ankit-rai-b5806924a/",
         imageUrl: "/assets/img/team/ankiit.jpeg",
         status: true,
     },
     {
         name: "Kshitij Saxena",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/kshitij-saxena-16baa5261/",
         imageUrl: "/assets/img/team/Kshitij.jpeg",
         status: true,
     },
     {
         name: "Ananya Sinha",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "#",
         imageUrl: "/assets/img/team/ananya.jpg",
         status: false,
     },
     {
         name: "Akash Kumar",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/akash-kumar-3baa04250/",
         imageUrl: "/assets/img/team/akash.jpg",
         status: true,
     },
     {
         name: "Chandrakant Singh",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/chandrakant001",
         imageUrl: "/assets/img/team/chandrakant.jpg",
         status: true,
     },
     {
         name: "Sonakshi Singh",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/sonakshi-singh-9baa72327/",
         imageUrl: "/assets/img/team/sonakshi.png",
         status: true,
     },
     {
         name: "Anjali Kumari",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/anjali-pandey-3193952b5",
         imageUrl: "/assets/img/team/anjali.jpg",
         status: true,
     },
     {
         name: "Rishu Kumari",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/rishukumari001/",
         imageUrl: "/assets/img/team/rishu.jpg",
         status: true,
     },
     {
         name: "Priyanka Kumari",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/priyanka-kumari-03ab792b7/",
         imageUrl: "/assets/img/team/priyanka.jpg",
         status: true,
     },
     {
         name: "Vinay Kumar Mahto",
-        role: "India",
+        role: "Bharat",
         linkedinUrl: "https://www.linkedin.com/in/vinay-kumar-546a35253/",
         imageUrl: "/assets/img/team/vinay.jpg",
         status: true,
@@ -950,7 +967,7 @@ export const scholars = [
 export const collaborators = [
     {
         name: "Dr. Sandhya Pundhir",
-        role: "India",
+        role: "Bharat",
         imageUrl: "/assets/img/team/sandhya.jpeg",
         linkedinUrl: "https://www.linkedin.com/in/dr-sandhya-pundhir-b67a187/",
     },
@@ -962,19 +979,19 @@ export const collaborators = [
     },
     {
         name: "Ms. Sneha Kumari",
-        role: "India",
+        role: "Bharat",
         imageUrl: "/assets/img/team/sneha.jpeg",
         linkedinUrl: "https://www.linkedin.com/in/sneha-kumari-138254172/",
     },
     {
         name: "Dr. Dona Sinha",
-        role: "India",
+        role: "Bharat",
         imageUrl: "/assets/img/team/dona.jpeg",
         linkedinUrl: "https://www.linkedin.com/in/dona-sinha-61b7a424/",
     },
     {
         name: "Dr. Amandeep Kaur",
-        role: "India",
+        role: "Bharat",
         imageUrl: "/assets/img/team/amandeep.jpeg",
         linkedinUrl: "https://www.linkedin.com/in/amandeep-kaur-20a20b2a/",
     },

@@ -63,12 +63,12 @@ export default function Contact() {
                 imageUrl="/assets/img/page-header-bg.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="contact-section" className="bg-background w-full">
+            <section id="contact-section" className="w-full bg-neutral-50">
                 <div className="relative z-1">
                     <LeafletMap />
                     <div className="relative z-1 mx-auto w-full px-48 max-lg:px-12">
-                        <div className="bg-background flex flex-row rounded-md px-4 py-20 shadow-[0_16px_28px_0_#00000026] max-lg:flex-col">
-                            <div className="border-main/20 w-full px-4 max-lg:mb-8 max-lg:border-b max-lg:pb-4">
+                        <div className="flex flex-row rounded-md bg-neutral-50 px-4 py-20 shadow-[0_16px_28px_0_#00000026] max-lg:flex-col">
+                            <div className="w-full border-neutral-900/20 px-4 max-lg:mb-8 max-lg:border-b max-lg:pb-4">
                                 <ContactInfo />
                             </div>
                             <div className="w-full px-4">

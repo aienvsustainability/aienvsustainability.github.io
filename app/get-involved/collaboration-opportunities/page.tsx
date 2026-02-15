@@ -58,22 +58,22 @@ const page = () => {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="bg-background w-full">
+            <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex w-full flex-col gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     {collaborationSections.map((section, idx) => (
                         <React.Fragment key={idx}>
                             <div className="flex flex-col items-start">
-                                <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                                <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                     {section.title}
                                 </h2>
-                                <p className="text-secondary text-base font-medium lg:text-lg">
+                                <p className="text-base text-neutral-500 lg:text-lg">
                                     {section.description}
                                 </p>
                             </div>
                             <div
                                 className={`grid grid-cols-1 gap-5 pb-14 sm:grid-cols-2 lg:grid-cols-3 ${
                                     idx !== collaborationSections.length - 1
-                                        ? "border-main/20 border-b border-dashed"
+                                        ? "border-b border-dashed border-neutral-900/20"
                                         : ""
                                 }`}>
                                 {section.cards.map((card, i) => (

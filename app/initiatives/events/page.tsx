@@ -12,6 +12,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import { CustomMetadata } from "@/types"
+import Breadcrumb from "@/components/ui/breadcrumb"
 
 export const metadata: CustomMetadata = {
     title: "Events",
@@ -55,49 +56,40 @@ export const metadata: CustomMetadata = {
 }
 
 const eventsPage = () => {
-    // const sortedEvents = [...eventdetails].sort(
-    //         (a, b) => Number(b.year) - Number(a.year)
-    //     )
     const sortedEvents = [...eventdetails].reverse()
+    const breadcrumb = [
+        { label: "Home", link: "/" },
+        { label: "Initiatives", link: "/" },
+        { label: "Events", active: true },
+    ]
     return (
-        <section className="flex min-h-screen flex-col items-center">
-            <div className="relative flex h-70 w-full flex-col items-center justify-center overflow-hidden md:h-102">
-                <Image
-                    src="/assets/img/events-background.webp"
-                    alt="Events Background"
-                    fill
-                    priority
-                    className="pointer-events-none object-cover object-bottom"
-                />
-                <h2 className="font-condensed relative z-10 text-5xl font-medium text-white uppercase mix-blend-difference sm:text-6xl lg:text-9xl">
-                    Events
-                </h2>
-                <p className="pointer-events-none z-10 max-w-xs text-center text-sm font-medium tracking-wide text-neutral-900 opacity-95 md:max-w-lg md:text-base">
-                    Discover CAIES Foundation events including workshops,
-                    training programs, seminars, and industry-focused learning
-                    initiatives.
-                </p>
-            </div>
+        <main className="flex min-h-screen flex-col bg-neutral-50 items-center">
+            <Breadcrumb
+                title="Events"
+                subtitle={`Discover CAIES Foundation events including workshops, training programs, seminars, and industry-focused learning initiatives.`}
+                imageUrl="/assets/img/publication-page-header.jpg"
+                breadcrumb={breadcrumb}
+            />
             <div className="flex w-full flex-col items-center justify-between px-4 py-6 md:max-w-6xl">
                 <div className="hidden w-full flex-col md:flex">
                     <div className="grid w-full grid-cols-10 items-center justify-between border-b border-neutral-300 px-4 py-2">
                         <div className="col-span-4 flex items-start justify-start px-2.5">
-                            <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
+                            <h3 className="text-left text-sm font-semibold tracking-wider text-neutral-900 capitalize">
                                 Title
                             </h3>
                         </div>
                         <div className="col-span-1 flex items-start justify-start px-2.5">
-                            <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
+                            <h3 className="text-left text-sm font-semibold tracking-wider text-neutral-900 capitalize">
                                 Date
                             </h3>
                         </div>
                         <div className="col-span-3 flex items-start justify-start px-2.5">
-                            <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
+                            <h3 className="text-left text-sm font-semibold tracking-wider text-neutral-900 capitalize">
                                 Description
                             </h3>
                         </div>
                         <div className="col-span-2 flex items-start justify-start px-2.5">
-                            <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
+                            <h3 className="text-left text-sm font-semibold tracking-wider text-neutral-900 capitalize">
                                 Image
                             </h3>
                         </div>
@@ -109,23 +101,23 @@ const eventsPage = () => {
                                 <DialogTrigger asChild>
                                     <div
                                         key={event.id}
-                                        className={`cursor-pointer grid w-full grid-cols-10 items-center justify-between px-4 py-2 ${
+                                        className={`grid w-full cursor-pointer grid-cols-10 items-center justify-between px-4 py-2 ${
                                             !isLast
                                                 ? "border-b border-neutral-300"
                                                 : ""
                                         }`}>
                                         <div className="col-span-4 flex min-h-32 items-center justify-start px-2.5 py-2">
-                                            <h3 className="text-main font-condensed text-left text-4xl font-medium tracking-wider uppercase">
+                                            <h3 className="font-condensed text-left text-4xl  tracking-wider text-neutral-900 uppercase">
                                                 {event.title}
                                             </h3>
                                         </div>
                                         <div className="col-span-1 flex min-h-32 items-center justify-start px-2.5 py-2">
-                                            <h3 className="text-main text-left text-sm font-semibold tracking-wider capitalize">
+                                            <h3 className="text-left text-sm font-semibold tracking-wide text-neutral-900 capitalize">
                                                 {event.year}
                                             </h3>
                                         </div>
                                         <div className="col-span-3 flex min-h-32 items-center justify-start px-2.5 py-2">
-                                            <h3 className="line-clamp-2 text-left text-sm leading-snug font-medium tracking-wider text-neutral-500">
+                                            <h3 className="line-clamp-2 text-left text-sm leading-snug text-neutral-500">
                                                 {event.description}
                                             </h3>
                                         </div>
@@ -144,7 +136,7 @@ const eventsPage = () => {
                                 <DialogContent className="border-none bg-white sm:max-w-fit">
                                     <DialogHeader>
                                         <DialogTitle>
-                                            <p className="text-main max-w-2xl text-center text-2xl font-black">
+                                            <p className="max-w-2xl text-center text-2xl font-black text-neutral-900">
                                                 {event.title}
                                             </p>
                                         </DialogTitle>
@@ -160,7 +152,7 @@ const eventsPage = () => {
                                                         className="flex aspect-video h-56 w-96 items-center justify-center object-contain object-center"
                                                     />
                                                 </div>
-                                                <p className="text-secondary mt-6 text-center text-base font-medium">
+                                                <p className="mt-6 text-center text-base  text-neutral-500">
                                                     {event.description}
                                                 </p>
                                             </div>
@@ -168,7 +160,7 @@ const eventsPage = () => {
                                     </DialogHeader>
                                     <DialogFooter className="my-5 sm:justify-center">
                                         <DialogClose asChild>
-                                            <div className="bg-main flex h-14 w-36 cursor-pointer items-center justify-center rounded-sm px-3 py-2 font-medium text-neutral-200">
+                                            <div className="flex h-14 w-36 cursor-pointer items-center justify-center rounded-sm bg-neutral-900 px-3 py-2  text-neutral-50">
                                                 Close
                                             </div>
                                         </DialogClose>
@@ -187,14 +179,14 @@ const eventsPage = () => {
                                     key={event.id}
                                     className="flex flex-col gap-3 rounded-lg border border-neutral-300 p-4">
                                     <div className="flex items-start justify-between gap-2">
-                                        <h3 className="text-main font-condensed text-2xl font-medium uppercase">
+                                        <h3 className="font-condensed text-2xl  text-neutral-900 uppercase">
                                             {event.title}
                                         </h3>
-                                        <span className="text-main text-sm font-semibold whitespace-nowrap">
+                                        <span className="text-sm font-semibold whitespace-nowrap text-neutral-900">
                                             {event.year}
                                         </span>
                                     </div>
-                                    <p className="text-left text-sm leading-snug font-medium text-neutral-500">
+                                    <p className="text-left text-sm leading-snug  text-neutral-500">
                                         {event.description}
                                     </p>
                                     <Image
@@ -210,7 +202,7 @@ const eventsPage = () => {
                             <DialogContent className="border-none bg-white sm:max-w-fit">
                                 <DialogHeader>
                                     <DialogTitle>
-                                        <p className="text-main max-w-2xl text-center text-2xl font-black">
+                                        <p className="max-w-2xl text-center text-2xl font-black text-neutral-900">
                                             {event.title}
                                         </p>
                                     </DialogTitle>
@@ -226,7 +218,7 @@ const eventsPage = () => {
                                                     className="flex aspect-video h-56 w-96 items-center justify-center object-contain object-center"
                                                 />
                                             </div>
-                                            <p className="text-secondary mt-6 text-center text-base font-medium">
+                                            <p className="mt-6 text-center text-base  text-neutral-500">
                                                 {event.description}
                                             </p>
                                         </div>
@@ -234,7 +226,7 @@ const eventsPage = () => {
                                 </DialogHeader>
                                 <DialogFooter className="my-5 sm:justify-center">
                                     <DialogClose asChild>
-                                        <div className="bg-main flex h-14 w-36 cursor-pointer items-center justify-center rounded-sm px-3 py-2 font-medium text-neutral-200">
+                                        <div className="flex h-14 w-36 cursor-pointer items-center justify-center rounded-sm bg-neutral-900 px-3 py-2  text-neutral-200">
                                             Close
                                         </div>
                                     </DialogClose>
@@ -244,7 +236,7 @@ const eventsPage = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </main>
     )
 }
 

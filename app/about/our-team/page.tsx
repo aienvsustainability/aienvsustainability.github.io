@@ -53,7 +53,10 @@ const SkeletonLoader = () => (
     </div>
 )
 
-const renderTeamMembers = (members: TeamMember[] | undefined, type?: "scholars") => {
+const renderTeamMembers = (
+    members: TeamMember[] | undefined,
+    type?: "scholars"
+) => {
     if (!members) {
         return Array.from({ length: 4 }).map((_, index) => (
             <SkeletonLoader key={index} />
@@ -64,7 +67,6 @@ const renderTeamMembers = (members: TeamMember[] | undefined, type?: "scholars")
         type === "scholars"
             ? members.filter((member) => member.status === false)
             : members
-
 
     return filteredMembers.map((member, index) => (
         <div key={index} className="flex p-1">
@@ -81,7 +83,7 @@ const renderTeamMembers = (members: TeamMember[] | undefined, type?: "scholars")
                         className="aspect-square size-75 object-cover"
                     />
                     <div className="hover">
-                        <h3 className="px-1.5 text-lg font-medium text-primary">
+                        <h3 className="text-primary px-1.5 text-lg">
                             {member.name}
                         </h3>
                         <span className="text-sm text-white">
@@ -112,13 +114,13 @@ export default function OurTeam() {
                 <div
                     id="heading"
                     className="mb-12 items-center justify-center px-48 text-center max-lg:px-8">
-                    <h1 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                    <h1 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                         Meet Our Team
                     </h1>
                     <span className="border-primary inline-block h-2 w-16 border-t-4 text-center max-lg:mb-8"></span>
                 </div>
                 <div id="container" className="ax-auto w-full px-4">
-                    <h2 className="text-main px-48 text-left text-2xl font-extrabold max-lg:px-8">
+                    <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-900 max-lg:px-8">
                         The Advisory Team
                     </h2>
                     <div
@@ -127,7 +129,7 @@ export default function OurTeam() {
                         {renderTeamMembers(intellectualAdvisors)}
                     </div>
 
-                    <h2 className="text-main px-48 text-left text-2xl font-extrabold max-lg:px-8">
+                    <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-900 max-lg:px-8">
                         Scholars
                     </h2>
                     <div
@@ -136,7 +138,7 @@ export default function OurTeam() {
                         {renderTeamMembers(scholars, "scholars")}
                     </div>
 
-                    {/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-main max-lg:px-8">
+                    {/*                     <h2 className="px-48 text-left text-2xl font-extrabold text-neutral-900 max-lg:px-8">
                         Collaborators
                     </h2>
                     <div

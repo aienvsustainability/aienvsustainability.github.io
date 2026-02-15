@@ -8,15 +8,15 @@ const formatDescription = (description: string) => {
 
 const About = () => {
     return (
-        <div className="w-full py-32 max-lg:py-24">
+        <div className="w-full bg-neutral-50 py-32 max-lg:py-24">
             <div
                 id="heading"
                 className="flex flex-col items-center justify-center px-4 text-center">
-                <h2 className="mb-2 text-center text-7xl uppercase font-condensed font-medium text-main">
+                <h2 className="font-condensed mb-2 text-center text-7xl text-neutral-900 uppercase">
                     About CAIES
                 </h2>
-                <span className="inline-block h-2 w-16 border-t-4 border-primary text-center"></span>
-                <p className="mb-4 font-medium mt-4 max-w-2xl text-lg text-secondary max-lg:text-base">
+                <span className="border-primary inline-block h-1 w-16 border-t-4 text-center"></span>
+                <p className="max-w-2xl py-4 text-base tracking-tight text-neutral-500">
                     Solutions are designed based on the &apos;goals&apos;
                     considering its multidimensional aspects which are grounded
                     in micro and macro scientific and technical rigors.
@@ -36,13 +36,12 @@ const About = () => {
                             alt={`causes${index + 1}`}
                             className="h-auto w-full"
                         />
-                        <div className="border border-dashed border-main/20 bg-white px-8 py-10 h-110">
-                            <h3 className="text-2xl font-semibold leading-8 text-main">
+                        <div className="h-110 border border-dashed border-neutral-900/20 bg-white px-8 py-10">
+                            <h3 className="text-2xl leading-8 font-bold tracking-tight text-neutral-900">
                                 {item.title}
                             </h3>
-                            {/* Replace \n with <br/> in the description */}
                             <p
-                                className="mt-2 text-base text-secondary"
+                                className="mt-2 text-base text-neutral-500"
                                 dangerouslySetInnerHTML={{
                                     __html: formatDescription(item.description),
                                 }}></p>

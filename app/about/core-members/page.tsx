@@ -58,10 +58,10 @@ export default function About() {
                 imageUrl="/assets/img/page-header-bg.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="about-section" className="bg-background relative">
+            <section id="about-section" className="relative bg-neutral-50">
                 <div
                     id="container"
-                    className="circle shape border-main/10 border-b p-48 max-lg:px-8 max-lg:py-24">
+                    className="circle shape border-b border-neutral-900/10 p-48 max-lg:px-8 max-lg:py-24">
                     <div
                         id="about-wrap"
                         className="-mx-4 flex flex-row items-center max-lg:flex-col">
@@ -84,10 +84,10 @@ export default function About() {
                         <div
                             id="about-content"
                             className="relative min-h-px w-full px-4">
-                            <h2 className="text-main font-condensed mb-5 text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                            <h2 className="font-condensed mb-5 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                 About the CAIES Foundation
                             </h2>
-                            <p className="text-secondary pr-5 text-lg font-normal">
+                            <p className="pr-5 text-base leading-snug font-normal text-neutral-700">
                                 The Center for Artificial Intelligence and
                                 Environmental Sustainability (CAIES) Foundation,
                                 is a niche Section (8) non-profit organization
@@ -112,13 +112,13 @@ export default function About() {
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                        <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                             The Directors
                         </h2>
                         <span className="border-primary inline-block h-2 w-16 border-t-4 text-center"></span>
                     </div>
                     <div id="content">
-                        <p className="text-secondary mb-4 text-left text-lg leading-8">
+                        <p className="mb-4 text-left text-base leading-snug text-neutral-700">
                             <b>Dr. Sushant Singh</b>, a founding Director of the
                             CAIES Foundation, boasts over 18 years of experience
                             in environmental science, data science, and
@@ -137,7 +137,7 @@ export default function About() {
                             activities like writing stories, poems, and plays
                             addressing social and environmental issues.
                         </p>
-                        <p className="text-secondary mb-4 text-left text-lg leading-8">
+                        <p className="mb-4 text-left text-base leading-snug text-neutral-700">
                             <b>Mrs. Rashmi Singh</b>, a founding Director of the
                             CAIES Foundation, possesses over 15 years of
                             professional experience in development sectors,
@@ -169,7 +169,6 @@ export default function About() {
                                             width={0}
                                             height={0}
                                             sizes="100vw"
-                                            quality={100}
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">
@@ -192,7 +191,6 @@ export default function About() {
                                             width={0}
                                             height={0}
                                             sizes="100vw"
-                                            quality={100}
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">
@@ -213,13 +211,13 @@ export default function About() {
                     <div
                         id="heading"
                         className="mb-12 items-center justify-center text-center">
-                        <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                        <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                             HRM and Legal
                         </h2>
                         <span className="border-primary inline-block h-2 w-16 border-t-4 text-center"></span>
                     </div>
                     <div id="content">
-                        <p className="text-secondary mb-4 text-left text-lg leading-8">
+                        <p className="mb-4 text-left text-base leading-snug text-neutral-700">
                             <b>Mr. Chandan Kumar Sinha</b> has recently joined
                             the CAIES Foundation as a Coordinator: HRM and
                             Legal. He has earned a law degree from Choudary
@@ -252,7 +250,6 @@ export default function About() {
                                             width={0}
                                             height={0}
                                             sizes="100vw"
-                                            quality={100}
                                             className="aspect-square size-75 object-cover object-center"
                                         />
                                         <div className="hover">

@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from "react"
 import Link from "next/link"
-import { CgMenuRight } from "react-icons/cg";
 import { GoChevronDown, GoChevronUp } from "react-icons/go"
 import {
     Sheet,
@@ -14,6 +13,7 @@ import {
 } from "@/components/ui/sheet"
 import { dropdownItems } from "@/constants"
 import { MobileDropdownProps } from "@/types"
+import { IoMenuSharp } from "react-icons/io5"
 
 const MobileDropdown = ({
     label,
@@ -24,7 +24,7 @@ const MobileDropdown = ({
     <li className="">
         <div className="flex flex-col items-center">
             <button
-                className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold ring-0 outline-0"
+                className="flex w-full items-center justify-start rounded px-2 text-xl font-semibold ring-0 outline-0"
                 onClick={onToggle}>
                 {label}{" "}
                 {isOpen ? (
@@ -34,13 +34,13 @@ const MobileDropdown = ({
                 )}
             </button>
             {isOpen && (
-                <ul className="border-main/20 mt-4 flex flex-col items-start border-l pl-1">
+                <ul className="mt-4 flex flex-col items-start border-l border-neutral-900/20 pl-1">
                     {links.map(({ text, href }) => (
                         <li key={href} className="">
                             <SheetClose asChild>
                                 <Link
                                     href={href}
-                                    className="text-main block px-1 text-base leading-11 font-medium transition-colors duration-300">
+                                    className="block px-1 text-base leading-11 text-neutral-900 transition-colors duration-300">
                                     {text}
                                 </Link>
                             </SheetClose>
@@ -59,7 +59,7 @@ const MobileHeader = () => {
         <section id="MobileNavigation" className="w-full max-w-66 lg:hidden">
             <Sheet>
                 <SheetTrigger asChild>
-                    <CgMenuRight className="mr-4 size-6 text-main cursor-pointer" />
+                    <IoMenuSharp className="mr-4 size-6 cursor-pointer stroke-1 text-neutral-900" />
                 </SheetTrigger>
                 <SheetContent className="flex flex-col items-start bg-white pt-20">
                     <SheetHeader>
@@ -93,7 +93,9 @@ const MobileHeader = () => {
                             )}
                             <SheetClose asChild>
                                 <li className="hover:bg-primary/15 flex w-full items-center justify-start rounded px-2 text-xl font-semibold">
-                                    <Link href="https://training.caienvsus.org/">Training & Courses</Link>
+                                    <Link href="https://training.caienvsus.org/">
+                                        Training & Courses
+                                    </Link>
                                 </li>
                             </SheetClose>
                             <SheetClose asChild>

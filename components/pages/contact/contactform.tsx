@@ -80,7 +80,7 @@ const ContactForm = () => {
                         type="text"
                         name="name"
                         placeholder="Name"
-                        className="input font-medium tracking-wide"
+                        className="input tracking-wide"
                         value={formData.name}
                         onChange={handleChange}
                     />
@@ -95,7 +95,7 @@ const ContactForm = () => {
                         type="email"
                         name="email"
                         placeholder="Email"
-                        className="input font-medium tracking-wide"
+                        className="input tracking-wide"
                         value={formData.email}
                         onChange={handleChange}
                     />
@@ -111,7 +111,7 @@ const ContactForm = () => {
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    className="input font-medium tracking-wide"
+                    className="input tracking-wide"
                     value={formData.subject}
                     onChange={handleChange}
                 />
@@ -125,7 +125,7 @@ const ContactForm = () => {
                 <textarea
                     name="message"
                     placeholder="Message"
-                    className="input h-30 font-medium tracking-wide"
+                    className="input h-30 tracking-wide"
                     value={formData.message}
                     onChange={handleChange}
                 />
@@ -135,7 +135,7 @@ const ContactForm = () => {
                     </p>
                 )}
             </div>
-            <label className="mb-2 flex items-center font-medium gap-4">
+            <label className="mb-2 flex items-center gap-4">
                 Solve: {randomNumbers.num1} + {randomNumbers.num2} = ?
                 <button type="button" onClick={handleRefreshCaptcha}>
                     <IoReloadCircle className="text-primary text-2xl" />
@@ -147,7 +147,7 @@ const ContactForm = () => {
                 value={formData.captcha}
                 onChange={handleChange}
                 placeholder="Your answer"
-                className="input mb-4 font-medium tracking-wide appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                className="input mb-4 appearance-none tracking-wide [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                 required
             />
             {errors.captcha && (
@@ -158,7 +158,7 @@ const ContactForm = () => {
             )}
             <button
                 type="submit"
-                className="bg-primary tracking-wide cursor-pointer rounded-md p-4 font-medium text-white">
+                className="bg-primary cursor-pointer rounded-md p-4 tracking-wide text-white">
                 Send Message
             </button>
         </form>

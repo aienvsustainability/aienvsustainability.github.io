@@ -50,7 +50,7 @@ export default function OurGoals() {
     const breadcrumb = [
         { label: "Home", link: "/" },
         { label: "About Us", link: "/" },
-        { label: "Our Goals", active: true }
+        { label: "Our Goals", active: true },
     ]
 
     return (
@@ -61,7 +61,7 @@ export default function OurGoals() {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
-            <section id="main-section" className="bg-background w-full">
+            <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex flex-col items-center justify-center gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     <div className="flex flex-col items-center justify-center">
                         <Image
@@ -73,10 +73,10 @@ export default function OurGoals() {
                             className="aspect-video h-full w-full rounded-2xl object-cover"
                         />
                         <div className="mt-8 flex flex-col items-center justify-center py-8">
-                            <h2 className="text-main font-condensed text-3xl font-medium tracking-wide uppercase lg:text-7xl">
+                            <h2 className="font-condensed text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
                                 Our Goals
                             </h2>
-                            <p className="text-secondary mt-8 max-w-5xl text-center text-base font-normal">
+                            <p className="mt-8 max-w-5xl text-center text-base font-normal text-neutral-500">
                                 At the CAIES Foundation, our goals reflect our
                                 commitment to driving impactful change through
                                 research, innovation, and education. These goals
@@ -88,7 +88,7 @@ export default function OurGoals() {
                                 className="h-137"
                             />
                             <div className="mt-2 flex flex-col items-center justify-center py-8">
-                                <p className="text-secondary max-w-5xl text-left text-base font-normal">
+                                <p className="max-w-5xl text-left text-base font-normal text-neutral-500">
                                     The CAIES Foundation reaffirms its
                                     commitment to driving positive change and
                                     fostering a sustainable future for future
