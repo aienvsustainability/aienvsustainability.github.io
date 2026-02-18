@@ -5,7 +5,7 @@ import GalleryGrid from "@/components/ui/galleryGrid"
 import { CustomMetadata } from "@/types"
 
 export const metadata: CustomMetadata = {
-    title: "Gallery | CAIES Foundation",
+    title: "Gallery",
     description:
         "Explore the CAIES Foundation gallery showcasing events, research activities, workshops, sustainability initiatives, and impactful moments across AI and Data Science programs.",
 
