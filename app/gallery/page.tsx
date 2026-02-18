@@ -9,14 +9,14 @@ export const metadata: CustomMetadata = {
     description:
         "Explore the CAIES Foundation gallery showcasing events, research activities, workshops, sustainability initiatives, and impactful moments across AI and Data Science programs.",
 
-    keywords: [
-        "CAIES Foundation gallery",
-        "AI events photos",
-        "Sustainability initiatives",
-        "Workshops gallery",
-        "Research activities",
-        "CAIES events images",
-    ],
+    // keywords: [
+    //     "CAIES Foundation gallery",
+    //     "AI events photos",
+    //     "Sustainability initiatives",
+    //     "Workshops gallery",
+    //     "Research activities",
+    //     "CAIES events images",
+    // ],
 
     alternates: {
         canonical: "/gallery",
