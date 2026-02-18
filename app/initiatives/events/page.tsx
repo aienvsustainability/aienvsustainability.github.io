@@ -107,7 +107,7 @@ const eventsPage = () => {
                                                 : ""
                                         }`}>
                                         <div className="col-span-4 flex min-h-32 items-center justify-start px-2.5 py-2">
-                                            <h3 className="font-condensed text-left text-4xl  tracking-wider text-neutral-900 uppercase">
+                                            <h3 className="text-left text-xl font-bold text-neutral-900">
                                                 {event.title}
                                             </h3>
                                         </div>
@@ -179,7 +179,7 @@ const eventsPage = () => {
                                     key={event.id}
                                     className="flex flex-col gap-3 rounded-lg border border-neutral-300 p-4">
                                     <div className="flex items-start justify-between gap-2">
-                                        <h3 className="font-condensed text-2xl  text-neutral-900 uppercase">
+                                        <h3 className="font-bold text-2xl  text-neutral-900">
                                             {event.title}
                                         </h3>
                                         <span className="text-sm font-semibold whitespace-nowrap text-neutral-900">

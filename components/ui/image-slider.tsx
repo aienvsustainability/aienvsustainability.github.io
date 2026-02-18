@@ -49,7 +49,7 @@ const ImageSlider = () => {
                             style={{ width: "100%", height: "100%" }}
                         />
                         <div
-                            className={`absolute inset-0 flex flex-col items-center justify-center text-white max-lg:px-8 ${slide.paddingX}`}>
+                            className={`absolute inset-0 flex flex-col items-center justify-center text-neutral-50 max-lg:px-8 ${slide.paddingX}`}>
                             <h2
                                 className={`animate-slidein mb-4 leading-[1.2] max-lg:text-4xl ${slide.titleSize} ${
                                     slide.titleClass ?? ""
@@ -64,7 +64,7 @@ const ImageSlider = () => {
                                 )}
                             </h2>
                             <p
-                                className={`animate-slidein text-base text-white ${
+                                className={`animate-slidein text-base text-neutral-50/80 ${
                                     slide.descPadding ?? ""
                                 }`}>
                                 {slide.desc}
@@ -76,13 +76,13 @@ const ImageSlider = () => {
 
             <button
                 ref={prevRef}
-                className="absolute top-1/2 left-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-neutral-900/50 p-3 text-white outline-none hover:bg-neutral-900"
+                className="text-neutral-50 absolute top-1/2 left-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-neutral-900/50 p-3 outline-none hover:bg-neutral-900"
                 aria-label="Previous slide">
                 <FiArrowLeft size={24} />
             </button>
             <button
                 ref={nextRef}
-                className="absolute top-1/2 right-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-neutral-900/50 p-3 text-white outline-none hover:bg-neutral-900"
+                className="text-neutral-50 absolute top-1/2 right-5 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-neutral-900/50 p-3 outline-none hover:bg-neutral-900"
                 aria-label="Next slide">
                 <FiArrowRight size={24} />
             </button>

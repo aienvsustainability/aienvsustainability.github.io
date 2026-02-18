@@ -4,9 +4,9 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: "out",
   images: { unoptimized: true },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // eslint: {
+  //   ignoreDuringBuilds: true,
+  // },
   typescript: {
     ignoreBuildErrors: true,
   },

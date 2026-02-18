@@ -140,8 +140,8 @@ export default function Internships() {
                                 </h3>
 
                                 <div className="relative w-full">
-                                    <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-gradient-to-r from-neutral-50 via-neutral-50/80 to-transparent" />
-                                    <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-gradient-to-l from-neutral-50 via-neutral-50/80 to-transparent" />
+                                    <div className="pointer-events-none absolute top-0 left-0 z-10 h-full w-12 bg-linear-to-r from-neutral-50 via-neutral-50/80 to-transparent" />
+                                    <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-12 bg-linear-to-l from-neutral-50 via-neutral-50/80 to-transparent" />
 
                                     <Marquee
                                         pauseOnHover

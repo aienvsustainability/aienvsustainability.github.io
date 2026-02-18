@@ -12,7 +12,7 @@ import Link from "next/link"
 const TopHeader = () => {
     return (
         <div className="bg-primary w-full h-10 md:h-12 mx-auto flex items-center border-0 justify-center md:justify-between py-3">
-            <div className="mx-auto flex max-w-6xl w-full items-center justify-between max-lg:px-2">
+            <div className="mx-auto flex max-w-7xl w-full items-center justify-between max-lg:px-2">
                 <div className="flex items-center justify-between px-2 md:px-0 max-md:w-full gap-8 lg:gap-6">
                     {contactLinks.map(({ href, icon, text }) => (
                         <Link key={href} href={href}>
