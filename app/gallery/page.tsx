@@ -42,13 +42,13 @@ export const metadata: CustomMetadata = {
         type: "website",
     },
 
-    twitter: {
-        card: "summary_large_image",
-        title: "Gallery | CAIES Foundation",
-        description:
-            "Explore photos from CAIES Foundation workshops, events, and initiatives.",
-        images: ["/assets/img/publication-page-header.jpg"],
-    },
+    // twitter: {
+    //     card: "summary_large_image",
+    //     title: "Gallery | CAIES Foundation",
+    //     description:
+    //         "Explore photos from CAIES Foundation workshops, events, and initiatives.",
+    //     images: ["/assets/img/publication-page-header.jpg"],
+    // },
 
     robots: {
         index: true,
