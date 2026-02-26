@@ -1,6 +1,8 @@
 import React from "react"
 import Image from "next/image"
-import { aboutcards } from "@/constants"
+import { aboutcards, ourPartners } from "@/constants"
+import Marquee from "@/components/ui/marquee"
+import Link from "next/link"
 
 const formatDescription = (description: string) => {
     return description.replace(/\n/g, "<br/>")
@@ -8,7 +10,7 @@ const formatDescription = (description: string) => {
 
 const About = () => {
     return (
-        <div className="w-full bg-neutral-50 py-32 max-lg:py-24">
+        <div className="flex w-full flex-col items-center justify-between bg-neutral-50 py-32 max-lg:py-24">
             <div
                 id="heading"
                 className="flex flex-col items-center justify-center px-4 text-center">
@@ -48,6 +50,31 @@ const About = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="w-full bg-neutral-50">
+                <h2 className="mx-auto w-full px-4 py-8 text-center text-xl text-neutral-900 lg:px-8 lg:text-2xl">
+                    Our partners we have signed MoU with
+                </h2>
+                <Marquee
+                    pauseOnHover
+                    className="flex items-center justify-center gap-4 overflow-hidden [--duration:20s] md:gap-5">
+                    {ourPartners.map((partner) => (
+                        <Link
+                            key={partner.id}
+                            href={partner.href}
+                            target="_blank"
+                            className="flex min-w-30 items-center justify-center">
+                            <Image
+                                src={partner.image}
+                                alt={partner.name}
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                className="h-16 w-auto cursor-pointer object-contain mix-blend-screen grayscale-100 hover:grayscale-0"
+                            />
+                        </Link>
+                    ))}
+                </Marquee>
             </div>
         </div>
     )

@@ -1322,3 +1322,30 @@ export const AvailableInternshipTrack = [
             "Ideal for students passionate about climate action, environmental research, circular economy, and green innovation. Interns contribute to sustainability projects and field studies or develop innovative sustainability models using scientific or AI-based approaches.",
     },
 ]
+
+export const ourPartners = [
+    {
+        id: 1,
+        name: "AN College, Patna",
+        image: "/assets/img/partners/anc.png",
+        href: "https://www.ancpatna.ac.in/"
+    },
+    {
+        id: 2,
+        name: "BD College, Patna",
+        image: "/assets/img/partners/bdc.png",
+        href: "https://bdcollegepatna.ac.in/"
+    },
+    {
+        id: 3,
+        name: "Government Women's Polytechnic",
+        image: "/assets/img/partners/gwp.png",
+        href: "https://www.gwpp.ac.in/"
+    },
+    {
+        id: 4,
+        name: "IISD",
+        image: "/assets/img/partners/iisd.png",
+        href: "https://www.iisdindia.in/"
+    },
+]

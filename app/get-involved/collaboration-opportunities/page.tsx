@@ -1,8 +1,11 @@
 import React from "react"
 import Breadcrumb from "@/components/ui/breadcrumb"
 import { VisionCard } from "@/components/ui/cards"
-import { collaborationSections } from "@/constants"
+import { collaborationSections, ourPartners } from "@/constants"
 import { CustomMetadata } from "@/types"
+import Marquee from "@/components/ui/marquee"
+import Image from "next/image"
+import Link from "next/link"
 
 export const metadata: CustomMetadata = {
     title: "Collaboration Opportunities",
@@ -58,6 +61,31 @@ const page = () => {
                 imageUrl="/assets/img/publication-page-header.jpg"
                 breadcrumb={breadcrumb}
             />
+            <section className="w-full bg-neutral-50">
+                <h2 className="mx-auto w-full px-4 py-8 text-center text-xl text-neutral-900 lg:px-8 lg:text-2xl">
+                    Our partners we have signed MoU with
+                </h2>
+                <Marquee
+                    pauseOnHover
+                    className="flex items-center justify-center gap-4 overflow-hidden [--duration:20s] md:gap-5">
+                    {ourPartners.map((partner) => (
+                        <Link
+                            key={partner.id}
+                            href={partner.href}
+                            target="_blank"
+                            className="flex min-w-30 items-center justify-center">
+                            <Image
+                                src={partner.image}
+                                alt={partner.name}
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                className="h-16 w-auto mix-blend-screen cursor-pointer grayscale-100 hover:grayscale-0 object-contain"
+                            />
+                        </Link>
+                    ))}
+                </Marquee>
+            </section>
             <section id="main-section" className="w-full bg-neutral-50">
                 <div className="mx-auto flex w-full flex-col gap-8 px-4 py-10 sm:px-8 lg:px-48 lg:py-20">
                     {collaborationSections.map((section, idx) => (
