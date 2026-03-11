@@ -9,13 +9,14 @@ import {
     DialogDescription,
 } from "@/components/ui/dialog"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AutoDialog() {
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
         const KEY = "caies_modal_seen"
-        const ONE_DAY = 24 * 60 * 60 * 1000
+        const ONE_DAY = 6 * 60 * 60 * 1000
 
         const stored = localStorage.getItem(KEY)
 
@@ -46,7 +47,17 @@ export default function AutoDialog() {
                     </DialogDescription>
                 </DialogHeader>
                 <div className="flex items-center justify-center">
-                    <Image src="/assets/img/one-page-brochure.png" alt="CAIES Foundation Update" width={600} height={800} className="w-full max-w-md rounded-md shadow-lg md:max-w-lg lg:max-w-xl" />
+                    <Link
+                        href="https://forms.gle/8KRQ1Zm7dFbg1aKE8"
+                        target="_blank">
+                        <Image
+                            src="/assets/img/ai_for_scientist.jpg"
+                            alt="CAIES Foundation Update"
+                            width={600}
+                            height={800}
+                            className="w-full max-w-md rounded-md object-contain shadow-lg md:max-w-lg"
+                        />
+                    </Link>
                 </div>
             </DialogContent>
         </Dialog>

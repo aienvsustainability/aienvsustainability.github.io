@@ -68,6 +68,7 @@ export default function RootLayout({
             <body
                 className={`${poppins.variable} ${satoshi.variable} ${dilemmaSans.variable} ${circularSans.variable} scroll-smooth bg-neutral-50 w-full overflow-x-hidden antialiased`}>
                 <Preloader duration={2000} />
+                <AutoDialog />
                 <Navbar />
                 {children}
                 <Footer />
