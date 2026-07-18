@@ -276,16 +276,16 @@ export default function Internships() {
                                                                 9–10
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 301/-
+                                                                ₹ 501/-
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
+                                                                ₹ 101/-
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
+                                                                ₹ 101/-
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
+                                                                ₹ 101/-
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 ₹ 1/-
@@ -295,27 +295,6 @@ export default function Internships() {
                                                         <tr className="hover:bg-neutral-50">
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 11–12
-                                                            </td>
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 301/-
-                                                            </td>
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
-                                                            </td>
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
-                                                            </td>
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 51/-
-                                                            </td>
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                ₹ 1/-
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr className="hover:bg-neutral-50">
-                                                            <td className="border border-neutral-300 px-4 py-3">
-                                                                Undergraduate
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 ₹ 501/-
@@ -336,7 +315,7 @@ export default function Internships() {
 
                                                         <tr className="hover:bg-neutral-50">
                                                             <td className="border border-neutral-300 px-4 py-3">
-                                                                Postgraduate
+                                                                Undergraduate
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 ₹ 1001/-
@@ -349,6 +328,27 @@ export default function Internships() {
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 ₹ 201/-
+                                                            </td>
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                ₹ 1/-
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr className="hover:bg-neutral-50">
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                Postgraduate
+                                                            </td>
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                ₹ 1501/-
+                                                            </td>
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                ₹ 301/-
+                                                            </td>
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                ₹ 301/-
+                                                            </td>
+                                                            <td className="border border-neutral-300 px-4 py-3">
+                                                                ₹ 301/-
                                                             </td>
                                                             <td className="border border-neutral-300 px-4 py-3">
                                                                 ₹ 1/-
@@ -382,8 +382,40 @@ export default function Internships() {
                                             person, depending on project
                                             requirements.
                                         </li>
+                                        <li className="mb-2">
+                                            7. Up to a 50% waiver in the
+                                            registration fee is available only
+                                            for EWS applicants from Private
+                                            Institutions.
+                                        </li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div className="mt-8 flex h-fit w-full flex-col items-start justify-center">
+                                <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
+                                    Support an Intern
+                                </h3>
+                                <p className="text-base font-bold text-neutral-500">
+                                    Contribute ₹201. Enable an Opportunity.
+                                    Empower a Future.
+                                </p>
+                                <p className="text-base font-normal text-neutral-500">
+                                    Help us provide internship opportunities—at
+                                    zero registration fee—to students from
+                                    government institutions and Economically
+                                    Weaker Sections (EWS).
+                                    <br />
+                                    <br />
+                                    Support an intern for just ₹201. You may
+                                    support as many interns as you wish.
+                                    <br />
+                                    <br />
+                                    As a valued supporter, your name and
+                                    photograph will be featured on our website,
+                                    and each intern supported through your
+                                    contribution will be acknowledged under your
+                                    name.
+                                </p>
                             </div>
                             <div className="mt-8 flex h-fit w-full flex-col items-start justify-center">
                                 <h3 className="font-condensed mb-8 text-3xl tracking-wide text-neutral-900 uppercase lg:text-7xl">
