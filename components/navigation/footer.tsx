@@ -62,15 +62,15 @@ const Footer = () => {
                     </p>
                     <div className="flex items-center justify-between gap-5">
                         <Link
-                            href="#"
+                            href="/privacy-policy"
                             className="mb-4 text-sm text-neutral-500 capitalize md:mb-0">
                             Privacy Policy
                         </Link>
-                        <Link
+                        {/* <Link
                             href="#"
                             className="mb-4 text-sm text-neutral-500 md:mb-0">
                             Terms of Services
-                        </Link>
+                        </Link> */}
                     </div>
                     <Image
                         src="https://hits.sh/caienvsus.org.svg?style=for-the-badge&label=Visitor%20Count&color=FE5F00&labelColor=000000"

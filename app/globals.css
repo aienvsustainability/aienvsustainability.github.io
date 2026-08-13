@@ -53,7 +53,8 @@
 
 body {
   background: var(--background);
-  font-family: var(--font-circular-sans), sans-serif;
+  font-family: var(--font-satoshi), sans-serif;
+  font-weight: 500;
 }
 
 
@@ -173,7 +174,7 @@ body {
 }
 
 .font-condensed {
-  font-family: var(--font-dilemma-sans), sans-serif !important;
+  font-family: var(--font-barlow-condensed), sans-serif !important;
 }
 
 @keyframes fadeIn {
