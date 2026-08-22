@@ -534,8 +534,8 @@ export const counters: CounterItem[] = [
     { icon: SlPeople, value: "300+", label: "People Impacted" },
     {
         icon: HiOutlineChatBubbleLeftRight,
-        value: "30+",
-        label: "Intellectual Support",
+        value: "200+",
+        label: "Training Recipients",
     },
 ]
 
