@@ -75,3 +75,24 @@ export const barlowCondensed = Barlow_Condensed({
     subsets: ["latin"]
 })
 
+export const glacialFont = localFont({
+    src: [
+        {
+            path: "./glacial-indifference/GlacialIndifference-Regular.ttf",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "./glacial-indifference/GlacialIndifference-Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+        {
+            path: "./glacial-indifference/GlacialIndifference-Italic.ttf",
+            weight: "400",
+            style: "italic",
+        },
+    ],
+    variable: "--font-glacial",
+    display: "swap",
+})

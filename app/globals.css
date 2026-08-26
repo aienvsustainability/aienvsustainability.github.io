@@ -53,8 +53,7 @@
 
 body {
   background: var(--background);
-  font-family: var(--font-satoshi), sans-serif;
-  font-weight: 500;
+  font-family: var(--font-glacial), sans-serif;
 }
 
 

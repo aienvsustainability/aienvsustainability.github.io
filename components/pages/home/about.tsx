@@ -52,7 +52,7 @@ const About = () => {
                 ))}
             </div>
             <div className="w-full bg-neutral-50">
-                <h2 className="mx-auto w-full px-4 py-8 text-center text-xl text-neutral-900 lg:px-8 lg:text-2xl">
+                <h2 className="mx-auto w-full px-4 py-8 font-bold text-center text-xl text-neutral-900 lg:px-8 lg:text-2xl">
                     Our partners we have signed MoU with
                 </h2>
                 <Marquee

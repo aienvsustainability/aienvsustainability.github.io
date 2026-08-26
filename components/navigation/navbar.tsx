@@ -56,7 +56,7 @@ export default function Navbar() {
                                 {navItems.map((item) =>
                                     item.dropdown ? (
                                         <NavigationMenuItem key={item.label}>
-                                            <NavigationMenuTrigger className="cursor-pointer bg-transparent text-sm font-medium text-neutral-900 uppercase hover:text-orange-500 data-[state=open]:bg-transparent">
+                                            <NavigationMenuTrigger className="cursor-pointer bg-transparent text-sm font-bold tracking-wide text-neutral-900 uppercase hover:text-orange-500 data-[state=open]:bg-transparent">
                                                 {item.label}
                                             </NavigationMenuTrigger>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
                                                                         href={
                                                                             sub.href
                                                                         }
-                                                                        className="block rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
+                                                                        className="block font-bold rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
                                                                         {
                                                                             sub.text
                                                                         }
@@ -100,7 +100,7 @@ export default function Navbar() {
                                                                         href={
                                                                             sub.href
                                                                         }
-                                                                        className="block rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
+                                                                        className="block font-bold rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
                                                                         {
                                                                             sub.text
                                                                         }
@@ -130,7 +130,7 @@ export default function Navbar() {
                                                                     href={
                                                                         sub.href
                                                                     }
-                                                                    className="block rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
+                                                                    className="block font-bold rounded-md px-2 py-2 text-sm hover:bg-neutral-100">
                                                                     {sub.text}
                                                                 </Link>
                                                             </NavigationMenuLink>
@@ -144,7 +144,7 @@ export default function Navbar() {
                                             <NavigationMenuLink asChild>
                                                 <Link
                                                     href={item.href ?? "/"}
-                                                    className="font-medium text-sm text-neutral-900 uppercase hover:text-orange-500">
+                                                    className="font-bold text-sm text-neutral-900 uppercase hover:text-orange-500">
                                                     {item.label}
                                                 </Link>
                                             </NavigationMenuLink>

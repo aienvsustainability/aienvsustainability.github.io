@@ -656,10 +656,26 @@ export const eventdetails: EventDetails[] = [
         location: "Vietnam",
         description: "Dr. Sushant Kumar Singh presented a workshop proposal on “Artificial Intelligence for Sustainability Problem-Solving: A Model for Practitioners” at the International Conference on Sustainable Development(ICSD 2026), Vietnam.",
         image: "/assets/img/event-icsd.jpeg"
+    },
+    {
+        id: 15,
+        title: "Three-day online training on AI for Rural Development",
+        year: "2026",
+        location: "Online",
+        description: "CAIES Foundation co-developed and delivered a three-day online training program on Artificial Intelligence for Rural Development: Transforming Technology into Reality for Rural Welfare, along with the Center on Integrated Rural Development for Asia and the Pacific(CIRDAP), Dhaka, Bangladesh.",
+        image: "/assets/img/event-15.jpg"
     }
 ]
 
 export const publications: PublicationDetails[] = [
+    {
+        id: 1,
+        image: "/assets/img/post-8.jpg",
+        date: "Aug 20.2026",
+        title: "Artificial Intelligence for Rural Development: Transforming Technology into Reality for Rural Welfare",
+        link: "https://cirdap.org/wp-content/uploads/2026/08/CIRDAP-CAIES-Handbook-on-AI-for-Rural-Development-Final-20-Aug-2026.pdf",
+        description: "This publication aims to enhance understanding and application within the domains of rural development and artificial intelligence.Although every effort has been made to ensure accuracy, the publisher and authors disclaim any responsibility for errors or omissions"
+    },
     {
         id: 1,
         image: "/assets/img/post-7.jpg",
@@ -1372,5 +1388,11 @@ export const ourPartners = [
         name: "IISD",
         image: "/assets/img/partners/iisd.png",
         href: "https://www.iisdindia.in/"
+    },
+    {
+        id: 5,
+        name: "CVRU",
+        image: "/assets/img/partners/cvru.png",
+        href: "https://cvrubihar.ac.in/"
     },
 ]
